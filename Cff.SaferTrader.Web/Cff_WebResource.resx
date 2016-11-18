@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="allowcallsLabel" xml:space="preserve">
+    <value>Allow calls:</value>
+  </data>
+  <data name="creditLimitLabel" xml:space="preserve">
+    <value>Credit limit:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleAdminFeeGstLabel" xml:space="preserve">
+    <value>GST:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleAdminFeeTotalLabel" xml:space="preserve">
+    <value>Admin Fee Total:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleAvailableForReleaseLabel" xml:space="preserve">
+    <value>Available for Release:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleChargesTotalLabel" xml:space="preserve">
+    <value>Adjustment/Charges:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleCheckConfirmLabel" xml:space="preserve">
+    <value>To be Checked or Confirmed:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleCreditLabel" xml:space="preserve">
+    <value>Credits:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleDateFinishedLabel" xml:space="preserve">
+    <value>Finish Date:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleDeductionsLabel" xml:space="preserve">
+    <value>Deductions:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleFactoredLabel" xml:space="preserve">
+    <value>Invoices Factored:</value>
+  </data>
+  <data name="InvoiceBatchesSchedulePostageLabel" xml:space="preserve">
+    <value>Postage:</value>
+  </data>
+  <data name="InvoiceBatchesSchedulePostageTotalLabel" xml:space="preserve">
+    <value>Postage Total:</value>
+  </data>
+  <data name="InvoiceBatchesSchedulePostGstLabel" xml:space="preserve">
+    <value>GST:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleReleasedLabel" xml:space="preserve">
+    <value>Release Date:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleRepurchasesLabel" xml:space="preserve">
+    <value>Repurchases:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleStatusDescriptionLabel" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleTotalInvoiceLabel" xml:space="preserve">
+    <value>Total Invoices:</value>
+  </data>
+  <data name="lastAmountLabel" xml:space="preserve">
+    <value>Last amount:</value>
+  </data>
+  <data name="lastPaidLabel" xml:space="preserve">
+    <value>Last paid:</value>
+  </data>
+  <data name="listDateLabel" xml:space="preserve">
+    <value>List date:</value>
+  </data>
+  <data name="nextCallLabel" xml:space="preserve">
+    <value>Next call:</value>
+  </data>
+  <data name="stopCreditLabel" xml:space="preserve">
+    <value>Stop credit:</value>
+  </data>
+  <data name="viewAllRecordsText" xml:space="preserve">
+    <value>View all records</value>
+  </data>
+  <data name="viewPagesText" xml:space="preserve">
+    <value>View pages</value>
+  </data>
+  <data name="InvoiceBatchesScheduleBatchNoteLabel" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleAdminFeeLabel" xml:space="preserve">
+    <value>Admin Fee:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleFactorFeeLabel" xml:space="preserve">
+    <value>Factor Fee:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleNonFactoredInvoicesLabel" xml:space="preserve">
+    <value>Non Factored Invoices:</value>
+  </data>
+  <data name="InvoiceBatchesScheduleRetentionHeldLabel" xml:space="preserve">
+    <value>Retention Held:</value>
+  </data>
+  <data name="LogOnFailIncorrectPassword" xml:space="preserve">
+    <value>Your password was incorrect, please try again.</value>
+  </data>
+  <data name="LogOnFailLockedOut" xml:space="preserve">
+    <value>Your account has been locked out, please contact your site administrator.</value>
+  </data>
+  <data name="LogOnFailNoUser" xml:space="preserve">
+    <value>There is no user with the user name;</value>
+  </data>
+  <data name="batchNumberLinkTooltip" xml:space="preserve">
+    <value>Click to view batch details</value>
+  </data>
+  <data name="clientNameLinkTooltip" xml:space="preserve">
+    <value>Click to load client's Dashboard</value>
+  </data>
+  <data name="customerNameLinkTooltip" xml:space="preserve">
+    <value>Click to load customer's Dashboard</value>
+  </data>
+  <data name="transacionSearchTimeOutMessage" xml:space="preserve">
+    <value>Sorry your search has timed out, please try again.</value>
+  </data>
+  <data name="LogOnFail" xml:space="preserve">
+    <value>Your username or password was incorrect, please try again.</value>
+  </data>
+  <data name="LogOnFailApprovalNeeded" xml:space="preserve">
+    <value>Your account is not yet approved by the administrator.</value>
+  </data>
+  <data name="CreateUserFailPasskeyError" xml:space="preserve">
+    <value>The passkey is invalid. Please verify your organization passkey from your Manager.</value>
+  </data>
+  <data name="PasswordMismatched" xml:space="preserve">
+    <value>The password you entered are not matched.</value>
+  </data>
+  <data name="msgEmailApprovalNotNeeded" xml:space="preserve">
+    <value>Your access are now activated and no longer require an approval from company registrant.</value>
+  </data>
+  <data name="msgEmailApprovalSent" xml:space="preserve">
+    <value>We already sent an email to your company registrant for CFF Client Portal access. You will receive an email from us for the status of your access request.&lt;br/&gt;&lt;br/&gt;Thank you for your patience.&lt;br/&gt;&lt;/br&gt;</value>
+  </data>
+  <data name="msgVerificationInvalid" xml:space="preserve">
+    <value>The verification link is invalid. Please register again.</value>
+  </data>
+  <data name="titleVerificationError" xml:space="preserve">
+    <value>Email verification Error</value>
+  </data>
+  <data name="titleVerificationSuccessful" xml:space="preserve">
+    <value>Email verification Successful</value>
+  </data>
+  <data name="msgVerificationDup" xml:space="preserve">
+    <value>This email has been verified already in our system.</value>
+  </data>
+</root>

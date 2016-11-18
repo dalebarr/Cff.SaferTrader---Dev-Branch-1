@@ -1,0 +1,1007 @@
+<%@ Import Namespace="Cff.SaferTrader.Core" %>
+<%@ Import  Namespace="Cff.SaferTrader.Web"%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SafeTrader.master.cs" Inherits="Cff.SaferTrader.Web.SafeTrader" %>
+
+<%@ Register Assembly="Cff.SaferTrader.Web" Namespace="Cff.SaferTrader.Web.UserControls" TagPrefix="uc" %>
+<%@ Register Assembly="Cff.SaferTrader.Web" Namespace="Cff.SaferTrader.Web.UserControls.gGridViewControls" TagPrefix="uc" %>
+
+<%@ Register TagPrefix="uc" TagName="ManagementContactDetails" Src="~/UserControls/ManagementContactDetails.ascx" %>
+<%@ Register TagPrefix="uc" TagName="ChangePassword" Src="~/UserControls/ChangePassword.ascx" %>
+
+<%@ Register TagPrefix="uc" TagName="CustomerNotesAdderModalBox" Src="~/UserControls/CustomerNotesAdderModalBox.ascx" %>
+<%@ Register TagPrefix="uc" TagName="MainNavigation" Src="~/UserControls/MainNavigation.ascx" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,9,10,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <%--<link rel="stylesheet" type="text/css" href="css/atd.css" media="screen" />--%>
+    <link rel="stylesheet" href="js/ui.1.10.4/themes/smoothness/jquery-ui.css" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="js/ui.1.10.4/themes/jquery.ui.dialog.css" />
+    <link rel="stylesheet" type="text/css" href="js/ui.1.10.4/themes/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="js/ui.1.10.4/themes/jquery.ui.core.css" />
+    <link rel="stylesheet" type="text/css" href="js/ui.1.10.4/themes/jquery.ui.all.css" />
+
+    <link rel="stylesheet" type="text/css" href="js/ui.1.10.4/themes/jquery.ui.button.css" />
+    <link rel="stylesheet" type="text/css" href="js/ui.1.10.4/themes/jquery.ui.menu.css" />
+    <link rel="stylesheet" type="text/css" href="js/ui.1.10.4/themes/jquery.ui.accordion.css" />
+
+    <link rel="stylesheet" type="text/css" href="js/ui.1.10.4/themes/jquery.ui.datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="js/ui.1.10.4/themes/jquery.ui.autocomplete.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/ui-datepicker-cff.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/hover.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?1.1" media="screen, handheld" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.6.3/font-awesome.min.css" media="screen, handheld" />
+    
+    <title>Cashflow Funding Limited | Debtor Management</title>
+    <style type="text/css">
+        .style1 {
+            width: 90px;
+            height: 22px;
+            font-weight: lighter;
+            font-size: 1.091em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .style2 {
+            text-align: right;
+            width: 100%;
+            height: 22px;
+        }
+
+        input[type="search"] {
+            background-color: transparent;
+            width: 100%;
+        }
+
+    </style>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/ui.1.10.4/ui/jquery-ui.js" type="text/javascript"></script>
+
+</head>
+
+<body id="body" runat="server">
+
+    <form id="safeTraderForm" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <CompositeScript ScriptMode="Release">
+                <Scripts>
+                    <asp:ScriptReference Path="js/ui.1.10.4/jquery-1.10.2.js" />
+                    <asp:ScriptReference Path="js/jquery-migrate-1.0.0.js" />
+                    <asp:ScriptReference Path="js/jquery.query-object.js" />
+
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery-ui.js" />
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.ui.core.js" />
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.ui.button.js" />
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.ui.widget.js" />
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.ui.menu.js" />
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.ui.slider.js" />
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.ui.dialog.js" />
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.ui.accordion.js" />
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.ui.datepicker.js" />
+                    <asp:ScriptReference Path="js/SuperFish/hoverIntent.js" />
+                    <asp:ScriptReference Path="js/SuperFish/superfish.js" />
+                    <asp:ScriptReference Path="js/PostBackRitalin.min.js" />
+                    <asp:ScriptReference Path="js/json3.js" />
+
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.ui.autocomplete.js" />
+                    <asp:ScriptReference Path="js/ui.1.10.4/ui/jquery.blockUI.js" />
+                    <asp:ScriptReference Path="js/cff.js" />
+                    <asp:ScriptReference Path="js/jquery.inputsearch.js"/>
+                    <%--<asp:ScriptReference Path="js/jquery.atd.textarea.js" />--%>
+                    <asp:ScriptReference Path="JavaScriptSpellCheck/include.js" />
+                    <asp:ScriptReference Path="js/csshttprequest.js" />
+
+                    <asp:ScriptReference Name="MicrosoftAjax.js" />
+                    <asp:ScriptReference Name="MicrosoftAjaxWebForms.js" />                   
+                </Scripts>
+            </CompositeScript>
+        </asp:ScriptManager>
+
+        <script type="text/javascript" language="javascript">
+
+            var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
+            if (isFirefox) {   // enable inputSearch func for FireFox only
+                window.onload = function () {
+                    setForFireFox();
+                };
+            }
+
+            function setForFireFox() {
+                $('#ClientSearch').inputSearch({ searchIconVisible: false });
+                $('#ClientSearch').css('width', '100%');
+
+                $('#CustomerSearch').inputSearch({ searchIconVisible: false });
+                $('#CustomerSearch').css('width', '100%');
+            }
+
+        </script>
+        
+
+        <div id="wrapper">
+            <div id="utilities">
+                <h1>Cashflow Funding Limited</h1>
+                <div id="tools">
+                    <span class="userClientOptions">
+                        <asp:DropDownList ID="UserClientSelection" runat="server" AutoPostBack="true" OnSelectedIndexChanged="UserClientSelection_SelectedIndexChanged" Style="margin-bottom: 8px;" />
+                        <asp:Label ID="LogOnNameLabel" runat="server" />
+                        |
+                    <asp:LinkButton ID="ChangePwd" Text="Change Password" runat="server" OnClick="ChangePassword_OnClick" />
+                        |
+                    <asp:LoginStatus ID="LogOnStatus" runat="server" OnLoggingOut="LogOnStatusLoggingOut" />
+                    </span>
+                </div>
+            </div>
+
+            <div id="header" style="min-width:1274px;">
+                <div id="search" class="clearfix">
+                    <ul>
+                        <li class="clientSearch">
+                            <input type="search" id="ClientSearch" onclick="this.select();" value="" runat="server" enableviewstate="true" clientidmode="Static" />
+                            <div id="clientNoMatch" class="clientSearchError_Hide"></div>
+                            <input type="hidden" id="ClientSelection" visible="false" clientidmode="Static" />
+                        </li>
+
+                        <li class="customerSearch">
+                            <input id="CustomerSearch" onclick="this.select();" type="search" value="" runat="server" enableviewstate="true" clientidmode="Static" title="Click to select and click x to clear" />
+                            <div id="customerNoMatch" class="customerSearchError_Hide"></div>
+                            <input id="customerSelectedID" type="hidden" clientidmode="Static" />
+                            <input id="customerSelection" type="hidden" runat="server" clientidmode="Static" />
+                            <input id="customerArrayData" type="hidden" value="" clientidmode="Static" />
+                        </li>
+
+                        <li style="display: none;">
+                            <asp:ImageButton ID="SearchButton" runat="server" ImageUrl="~/images/btn_go.png" AlternateText="Go" OnClick="SearchButtonClick" />
+                        </li>
+
+                        <li class="searchCriteria">
+                            <select id="searchCriteriaOptions" onchange="SetUpSearchCriteria(this);" runat="server" clientidmode="Static">
+                                <option value="0">Customer Name</option>
+                                <option value="1">Customer Number</option>
+                                <option value="2">Phone/Fax</option>
+                                <option value="3">Mobile</option>
+                                <option value="4">Contact Person</option>
+                                <option value="5">Email</option>
+                                <option value="6">Invoice Number</option>
+                                <option value="7">Invoice Amount</option>
+                                <option value="8">Current Invoice Amt</option>
+                                <option value="9">Code</option>
+                                <option value="10">Address</option>
+                                <option value="11">Balance &gt; $0</option>
+                                <option value="12">Balance &lt; $0</option>
+                                <option value="13">1 Month</option>
+                                <option value="14">2 Months</option>
+                                <option value="15">3 Months +</option>
+                            </select>
+                            <input id="SearchCriteria" type="hidden" clientidmode="Static" runat="server" />
+                            <input id="OldSearchCriteria" type="hidden" clientidmode="Static" value="0" />
+                        </li>
+
+                        <li class="showContactDetails" id="showContactDetailsLink" runat="server">
+                            <p>
+                                <asp:CheckBox ID="StartsWith" runat="server" Checked="true" AutoPostBack="True" OnCheckedChanged="StartsWithClick" Text="&nbsp;Starts with" />
+                            </p>
+                            <p id="contactDetailsLink" runat="server">
+                                <a id="showContactDetails" href="#" clientidmode="Static" onclick="toggleContactDetails();">
+                                    <%=(SessionWrapper.Instance.Get == null) ? "Show" : (SessionWrapper.Instance.Get.IsContactShown) ? "Hide" : "Show"%>Contact Details</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="contactDetails" class="clearfix" style="<%=(SessionWrapper.Instance.Get==null)?("display: none"): (SessionWrapper.Instance.Get.IsContactShown)?("display: block"):("display: none")%>;">
+                    <asp:UpdatePanel ID="ContactDetailsUpdatePanel" runat="server" UpdateMode="Always">
+                        <Triggers>
+                            <asp:AsyncPostBackTrigger ControlID="SearchButton" />
+                        </Triggers>
+                        <ContentTemplate>
+                            <div style="width: 1500px; margin-left: 15px; margin-top: 0px; display: table-cell;">
+                                <div style="float: left; width: 400px; font-size: 11px; font-style: normal; margin-bottom: 5px; display: table-cell;">
+                                    <dl style="width: 141%; float: left; margin-left:15px;">
+                                        <dd style="padding-bottom: 1px; padding-top: 0px;">
+                                            <div style="width: 50%; float: left;">
+                                                <span style="width: 18px;">
+                                                    <asp:Literal ID="clientContactName" runat="server" />
+                                                </span>
+                                                <asp:TextBox ID="txtClientContactFName" Width="65%" runat="server" />
+                                            </div>
+                                            <div style="width: 50%; float: left;">
+                                                <span>
+                                                    <asp:Literal ID="literalLName" runat="server" />
+                                                </span>
+                                                <span>
+                                                    <asp:TextBox ID="txtClientContactLName" Width="65%" runat="server" />
+                                                </span>
+                                            </div>
+                                        </dd>
+
+                                        <dd style="padding-bottom: 1px;">
+                                            <div style="width: 50%; float: left;">
+                                                <asp:Literal ID="clientContactPhone" runat="server" />
+                                                <span style="margin-left: 26px;">
+                                                    <asp:TextBox ID="txtClientContactPhone" Width="65%" runat="server" />
+                                                </span>
+                                            </div>
+                                            <div style="width: 50%; float: left;">
+                                                <span>
+                                                    <asp:Literal ID="clientContactFax" runat="server" />
+                                                </span>
+                                                <span style="margin-left:39px;">
+                                                    <asp:TextBox ID="txtClientContactFax" Width="65%" runat="server" />
+                                                </span>
+                                            </div>
+                                            <div style="width: 50%; float: left;">
+                                                <span>
+                                                    <asp:Literal ID="clientContactMobile" runat="server" />
+                                                </span>
+                                                <span style="margin-left:23px;">
+                                                    <asp:TextBox ID="txtClientContactMobile" Width="65%" runat="server" />
+                                                </span>
+                                            </div>
+                                        </dd>
+
+                                        <dd style="padding-bottom: 1px;">
+                                            <div style="width: 50%; float: left;">
+                                                <asp:Literal ID="clientContactRole" runat="server"></asp:Literal>
+                                                <span style="margin-left: 34px;">
+                                                    <asp:TextBox ID="txtClientContactRole" Width="65%" runat="server" /></span>
+                                            </div>
+                                            <div style="width: 50%; float: left;">
+                                                <asp:HyperLink ID="clientContactEmail" runat="server"></asp:HyperLink>
+                                                <span style="margin-left: 33px;">
+                                                    <asp:TextBox ID="txtClientContactEmail" Width="65%" runat="server" /></span>
+                                            </div>
+                                        </dd>
+                                        <dd style="padding-bottom: 1px; padding-top: 0px;">
+                                            <div style="width: 50%; float: left;">
+                                                <asp:Literal ID="clientContactAddress1" runat="server"></asp:Literal>
+                                                <span style="margin-left: 14px;">
+                                                    <asp:TextBox ID="txtClientContactAddress1" Width="65%" runat="server" /></span>
+                                            </div>
+                                            <div style="width: 50%; float: left;">
+                                                <asp:Literal ID="clientContactAddress2" runat="server"></asp:Literal>
+                                                <span style="margin-left: 15px;">
+                                                    <asp:TextBox ID="txtClientContactAddress2" Width="65%" runat="server" /></span>
+                                            </div>
+                                        </dd>
+                                        <dd style="padding-bottom: 1px; padding-top: 0px;">
+                                            <div style="width: 50%; float: left;">
+                                                <asp:Literal ID="clientContactAddress3" runat="server"></asp:Literal>
+                                                <span style="margin-left: 14px;">
+                                                    <asp:TextBox ID="txtClientContactAddress3" Width="65%" runat="server" /></span>
+                                            </div>
+                                            <div style="width: 50%; float: left;">
+                                                <asp:Literal ID="clientContactAddress4" runat="server"></asp:Literal>
+                                                <span style="margin-left: 15px;">
+                                                    <asp:TextBox ID="txtClientContactAddress4" Width="65%" runat="server" /></span>
+                                            </div>
+                                        </dd>
+                                        <dd style="padding-bottom: 1px;">
+                                            <div style="width: 50%; float: left;">
+                                                <span>
+                                                    <asp:LinkButton ID="LinkBtnEditClientContact" runat="server" Text="Edit Details" OnClick="LinkBtnEditClientContactClick">
+                                                        <%=(SessionWrapper.Instance.Get == null)?"Edit Details":(SessionWrapper.Instance.Get.IsEditContactDetails) ? "Save Changes" : "Edit Details"%>
+                                                    </asp:LinkButton>
+                                                </span>
+                                                <span style="margin-left: 5px;">
+                                                    <asp:LinkButton ID="LinkBtnCancelEditContact" runat="server" OnClick="LinkBtnCancelEditContactClick" Text="Cancel"></asp:LinkButton>
+                                                    <asp:Literal ID="literalStatusEditClientContact" runat="server"></asp:Literal>
+                                                </span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div style="width:50px; float: left; margin-left: 6%; font-size: 11px; font-style: normal; margin-bottom: 5px; display: table-cell;"></div>
+
+                                <div style="width:500px; float: left; margin-left: 5%; font-size: 11px; font-style: normal; margin-bottom: 5px; display: table-cell;">
+                                    <dl style="width:100%">
+                                        <dd style="padding-bottom: 1px; padding-top: 0px;">
+                                            <div style="width:50%; float:left">
+                                                <span style="width:18px;">
+                                                    <asp:Literal ID="customerContactName" runat="server" />
+                                                </span>
+                                                <asp:TextBox ID="txtCustomerContactFName" Width="65%" runat="server" />
+                                            </div>
+                                            <div style="width:50%; float:left">
+                                                <span style="margin-left: 0px;">
+                                                    <asp:Literal ID="literalCLName" runat="server" /></span>
+                                                <span style="margin-left: 3px;">
+                                                <asp:TextBox ID="txtCustomerContactLName" Width="65%" runat="server" /></span>
+                                            </div>
+                                        </dd>
+
+                                        <dd style="padding-bottom: 1px; padding-top: 0px;">
+                                            <div style="width:50%; float:left">
+                                                <asp:Literal ID="customerContactPhone" runat="server"></asp:Literal>
+                                                <span style="margin-left:26px;">
+                                                    <asp:TextBox ID="txtCustomerContactPhone" Width="65%" runat="server"></asp:TextBox>
+                                                </span>
+                                            </div>
+                                            <div style="width:50%; float:left;">
+                                                 <asp:Literal ID="customerContactFax" runat="server"></asp:Literal>
+                                                 <span style="margin-left:45px;">
+                                                    <asp:TextBox ID="txtCustomerContactFax" Width="65%" runat="server"></asp:TextBox>
+                                                 </span>
+                                            </div>
+                                            <div style="width:50%; float: left;">
+                                                 <asp:Literal ID="customerContactMobile" runat="server"></asp:Literal>
+                                                 <span style="margin-left:28px;">
+                                                    <asp:TextBox ID="txtCustomerContactMobile" Width="65%" runat="server"></asp:TextBox>
+                                                </span>
+                                            </div>
+                                        </dd>
+
+                                        <dd style="padding-bottom: 1px; padding-top: 0px;">
+                                            <div style="width:50%; float:left">
+                                                <asp:Literal ID="customerContactRole" runat="server"></asp:Literal>
+                                                <span style="margin-left:37px;">
+                                                    <asp:TextBox ID="txtCustomerContactRole" Width="65%" runat="server" />
+                                                </span>
+                                            </div>
+                                            <div style="width:50%; float:left">
+                                                 <asp:Literal ID="customerContactEmail" runat="server"></asp:Literal>
+                                                 <span style="margin-left:33px;">
+                                                    <asp:TextBox ID="txtCustomerContactEmail" Width="65%" runat="server" />
+                                                </span>
+                                            </div>
+                                        </dd>
+
+                                        <dd style="padding-bottom: 1px; padding-top: 0px;">
+                                            <div style="width:50%; float:left">
+                                                 <asp:Literal ID="customerContactAddress1" runat="server"></asp:Literal>&nbsp;
+                                                 <span style="margin-left:10px;">
+                                                    <asp:TextBox ID="txtCustomerContactAddress1" Width="65%" runat="server" />
+                                                 </span>
+                                            </div>
+                                            <div style="width:50%; float:left">
+                                                 <asp:Literal ID="customerContactAddress2" runat="server"></asp:Literal>
+                                                 <span style="margin-left:15px;">
+                                                    <asp:TextBox ID="txtCustomerContactAddress2" Width="65%" runat="server" />
+                                                 </span>
+                                            </div>
+                                        </dd>
+
+                                        <dd style="padding-bottom: 1px; padding-top: 0px;">
+                                            <div style="width:50%; float:left">
+                                                <asp:Literal ID="customerContactAddress3" runat="server"></asp:Literal>&nbsp;
+                                                <span style="margin-left:10px;">
+                                                    <asp:TextBox ID="txtCustomerContactAddress3" Width="65%" runat="server" />                                                
+                                                </span>
+                                            </div>
+                                           
+                                            <div style="width:50%; float:left">
+                                                <asp:Literal ID="customerContactAddress4" runat="server"></asp:Literal>
+                                                <span style="margin-left:15px;">
+                                                    <asp:TextBox ID="txtCustomerContactAddress4" Width="65%" runat="server" />
+                                                </span>
+                                            </div>
+                                        </dd>
+                                        <dd style="padding-bottom: 1px;">
+                                             <div style="width: 50%; float:left;">
+                                                <span>
+                                                    <asp:LinkButton ID="LinkBtnEditCustomerContact" runat="server" Text="Edit Details" OnClick="LinkBtnEditCustomerContactClick"> 
+                                                        <%=(SessionWrapper.Instance.Get == null) ? "Edit Details" : (SessionWrapper.Instance.Get.IsEditCContactDetails)? "Save Changes" : "Edit Details"%>
+                                                    </asp:LinkButton>
+                                                </span>
+                                                <span style="margin-left: 6px;">
+                                                    <asp:LinkButton ID="LinkBtnCancelEditCustomerContact" runat="server" OnClick="LinkBtnCancelEditCustomerContactClick" Text="Cancel" ></asp:LinkButton>
+                                                    <asp:Literal ID="literalStatusEditCustContact" runat="server"></asp:Literal>
+                                                    <asp:Literal ID="literalContactCustomerID" runat="server"></asp:Literal>
+                                                </span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <asp:UpdateProgress ID="Progress" runat="server" AssociatedUpdatePanelID="ContactDetailsUpdatePanel" Visible="true">
+                        <ProgressTemplate>
+                            <div class="progressIndicator"></div>
+                        </ProgressTemplate>
+                    </asp:UpdateProgress>
+                </div>
+            </div>
+
+            <uc:MainNavigation ID="mainNavigation" runat="server" />
+
+            <div id="content" style="min-width:1274px;">
+                <div id="side">
+                    <asp:ContentPlaceHolder ID="CustomerInformationContentPlaceholder" runat="server">
+                        <asp:UpdatePanel ID="customerInformationUpdatePanel" runat="server" UpdateMode="Conditional">
+                            <Triggers>
+                                <asp:AsyncPostBackTrigger ControlID="SearchButton" />
+                            </Triggers>
+                            <ContentTemplate>
+                                <asp:ContentPlaceHolder ID="AddCustomerNoteContentPlaceholder" runat="server" Visible="false">
+                                    <dl id="addCustomerNote" class="collapsed">
+                                        <dd>
+                                            <asp:LinkButton ID="AddCustomerNoteButton" runat="server" Text="Add Customer Note" OnClick="AddCustomerNoteButtonClick" />
+                                        </dd>
+                                        <dd></dd>
+                                    </dl>
+                                </asp:ContentPlaceHolder>
+                                <div>
+                                    <dl id="ageing">
+                                        <dd style="background-color: #e6e6e6;"><a href="#">Ageing</a></dd>
+                                        <dd>
+                                            <table style="width: auto">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="style1"><span>Current:</span> </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="CurrentLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>1 month:</span> </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="oneMonthAgingLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>2 months:</span> </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="twoMonthAgingLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span>3+ months:</span> </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="threeMonthAgingLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td><span>Balance:</span></td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="balanceLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </dd>
+                                    </dl>
+                                    <dl id="clientInformationPanel" class="clientInformationPanel expanded" runat="server">
+                                        <dd><a href="#">Client Information</a></dd>
+                                        <dd>
+                                            <table style="width: auto">
+                                                <tbody>
+                                                    <tr id="CurrentACAvailableClientTR" visible="false" runat="server">
+                                                        <td class="style1">Funds available:</td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="CurrentACAvailableClientLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="CurrentACLimitClientTR" visible="false" runat="server">
+                                                        <td class="style1">Secured funding limit:</td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="CALimitClientLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="CurrentACCreditLimitCust_ClientTR" visible="false" runat="server">
+                                                        <td>C/A credit limit:</td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="CurrentACCreditLimitCust_ClientLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"><strong>Transactions this month:</strong> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Invoices </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="invoicesLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Receipts: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="receiptsLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Credits: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="creditsLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Discounts: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="discountsLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Client queries: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="clientQueriesLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                <td><%-- this is referring to DebtorAdmin (basis is if no calls then this is yes, otehrwise no)--%>Administration Type: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="administeredByLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Created: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="createdLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Credit terms: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="creditTermsLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Customer terms: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="individualCustomerTermsLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Invoice terms: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="individualInvoiceTermsLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Facility type: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="facilityTypeLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Client #: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="clientNumberClientPanelLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Company #: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="companyNumberLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1">GST: </td>
+                                                        <td class="style2">
+                                                            <asp:Literal ID="clientGstLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                    </dl>
+                                    <dl id="customerInformationPanel" runat="server">
+                                        <dd>
+                                            <table class="customerInformationPanel">
+                                                <tr style="background-color: #e6e6e6;">
+                                                    <td align="left" style="vertical-align: middle; padding-left: 2px; font-size: 10px; width: 7%;">
+                                                        <asp:Image ID="Image1" Height="15px" Width="15px" runat="server" ImageUrl="./images/customer_info.png" Visible="true" />
+                                                    </td>
+                                                    <td align="left" style="width: 23%;"><a href="#" style="padding-left: 5px; margin-left: 2px; text-align: left;">Customer Information</a> </td>
+                                                    <td align="left" style="vertical-align: middle; width: 70%;">
+                                                        <asp:ImageButton ID="btnEditCustomerInfo" runat="server"
+                                                            Height="15px" Width="15px" ImageUrl="./images/page_edit.png" Visible="true" OnClick="btnEditCustomerInfo_Click" ToolTip="Edit Customer Information"></asp:ImageButton>
+                                                        &nbsp;
+                                                        <asp:ImageButton ID="btnCancelEditCustomerInfo" runat="server" Height="15px" Width="15px" 
+                                                            ImageUrl="./images/page_delete.png" Visible="false" OnClick="btnCancelEditCustomerInfo_Click" ToolTip="Cancel Changes"></asp:ImageButton>
+                                                        &nbsp;
+                                                        <asp:Label ID="lblCENote" runat="server" Font-Size="X-Small" ForeColor="#FF3300" Text="**Note:" Visible="false" Style="white-space: nowrap"></asp:Label>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </dd>
+                                        <dd>
+                                            <table style="width: auto; margin-left: 10px; margin-right: 10px; font-size: 10px; font-family: Arial, Helvetica, sans-serif; background-color: #fff;">
+                                                <tbody>
+                                                    <tr id="CurrentACAvailable" visible="false" runat="server">
+                                                        <td class="style1">Funds available:</td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="CAAvailable" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr id="CurrentACLimit" visible="false" runat="server">
+                                                        <td class="style1" style="padding-left: 2px;">Secured funding limit:</td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="CALimit" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1">Credit Limit: </td>
+                                                        <td class="right">
+                                                            <asp:TextBox ID="creditLimitTBox" runat="server" Height="15px" Width="75px" Visible="false" Font-Size="X-Small" AutoPostBack="true" OnTextChanged="creditLimitTBox_TextChanged"></asp:TextBox>
+                                                            <asp:Literal ID="creditLimitLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1">Stop Credit: </td>
+                                                        <td class="right">
+                                                            <asp:DropDownList ID="stopCreditDDList" runat="server" Height="20px" Width="50px" Visible="false" Font-Size="X-Small">
+                                                                <asp:ListItem>Yes</asp:ListItem>
+                                                                <asp:ListItem>No</asp:ListItem>
+                                                            </asp:DropDownList>
+                                                            <asp:Literal ID="stopCreditLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1">Next Call: </td>
+                                                        <td class="right">
+                                                            <asp:ImageButton ID="EditCustomerInformationButton" runat="server" Height="16px" Width="28px" OnClick="EditCustomerInformationClick" ImageUrl="~/images/btn_sm_edit.png" Visible="false" />
+                                                            <asp:Literal ID="nextCallLiteral" runat="server"></asp:Literal>
+                                                            <asp:TextBox ID="nextCallTextBox" runat="server" Visible="false" CssClass="dateRange" Width="89px" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1">Allow Calls: </td>
+                                                        <td class="right">
+                                                            <asp:DropDownList ID="allowCallsDDlist" runat="server" Height="20px" Width="50px" Visible="false" Font-Size="X-Small">
+                                                                <asp:ListItem>Yes</asp:ListItem>
+                                                                <asp:ListItem>No</asp:ListItem>
+                                                            </asp:DropDownList>
+                                                            <asp:Literal ID="allowCallsLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1">Last Paid: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="lastPaidLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1">Last Amount: </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="lastAmountLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1">List Date: </td>
+                                                        <td class="right">
+                                                            <asp:TextBox ID="ListDateTBox" runat="server" CssClass="dateRange" Height="16px" Visible="false" Width="66px" Font-Size="X-Small" />
+                                                            <asp:Literal ID="ListDateLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1"><span>Terms:</span> </td>
+                                                        <td class="right" style="width: 20px;">
+                                                            <asp:TextBox ID="termsTBox" runat="server" Height="15px" Width="29px" Font-Size="X-Small" Visible="false" OnTextChanged="termsTBox_TextChanged" AutoPostBack="true" />
+                                                            <asp:DropDownList ID="termsDDList" AutoPostBack="true" runat="server" Height="20px" Width="81px" Visible="false" OnSelectedIndexChanged="termsDDList_SelectedIndexChanged" Font-Size="X-Small">
+                                                                <asp:ListItem>20th following</asp:ListItem>
+                                                                <asp:ListItem>EOM following</asp:ListItem>
+                                                                <asp:ListItem>Days</asp:ListItem>
+                                                            </asp:DropDownList>
+                                                            <asp:Literal ID="termsLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1"><span>Client #:</span> </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="clientNumberLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1"><span>Customer #:</span> </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="customerNumberLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="padding-left: 2px;">
+                                                        <td><span>CFF ID:</span> </td>
+                                                        <td class="right">
+                                                            <asp:Literal ID="CffIdLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1"><span>Company ID:</span></td>
+                                                        <td class="right">
+                                                            <asp:TextBox ID="companyIDTBox" runat="server" Font-Size="X-Small" Height="16px" Visible="false" Width="50px" />
+                                                            <asp:Literal ID="companyIDLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="style1"><span>GST:</span></td>
+                                                        <td class="right">
+                                                            <asp:Label ID="lblGSTError" runat="server" Text="" Font-Size="X-Small" ForeColor="#FF3300" Visible="false"></asp:Label>
+                                                            <asp:TextBox ID="GSTTBox" runat="server" Font-Size="X-Small" Height="16px" Visible="false" Width="50px" AutoPostBack="true" OnTextChanged="GSTTBox_TextChanged" />
+                                                            <asp:Literal ID="GSTLiteral" runat="server"></asp:Literal>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                        <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="customerInformationUpdatePanel" Visible="true">
+                            <ProgressTemplate>
+                                <div class="progressIndicator">
+                                </div>
+                            </ProgressTemplate>
+                        </asp:UpdateProgress>
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <!--start main-->
+                <div id="main">
+                    <div>
+                        <table width="auto">
+                            <tr>
+                                <td style="width: auto">
+                                    <asp:UpdatePanel ID="custAsAtPanel" runat="server" Visible="false">
+                                        <ContentTemplate>
+                                            <div id="lside">
+                                                <dl id="balances" class="expanded">
+                                                    <dt><a href="#">Balances</a></dt>
+                                                    <dd>
+                                                        <table style="width: auto">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="style1">
+                                                                        <span>As At</span>
+                                                                    <td class="right">
+                                                                        <asp:DropDownList
+                                                                            ID="ddlAsAtDate" AutoPostBack="true" runat="server" Height="20px" Width="140px"
+                                                                            OnSelectedIndexChanged="ddlAsAtDate_SelectedIndexChanged" Font-Size="Small">
+                                                                        </asp:DropDownList></span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>Current:</span>
+                                                                    </td>
+                                                                    <td class="right">
+                                                                        <span>
+                                                                            <asp:Literal ID="currentAmtLiteral" runat="server"></asp:Literal></span><asp:HiddenField ID="hfCurrent" runat="server" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>Month1:</span>
+                                                                    </td>
+                                                                    <td class="right">
+                                                                        <span>
+                                                                            <asp:Literal ID="month1Literal" runat="server"></asp:Literal></span><asp:HiddenField ID="hfMonth1" runat="server" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>Month2:</span>
+                                                                    </td>
+                                                                    <td class="right">
+                                                                        <span>
+                                                                            <asp:Literal ID="month2Literal" runat="server"></asp:Literal></span><asp:HiddenField ID="hfMonth2" runat="server" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <span>Month3:</span>
+                                                                    </td>
+                                                                    <td class="right">
+                                                                        <span>
+                                                                            <asp:Literal ID="month3Literal" runat="server"></asp:Literal></span><asp:HiddenField ID="hfMonth3" runat="server" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <b>Balance:</b>
+                                                                    </td>
+                                                                    <td class="right">
+                                                                        <span>
+                                                                            <asp:Literal ID="totalAmountLiteral" runat="server"></asp:Literal></span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                    <asp:UpdateProgress ID="UpdateCustAsAtPanel" runat="server" AssociatedUpdatePanelID="custAsAtPanel" Visible="true">
+                                        <ProgressTemplate>
+                                            <div class="clearProgressIndicator"></div>
+                                        </ProgressTemplate>
+                                    </asp:UpdateProgress>
+
+                                </td>
+                                <td style="width: 100%">
+                                    <asp:ContentPlaceHolder ID="MainContentPlaceholder" runat="server">
+                                    </asp:ContentPlaceHolder>
+
+                                    <asp:UpdatePanel ID="ChangePasswordUpdatePanel" runat="server">
+                                        <ContentTemplate>
+                                            <uc:ChangePassword ID="ChangePassword" runat="server" />
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                    <asp:UpdateProgress ID="UpdateProgress2" runat="server" AssociatedUpdatePanelID="ChangePasswordUpdatePanel" Visible="true">
+                                        <ProgressTemplate>
+                                            <div class="progressIndicator"></div>
+                                        </ProgressTemplate>
+                                    </asp:UpdateProgress>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <asp:UpdatePanel ID="NoteUpdatePanel" runat="server">
+                        <ContentTemplate>
+                            <uc:CustomerNotesAdderModalBox ID="CustomerNotesAdderModalBox" runat="server" />
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+
+                    <asp:UpdateProgress ID="UpdateProgress3" runat="server" AssociatedUpdatePanelID="NoteUpdatePanel" Visible="true">
+                        <ProgressTemplate>
+                            <div class="progressIndicator"></div>
+                        </ProgressTemplate>
+                    </asp:UpdateProgress>
+                </div>
+                <!--end main-->
+
+                <div class="clear">
+                </div>
+
+                <!--start footer-->
+                <div id="footer" runat="server" class="footer clear">
+                    <p>
+                        © Cashflow Funding Limited - Phone 09 579 4204 - Fax 09 525 3598 - <a href='mailto:info@factor.co.nz'>Email info@factor.co.nz</a>  - <a href="http://www.cashflowfunding.co.nz">Web www.cashflowfunding.co.nz</a>
+                    </p>
+                </div>
+                <!--end footer-->
+            </div>
+
+            <div id="sessionWarning" style="display: none;">
+                <div class="blockUI"></div>
+                <div id="timeoutModalWarning" style="<%=SessionWrapper.Instance.Get ==null?"display: block": SessionWrapper.Instance.Get.IsSessionExpiring ? "display: block": "display: none"%>">
+                    <fieldset id="timeoutWarningPanel" class="clearfix">
+                        <h4>This page is expiring </h4>
+                        <p>
+                            - click to continue. The session will timeout if you don't respond for some time.<br />
+                            <asp:ImageButton ID="ImageButton2"
+                                runat="server" ImageUrl="~/images/btn_continue.png"
+                                AlternateText="Continue"
+                                OnClientClick='continueSession("<%=cRole%>", "<%=logonURL%>","<%= timeoutWarning %>");return true;' />
+                        </p>
+                    </fieldset>
+                </div>
+            </div>
+
+            <iframe id="KeepAlive_Frame" src="KeepSessionAlive.aspx" frameborder="0" width="0" height="0" runat="server" visible="false"></iframe>
+
+
+
+        </div>
+    </form>
+
+    <asp:PlaceHolder ID="ScriptPlaceholder" runat="server" />
+
+    <div>
+        <input type="hidden" name="clientId" id="clientId" value="" />
+    </div>
+
+    <script type="text/javascript">
+        window.onbeforeunload = clearSessionPool;
+        function getQuerystring(key, default_) {
+            if (default_ == null) default_ = "";
+            key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
+            var qs = regex.exec(window.location.href);
+            if (qs == null)
+                return default_;
+            else
+                return qs[1];
+        }
+
+        function clearSessionPool() {
+            var e = window.event;
+            var se = window.srcElement;
+            if (e != null) {
+                if ((e.clientY < 0) || (e.screenY < 0)) {
+                    var xvid = getQuerystring('ViewID');
+                    var viewId = "{'viewId': '" + xvid + "'}";
+                    CallServiceMethod(relativePathToRoot + "ClientAutoCompleteHelper.asmx/ClearSessionIDPool", viewId, function () { return; });
+                }
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        function SetUpSearchCriteria(criteria) {
+            $('#SearchCriteria').val(criteria.value);
+            $.query.SET("Criteria", criteria.value);
+            //alert('here@SetCriteriaAutoComplete::' + $.query.toString());
+            //MSarza: added line to refresh Customer List when Search Criteria is updated
+            attachCustomerAutoComplete(criteria.value, null)
+        }
+
+        function settimes() {
+            var time = new Date();
+            hours = time.getHours();
+            mins = time.getMinutes();
+            secs = time.getSeconds();
+            etime = hours * 3600 + mins * 60 + secs;
+            etime += exTO;
+        }
+
+        function checktime() {
+            var time = new Date();
+            hours = time.getHours();
+            mins = time.getMinutes();
+            secs = time.getSeconds();
+            ctime = hours * 3600 + mins * 60 + secs;
+            var ltime = ctime - etime;
+            if (ltime > exTO) { return true; }
+            else { return false; }
+        }
+
+        function showSessionTimeoutWarning(usr) {
+            try {
+                if (usr > 3) {
+                    showSessionTimeoutMessage();
+                } else {
+                    if (usr == 2 || usr == 3) {
+                        settimes();
+                        if (usr == 2) { exTO = 30 * 60; }
+                        else { exTO = 15 * 60; }
+                        $('#sessionWarning').show();
+                        expandBlockUI();
+                    }
+                }
+            } catch (Error) { }
+        }
+
+        function continueSession(usr, logonURL, timeoutWarning) {
+
+            if (checktime() == true) {
+                endSession(logonURL);
+            } else {
+                if (usr == 2) { exTO = 30 * 60; }
+                else { exTO = 15 * 60; }
+                resetTimeout(usr, timeoutWarning);
+            }
+        }
+
+        function showSessionTimeoutMessage() {
+            $('#sessionTimeout').show();
+            expandBlockUI();
+        }
+
+        function endSession(logonURL) {
+            document.location = logonURL;
+        }
+
+        function resetTimeout(usr, timeoutWarning) {
+            ctime = 0; etime = 0; settimes();
+            window.clearTimeout(timeoutID);
+            timeoutID = window.setTimeout("showSessionTimeoutWarning(" + usr + ");", timeoutWarning);
+        }
+
+
+        var etime = 0;
+        var ctime = 0;
+        var exTO = 0;
+
+        var timeoutID = window.setTimeout("showSessionTimeoutWarning(" + "<%=cRole%>" + ");", "<%=timeoutWarning%>");
+
+    </script>
+</body>
+
+</html>

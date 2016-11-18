@@ -1,0 +1,144 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BLL
+</name>
+</assembly>
+<members>
+<member name="M:BLL.ImportDT.parseXMLData">
+	<summary>
+ Parse XML Data
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.populatePaymentData(System.Xml.XmlNodeList,System.Boolean)">
+	<summary>
+ Populate payment data
+ </summary>
+	<param name="theNode"></param>
+	<param name="isDiscount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.populateCreditNoteData(System.Xml.XmlNodeList)">
+	<summary>
+ Populate credit note data
+ </summary>
+	<param name="theNode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.populateAdjustmentsData(System.Xml.XmlNodeList)">
+	<summary>
+	</summary>
+	<param name="theNode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.retrieveSQLString(BLL.CPayments,BLL.TransactionTypes,BLL.TaxDetails,System.String,System.String[])">
+	<summary>
+ Generate SQL String
+ </summary>
+	<param name="paymentData">payment data</param>
+	<param name="ttype">transaction type</param>
+	<param name="strAddress">optional</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.postData2MYOB(System.Boolean,System.String,BLL.CRptSumSettings,System.String)">
+	<summary>
+ Import Data to MYOB
+ </summary>
+	<param name="output2CSV"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.createCSVPayments(BLL.CPayments)">
+	<summary>
+ Create CSV File - Payment Data
+ </summary>
+	<param name="paymentData"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.createCSVForImport">
+	<summary>
+ Create CSV File for Import
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.generateExcelReport(System.Collections.Generic.List{BLL.CPayments},BLL.TransactionTypes,System.Boolean)">
+	<summary>
+ Generate Excel Report
+ </summary>
+	<param name="importedList"></param>
+	<param name="trxType"></param>
+	<param name="isUnposted"></param>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.generatePDFReport(System.Collections.Generic.List{BLL.CPayments},BLL.TransactionTypes,System.Boolean)">
+	<summary>
+ Generate PDF Report
+ </summary>
+	<param name="importedList"></param>
+	<param name="trxType"></param>
+	<param name="isUnposted"></param>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.GenerateImportReceiptReportSummary(System.Collections.Generic.List{BLL.CPayments})">
+	<summary>
+ Generate Imported Receipts Summary Report
+ </summary>
+	<param name="importedReceiptsList"></param>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.GenerateImportedDiscountsReportSummary(System.Collections.Generic.List{BLL.CPayments})">
+	<summary>
+     Generate the imported discounts report that needs to be manually applied to specific invoice
+ </summary>
+	<param name="discountsPosted"></param>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.GenerateUnpostedDiscountsReportSummary(System.Collections.Generic.List{BLL.CPayments})">
+	<summary>
+ Generate unposted discounts summary report
+ </summary>
+	<param name="unpostedDiscounts"></param>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.GenerateImportedCreditNotes_Posted_ReportSummary(System.Collections.Generic.List{BLL.CPayments})">
+	<summary>
+  Generate the imported credit notes report that needs to be manually applied to specific invoice
+ </summary>
+	<remarks></remarks>
+</member><member name="M:BLL.ImportDT.GenerateImportedCreditNotes_Unposted_ReportSummary(System.Collections.Generic.List{BLL.CPayments})">
+	<summary>
+ Generate Imported Credit Notes Unposted
+ </summary>
+	<param name="UnpostedCreditNotes"></param>
+	<remarks></remarks>
+</member><member name="M:BLL.Compression.CompressFile(System.String,System.Boolean)">
+	<summary>
+ Compress File
+ </summary>
+	<param name="theFile">filename string parameter</param>
+	<param name="isBinary">true=given file is binary, false=gien file is non-binary</param>
+	<returns>zip file path</returns>
+	<remarks>Compress binary/non-binary file and returns file path on success, error otherwise</remarks>
+</member><member name="T:BLL.TaxDetails">
+	<summary>
+ Tax Details
+ </summary>
+	<remarks></remarks>
+</member><member name="T:BLL.CHeader">
+	<summary>
+ File Header
+ </summary>
+	<remarks></remarks>
+</member><member name="T:BLL.CPayments">
+	<summary>
+ Payment Details
+ </summary>
+	<remarks></remarks>
+</member><member name="M:BLL.odbcSettings.GetUserDataSourceNames">
+	<summary>
+  Gets all User data source names for the local machine.
+ </summary>
+</member><member name="M:BLL.odbcSettings.GetDataBasePath(System.String)">
+	<summary>
+ Gets the data base path for a given DSN
+ TODO: GetValue("DefaultDir") when reading DBF
+ </summary>
+</member>
+</members>
+</doc>

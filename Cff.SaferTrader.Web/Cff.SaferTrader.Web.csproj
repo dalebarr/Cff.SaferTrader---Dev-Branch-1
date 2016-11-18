@@ -1,0 +1,2097 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A231269A-313C-4209-9BEE-BBBC01AD12FF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cff.SaferTrader.Web</RootNamespace>
+    <AssemblyName>Cff.SaferTrader.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Cff.SaferTrader.Web.pfx</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <ApplicationInsightsResourceId>/subscriptions/956c7040-2e8d-4b8c-9bc2-91a8ee12093d/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/Cff.SaferTrader.Web</ApplicationInsightsResourceId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Globalization#CA1305;+!Microsoft.Portability#CA1901;+!Microsoft.Portability#CA1900</CodeAnalysisRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <IncludeIisSettings>true</IncludeIisSettings>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+    <IncludeIisSettings>true</IncludeIisSettings>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'WebOnly|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>+!Microsoft.Design#CA1012;+!Microsoft.Design#CA2210;+!Microsoft.Design#CA1040;+!Microsoft.Design#CA1005;+!Microsoft.Design#CA1020;+!Microsoft.Design#CA1021;+!Microsoft.Design#CA1010;+!Microsoft.Design#CA1011;+!Microsoft.Design#CA1009;+!Microsoft.Design#CA1050;+!Microsoft.Design#CA1026;+!Microsoft.Design#CA1019;+!Microsoft.Design#CA1031;+!Microsoft.Design#CA1047;+!Microsoft.Design#CA1000;+!Microsoft.Design#CA1048;+!Microsoft.Design#CA1051;+!Microsoft.Design#CA1002;+!Microsoft.Design#CA1061;+!Microsoft.Design#CA1006;+!Microsoft.Design#CA1046;+!Microsoft.Design#CA1045;+!Microsoft.Design#CA1065;+!Microsoft.Design#CA1038;+!Microsoft.Design#CA1008;+!Microsoft.Design#CA1028;+!Microsoft.Design#CA1064;+!Microsoft.Design#CA1004;+!Microsoft.Design#CA1035;+!Microsoft.Design#CA1063;+!Microsoft.Design#CA1032;+!Microsoft.Design#CA1023;+!Microsoft.Design#CA1033;+!Microsoft.Design#CA1039;+!Microsoft.Design#CA1016;+!Microsoft.Design#CA1014;+!Microsoft.Design#CA1017;+!Microsoft.Design#CA1018;+!Microsoft.Design#CA1027;+!Microsoft.Design#CA1059;+!Microsoft.Design#CA1060;+!Microsoft.Design#CA1034;+!Microsoft.Design#CA1013;+!Microsoft.Design#CA1036;+!Microsoft.Design#CA1044;+!Microsoft.Design#CA1041;+!Microsoft.Design#CA1025;+!Microsoft.Design#CA1052;+!Microsoft.Design#CA1053;+!Microsoft.Design#CA1057;+!Microsoft.Design#CA1058;+!Microsoft.Design#CA1001;+!Microsoft.Design#CA1049;+!Microsoft.Design#CA1054;+!Microsoft.Design#CA1056;+!Microsoft.Design#CA1055;+!Microsoft.Design#CA1030;+!Microsoft.Design#CA1003;+!Microsoft.Design#CA1007;+!Microsoft.Design#CA1043;+!Microsoft.Design#CA1024;+!Microsoft.Globalization#CA1301;+!Microsoft.Globalization#CA1302;+!Microsoft.Globalization#CA1308;+!Microsoft.Globalization#CA1306;+!Microsoft.Globalization#CA1304;-!Microsoft.Globalization#CA1305;+!Microsoft.Globalization#CA2101;+!Microsoft.Globalization#CA1300;+!Microsoft.Globalization#CA1307;+!Microsoft.Globalization#CA1309;+!Microsoft.Interoperability#CA1403;+!Microsoft.Interoperability#CA1406;+!Microsoft.Interoperability#CA1413;+!Microsoft.Interoperability#CA1402;+!Microsoft.Interoperability#CA1407;+!Microsoft.Interoperability#CA1404;+!Microsoft.Interoperability#CA1410;+!Microsoft.Interoperability#CA1411;+!Microsoft.Interoperability#CA1405;+!Microsoft.Interoperability#CA1409;+!Microsoft.Interoperability#CA1415;+!Microsoft.Interoperability#CA1408;+!Microsoft.Interoperability#CA1414;+!Microsoft.Interoperability#CA1412;+!Microsoft.Interoperability#CA1400;+!Microsoft.Interoperability#CA1401;+!Microsoft.Maintainability#CA1506;+!Microsoft.Maintainability#CA1502;+!Microsoft.Maintainability#CA1501;+!Microsoft.Maintainability#CA1505;+!Microsoft.Maintainability#CA1504;+!Microsoft.Maintainability#CA1500;+!Microsoft.Mobility#CA1600;+!Microsoft.Mobility#CA1601;+!Microsoft.Naming#CA1702;+!Microsoft.Naming#CA1700;+!Microsoft.Naming#CA1712;+!Microsoft.Naming#CA1713;+!Microsoft.Naming#CA1714;+!Microsoft.Naming#CA1709;+!Microsoft.Naming#CA1704;+!Microsoft.Naming#CA1708;+!Microsoft.Naming#CA1715;+!Microsoft.Naming#CA1710;+!Microsoft.Naming#CA1720;+!Microsoft.Naming#CA1707;+!Microsoft.Naming#CA1722;+!Microsoft.Naming#CA1711;+!Microsoft.Naming#CA1716;+!Microsoft.Naming#CA1717;+!Microsoft.Naming#CA1725;+!Microsoft.Naming#CA1719;+!Microsoft.Naming#CA1721;+!Microsoft.Naming#CA1701;+!Microsoft.Naming#CA1703;+!Microsoft.Naming#CA1724;+!Microsoft.Naming#CA1726;+!Microsoft.Performance#CA1809;+!Microsoft.Performance#CA1811;+!Microsoft.Performance#CA1812;+!Microsoft.Performance#CA1813;+!Microsoft.Performance#CA1823;+!Microsoft.Performance#CA1800;+!Microsoft.Performance#CA1805;+!Microsoft.Performance#CA1810;+!Microsoft.Performance#CA1824;+!Microsoft.Performance#CA1822;+!Microsoft.Performance#CA1815;+!Microsoft.Performance#CA1814;+!Microsoft.Performance#CA1819;+!Microsoft.Performance#CA1821;+!Microsoft.Performance#CA1804;+!Microsoft.Performance#CA1820;+!Microsoft.Performance#CA1802;+!Microsoft.Portability#CA1901;+!Microsoft.Portability#CA1900;+!Microsoft.Reliability#CA2001;+!Microsoft.Reliability#CA2002;+!Microsoft.Reliability#CA2003;+!Microsoft.Reliability#CA2004;+!Microsoft.Reliability#CA2006;+!Microsoft.Security#CA2116;+!Microsoft.Security#CA2117;+!Microsoft.Security#CA2105;+!Microsoft.Security#CA2115;+!Microsoft.Security#CA2102;+!Microsoft.Security#CA2104;+!Microsoft.Security#CA2122;+!Microsoft.Security#CA2114;+!Microsoft.Security#CA2123;+!Microsoft.Security#CA2111;+!Microsoft.Security#CA2108;+!Microsoft.Security#CA2107;+!Microsoft.Security#CA2103;+!Microsoft.Security#CA2118;+!Microsoft.Security#CA2109;+!Microsoft.Security#CA2119;+!Microsoft.Security#CA2106;+!Microsoft.Security#CA2112;+!Microsoft.Security#CA2120;+!Microsoft.Security#CA2121;+!Microsoft.Security#CA2126;+!Microsoft.Security#CA2124;+!Microsoft.Security#CA2127;+!Microsoft.Security#CA2128;+!Microsoft.Security#CA2129;+!Microsoft.Usage#CA2243;+!Microsoft.Usage#CA2236;+!Microsoft.Usage#CA1816;+!Microsoft.Usage#CA2227;+!Microsoft.Usage#CA2213;+!Microsoft.Usage#CA2216;+!Microsoft.Usage#CA2214;+!Microsoft.Usage#CA2222;+!Microsoft.Usage#CA1806;+!Microsoft.Usage#CA2217;+!Microsoft.Usage#CA2212;+!Microsoft.Usage#CA2219;+!Microsoft.Usage#CA2201;+!Microsoft.Usage#CA2228;+!Microsoft.Usage#CA2221;+!Microsoft.Usage#CA2220;+!Microsoft.Usage#CA2240;+!Microsoft.Usage#CA2229;+!Microsoft.Usage#CA2238;+!Microsoft.Usage#CA2207;+!Microsoft.Usage#CA2208;+!Microsoft.Usage#CA2235;+!Microsoft.Usage#CA2237;+!Microsoft.Usage#CA2232;+!Microsoft.Usage#CA2223;+!Microsoft.Usage#CA2211;+!Microsoft.Usage#CA2233;+!Microsoft.Usage#CA2225;+!Microsoft.Usage#CA2226;+!Microsoft.Usage#CA2231;+!Microsoft.Usage#CA2224;+!Microsoft.Usage#CA2218;+!Microsoft.Usage#CA2234;+!Microsoft.Usage#CA2239;+!Microsoft.Usage#CA2200;+!Microsoft.Usage#CA1801;+!Microsoft.Usage#CA2242;+!Microsoft.Usage#CA2205;+!Microsoft.Usage#CA2230</CodeAnalysisRules>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=16.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.16.1.0.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AjaxMin, Version=5.14.5506.26196, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxMin.5.14.5506.26202\lib\net40\AjaxMin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ASPNetSpell, Version=4.0.3.30364, Culture=neutral, PublicKeyToken=ed4c1e6166f7ca72, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>JavaScriptSpellCheck\aspnetspell.dll\ASPNetSpell.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.4, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.4\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.4.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\NPOI 1.2.4 assembly\.net 4.0\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="PostBackRitalin">
+      <HintPath>..\Libraries\postback-ritalin-0.10\PostBackRitalin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Windows\assembly\GAC_MSIL\System.Web.DynamicData\3.5.0.0__31bf3856ad364e35\System.Web.DynamicData.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="AccountToAccess.aspx.cs">
+      <DependentUpon>AccountToAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountToAccess.aspx.designer.cs">
+      <DependentUpon>AccountToAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgreementPage.aspx.cs">
+      <DependentUpon>AgreementPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgreementPage.aspx.designer.cs">
+      <DependentUpon>AgreementPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Cff_WebResource.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cff_WebResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CFFApplicationForm.cs" />
+    <Compile Include="ImportMYOB.aspx.cs">
+      <DependentUpon>ImportMYOB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImportMYOB.aspx.designer.cs">
+      <DependentUpon>ImportMYOB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientAutoCompleteHelper.asmx.cs">
+      <DependentUpon>ClientAutoCompleteHelper.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomerAutoCompleteHelper.asmx.cs">
+      <DependentUpon>CustomerAutoCompleteHelper.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="downloading.aspx.cs">
+      <DependentUpon>downloading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="downloading.aspx.designer.cs">
+      <DependentUpon>downloading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EndSession.aspx.cs">
+      <DependentUpon>EndSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EndSession.aspx.designer.cs">
+      <DependentUpon>EndSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KeepSessionAlive.aspx.cs">
+      <DependentUpon>KeepSessionAlive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KeepSessionAlive.aspx.designer.cs">
+      <DependentUpon>KeepSessionAlive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOnRedirection.aspx.cs">
+      <DependentUpon>LogOnRedirection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOnRedirection.aspx.designer.cs">
+      <DependentUpon>LogOnRedirection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientSearch.ashx.cs">
+      <DependentUpon>ClientSearch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CompressionModule.cs" />
+    <Compile Include="Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSearch.ashx.cs">
+      <DependentUpon>CustomerSearch.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="InvoiceBatches.aspx.cs">
+      <DependentUpon>InvoiceBatches.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InvoiceBatches.aspx.designer.cs">
+      <DependentUpon>InvoiceBatches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOn.aspx.cs">
+      <DependentUpon>LogOn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOn.aspx.designer.cs">
+      <DependentUpon>LogOn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notes.aspx.cs">
+      <DependentUpon>Notes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Notes.aspx.designer.cs">
+      <DependentUpon>Notes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\checkEmail.aspx.cs">
+      <DependentUpon>checkEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\checkEmail.aspx.designer.cs">
+      <DependentUpon>checkEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\ClientNotesPopup.aspx.cs">
+      <DependentUpon>ClientNotesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\ClientNotesPopup.aspx.designer.cs">
+      <DependentUpon>ClientNotesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\CreditsClaimedPopup.aspx.cs">
+      <DependentUpon>CreditsClaimedPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\CreditsClaimedPopup.aspx.designer.cs">
+      <DependentUpon>CreditsClaimedPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\CustomerNotesPopup.aspx.cs">
+      <DependentUpon>CustomerNotesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\CustomerNotesPopup.aspx.designer.cs">
+      <DependentUpon>CustomerNotesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchAdjustmentsPopup.aspx.cs">
+      <DependentUpon>InvoiceBatchAdjustmentsPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchAdjustmentsPopup.aspx.designer.cs">
+      <DependentUpon>InvoiceBatchAdjustmentsPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchCreditsPopup.aspx.cs">
+      <DependentUpon>InvoiceBatchCreditsPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchCreditsPopup.aspx.designer.cs">
+      <DependentUpon>InvoiceBatchCreditsPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchesPopup.aspx.cs">
+      <DependentUpon>InvoiceBatchesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchesPopup.aspx.designer.cs">
+      <DependentUpon>InvoiceBatchesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchInvoicesPopup.aspx.cs">
+      <DependentUpon>InvoiceBatchInvoicesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchInvoicesPopup.aspx.designer.cs">
+      <DependentUpon>InvoiceBatchInvoicesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchNonFactoredInvoicesPopup.aspx.cs">
+      <DependentUpon>InvoiceBatchNonFactoredInvoicesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchNonFactoredInvoicesPopup.aspx.designer.cs">
+      <DependentUpon>InvoiceBatchNonFactoredInvoicesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchPopup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchRepurchasesPopup.aspx.cs">
+      <DependentUpon>InvoiceBatchRepurchasesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchRepurchasesPopup.aspx.designer.cs">
+      <DependentUpon>InvoiceBatchRepurchasesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchSchedulePopup.aspx.cs">
+      <DependentUpon>InvoiceBatchSchedulePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchSchedulePopup.aspx.designer.cs">
+      <DependentUpon>InvoiceBatchSchedulePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchSchedulePopupPrint.aspx.cs">
+      <DependentUpon>InvoiceBatchSchedulePopupPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\InvoiceBatchSchedulePopupPrint.aspx.designer.cs">
+      <DependentUpon>InvoiceBatchSchedulePopupPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\LettersPopup.aspx.cs">
+      <DependentUpon>LettersPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\LettersPopup.aspx.designer.cs">
+      <DependentUpon>LettersPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\NotesPopup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\OverdueChargesPopup.aspx.cs">
+      <DependentUpon>OverdueChargesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\OverdueChargesPopup.aspx.designer.cs">
+      <DependentUpon>OverdueChargesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\PermanentClientNotesPopup.aspx.cs">
+      <DependentUpon>PermanentClientNotesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\PermanentClientNotesPopup.aspx.designer.cs">
+      <DependentUpon>PermanentClientNotesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\PermanentCustomerNotesPopup.aspx.cs">
+      <DependentUpon>PermanentCustomerNotesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\PermanentCustomerNotesPopup.aspx.designer.cs">
+      <DependentUpon>PermanentCustomerNotesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\Popup.Master.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\Popup.Master.designer.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\RepurchasesClaimedPopup.aspx.cs">
+      <DependentUpon>RepurchasesClaimedPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\RepurchasesClaimedPopup.aspx.designer.cs">
+      <DependentUpon>RepurchasesClaimedPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\RetentionAdjustmentsPopup.aspx.cs">
+      <DependentUpon>RetentionAdjustmentsPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\RetentionAdjustmentsPopup.aspx.designer.cs">
+      <DependentUpon>RetentionAdjustmentsPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\RetentionLikelyRepurchasesPopup.aspx.cs">
+      <DependentUpon>RetentionLikelyRepurchasesPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\RetentionLikelyRepurchasesPopup.aspx.designer.cs">
+      <DependentUpon>RetentionLikelyRepurchasesPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\RetentionSchedulePopup.aspx.cs">
+      <DependentUpon>RetentionSchedulePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\RetentionSchedulePopup.aspx.designer.cs">
+      <DependentUpon>RetentionSchedulePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\RetnAccountTransactionsPopup.aspx.cs">
+      <DependentUpon>RetnAccountTransactionsPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\RetnAccountTransactionsPopup.aspx.designer.cs">
+      <DependentUpon>RetnAccountTransactionsPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popups\StatementReportPopup.aspx.cs">
+      <DependentUpon>StatementReportPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popups\StatementReportPopup.aspx.designer.cs">
+      <DependentUpon>StatementReportPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reportfiles\readme.aspx.cs">
+      <DependentUpon>readme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportfiles\readme.aspx.designer.cs">
+      <DependentUpon>readme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.Master.cs">
+      <DependentUpon>Reports.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.Master.designer.cs">
+      <DependentUpon>Reports.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsServices.asmx.cs">
+      <DependentUpon>ReportsServices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AccountTransRpt.aspx.cs">
+      <DependentUpon>AccountTransRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AccountTransRpt.aspx.designer.cs">
+      <DependentUpon>AccountTransRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AgedBalances.aspx.cs">
+      <DependentUpon>AgedBalances.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AgedBalances.aspx.designer.cs">
+      <DependentUpon>AgedBalances.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CallsDue.aspx.cs">
+      <DependentUpon>CallsDue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CallsDue.aspx.designer.cs">
+      <DependentUpon>CallsDue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ClientAction.aspx.cs">
+      <DependentUpon>ClientAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ClientAction.aspx.designer.cs">
+      <DependentUpon>ClientAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Control.aspx.cs">
+      <DependentUpon>Control.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Control.aspx.designer.cs">
+      <DependentUpon>Control.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CreditBalanceTransfers.aspx.cs">
+      <DependentUpon>CreditBalanceTransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CreditBalanceTransfers.aspx.designer.cs">
+      <DependentUpon>CreditBalanceTransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CreditLimitExceeded.aspx.cs">
+      <DependentUpon>CreditLimitExceeded.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CreditLimitExceeded.aspx.designer.cs">
+      <DependentUpon>CreditLimitExceeded.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CreditNotes.aspx.cs">
+      <DependentUpon>CreditNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CreditNotes.aspx.designer.cs">
+      <DependentUpon>CreditNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CreditStopSuggestions.aspx.cs">
+      <DependentUpon>CreditStopSuggestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CreditStopSuggestions.aspx.designer.cs">
+      <DependentUpon>CreditStopSuggestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CurrentOverpaid.aspx.cs">
+      <DependentUpon>CurrentOverpaid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CurrentOverpaid.aspx.designer.cs">
+      <DependentUpon>CurrentOverpaid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CurrentShortPaid.aspx.cs">
+      <DependentUpon>CurrentShortPaid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CurrentShortPaid.aspx.designer.cs">
+      <DependentUpon>CurrentShortPaid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CustomerWatch.aspx.cs">
+      <DependentUpon>CustomerWatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CustomerWatch.aspx.designer.cs">
+      <DependentUpon>CustomerWatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Discounts.aspx.cs">
+      <DependentUpon>Discounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Discounts.aspx.designer.cs">
+      <DependentUpon>Discounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\OverdueCharges.aspx.cs">
+      <DependentUpon>OverdueCharges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\OverdueCharges.aspx.designer.cs">
+      <DependentUpon>OverdueCharges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Overpayments.aspx.cs">
+      <DependentUpon>Overpayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Overpayments.aspx.designer.cs">
+      <DependentUpon>Overpayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Prompt.aspx.cs">
+      <DependentUpon>Prompt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Prompt.aspx.designer.cs">
+      <DependentUpon>Prompt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Repurchases.aspx.cs">
+      <DependentUpon>Repurchases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Repurchases.aspx.designer.cs">
+      <DependentUpon>Repurchases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RetentionReleaseEstimate.aspx.cs">
+      <DependentUpon>RetentionReleaseEstimate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RetentionReleaseEstimate.aspx.designer.cs">
+      <DependentUpon>RetentionReleaseEstimate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Statement.aspx.cs">
+      <DependentUpon>Statement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Statement.aspx.designer.cs">
+      <DependentUpon>Statement.aspx</DependentUpon>
+    </Compile>
+    <Content Include="css\atd.css" />
+    <Content Include="css\default-date.png" />
+    <Content Include="css\disabled-date.png" />
+    <Content Include="css\font-awesome-4.6.3\font-awesome.css" />
+    <Content Include="css\font-awesome-4.6.3\font-awesome.min.css" />
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\header.png" />
+    <Content Include="css\hover.css" />
+    <Content Include="css\jquery.clearField.css" />
+    <Content Include="css\selected-date.png" />
+    <Content Include="images\btn_print_new.png" />
+    <Content Include="images\editing.gif" />
+    <Content Include="images\editing.png" />
+    <Content Include="images\loginLogo.png" />
+    <Content Include="images\metallic\default-date.png" />
+    <Content Include="images\metallic\disabled-date.png" />
+    <Content Include="images\metallic\header.png" />
+    <Content Include="images\metallic\selected-date.png" />
+    <Content Include="images\ui-icons_888888_256x240.png" />
+    <Content Include="images\writing.gif" />
+    <Content Include="images\writing.png" />
+    <Content Include="JavaScriptSpellCheck\01-HELP.txt" />
+    <Content Include="JavaScriptSpellCheck\aspnetspell.dll\ASPNetSpell.dll" />
+    <Content Include="JavaScriptSpellCheck\aspnetspell.dll\What is this for.txt" />
+    <Content Include="JavaScriptSpellCheck\core\asp\ASPSpellClass.asp" />
+    <Content Include="JavaScriptSpellCheck\core\default.asp" />
+    <Content Include="JavaScriptSpellCheck\core\Default.aspx" />
+    <Content Include="JavaScriptSpellCheck\core\dialog.js" />
+    <Content Include="JavaScriptSpellCheck\core\settings\default-settings.asp" />
+    <Content Include="JavaScriptSpellCheck\dialog.html" />
+    <Content Include="JavaScriptSpellCheck\dictionaries\custom.txt" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\blank.gif" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancybox-x.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancybox-y.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancybox.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_close.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_loading.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_nav_left.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_nav_right.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_shadow_e.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_shadow_n.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_shadow_ne.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_shadow_nw.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_shadow_s.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_shadow_se.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_shadow_sw.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_shadow_w.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_title_left.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_title_main.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_title_over.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\fancy_title_right.png" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\jquery.fancybox-1.3.4.css" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\jquery.fancybox-1.3.4.js" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="JavaScriptSpellCheck\extensions\fancybox\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="JavaScriptSpellCheck\extensions\modalbox\lib\effects.js" />
+    <Content Include="JavaScriptSpellCheck\extensions\modalbox\lib\prototype.js" />
+    <Content Include="JavaScriptSpellCheck\extensions\modalbox\lib\scriptaculous.js" />
+    <Content Include="JavaScriptSpellCheck\extensions\modalbox\lib\unittest.js" />
+    <Content Include="JavaScriptSpellCheck\extensions\modalbox\modalbox.combined.js" />
+    <Content Include="JavaScriptSpellCheck\extensions\modalbox\modalbox.css" />
+    <Content Include="JavaScriptSpellCheck\extensions\modalbox\spinner.gif" />
+    <Content Include="JavaScriptSpellCheck\include.js" />
+    <Content Include="JavaScriptSpellCheck\license.txt" />
+    <Content Include="JavaScriptSpellCheck\themes\clean\ajax-loader.gif" />
+    <Content Include="JavaScriptSpellCheck\themes\clean\context-menu.css" />
+    <Content Include="JavaScriptSpellCheck\themes\clean\dialog-window.css" />
+    <Content Include="JavaScriptSpellCheck\themes\clean\gwiggle.png" />
+    <Content Include="JavaScriptSpellCheck\themes\clean\ieonly.css" />
+    <Content Include="JavaScriptSpellCheck\themes\clean\wiggle.png" />
+    <Content Include="JavaScriptSpellCheck\themes\modern\ajax-loader.gif" />
+    <Content Include="JavaScriptSpellCheck\themes\modern\context-menu.css" />
+    <Content Include="JavaScriptSpellCheck\themes\modern\dialog-window.css" />
+    <Content Include="JavaScriptSpellCheck\themes\modern\gwiggle.png" />
+    <Content Include="JavaScriptSpellCheck\themes\modern\ieonly.css" />
+    <Content Include="JavaScriptSpellCheck\themes\modern\wiggle.png" />
+    <Content Include="JavaScriptSpellCheck\themes\modern\xp.gif" />
+    <Content Include="JavaScriptSpellCheck\translations\af.js" />
+    <Content Include="JavaScriptSpellCheck\translations\ar.js" />
+    <Content Include="JavaScriptSpellCheck\translations\be.js" />
+    <Content Include="JavaScriptSpellCheck\translations\bg.js" />
+    <Content Include="JavaScriptSpellCheck\translations\ca.js" />
+    <Content Include="JavaScriptSpellCheck\translations\cn.js" />
+    <Content Include="JavaScriptSpellCheck\translations\cs.js" />
+    <Content Include="JavaScriptSpellCheck\translations\cy.js" />
+    <Content Include="JavaScriptSpellCheck\translations\da.js" />
+    <Content Include="JavaScriptSpellCheck\translations\de.js" />
+    <Content Include="JavaScriptSpellCheck\translations\el.js" />
+    <Content Include="JavaScriptSpellCheck\translations\en.js" />
+    <Content Include="JavaScriptSpellCheck\translations\es.js" />
+    <Content Include="JavaScriptSpellCheck\translations\et.js" />
+    <Content Include="JavaScriptSpellCheck\translations\fa.js" />
+    <Content Include="JavaScriptSpellCheck\translations\fi.js" />
+    <Content Include="JavaScriptSpellCheck\translations\fr.js" />
+    <Content Include="JavaScriptSpellCheck\translations\ga.js" />
+    <Content Include="JavaScriptSpellCheck\translations\gl.js" />
+    <Content Include="JavaScriptSpellCheck\translations\hi.js" />
+    <Content Include="JavaScriptSpellCheck\translations\hr.js" />
+    <Content Include="JavaScriptSpellCheck\translations\hu.js" />
+    <Content Include="JavaScriptSpellCheck\translations\id.js" />
+    <Content Include="JavaScriptSpellCheck\translations\is.js" />
+    <Content Include="JavaScriptSpellCheck\translations\it.js" />
+    <Content Include="JavaScriptSpellCheck\translations\iw.js" />
+    <Content Include="JavaScriptSpellCheck\translations\ja.js" />
+    <Content Include="JavaScriptSpellCheck\translations\ko.js" />
+    <Content Include="JavaScriptSpellCheck\translations\lt.js" />
+    <Content Include="JavaScriptSpellCheck\translations\lv.js" />
+    <Content Include="JavaScriptSpellCheck\translations\mk.js" />
+    <Content Include="JavaScriptSpellCheck\translations\ms.js" />
+    <Content Include="JavaScriptSpellCheck\translations\mt.js" />
+    <Content Include="JavaScriptSpellCheck\translations\nl.js" />
+    <Content Include="JavaScriptSpellCheck\translations\no.js" />
+    <Content Include="JavaScriptSpellCheck\translations\pl.js" />
+    <Content Include="JavaScriptSpellCheck\translations\pt.js" />
+    <Content Include="JavaScriptSpellCheck\translations\ro.js" />
+    <Content Include="JavaScriptSpellCheck\translations\ru.js" />
+    <Content Include="JavaScriptSpellCheck\translations\simple.js" />
+    <Content Include="JavaScriptSpellCheck\translations\sk.js" />
+    <Content Include="JavaScriptSpellCheck\translations\sl.js" />
+    <Content Include="JavaScriptSpellCheck\translations\sq.js" />
+    <Content Include="JavaScriptSpellCheck\translations\sr.js" />
+    <Content Include="JavaScriptSpellCheck\translations\sw.js" />
+    <Content Include="JavaScriptSpellCheck\translations\template.js" />
+    <Content Include="JavaScriptSpellCheck\translations\th.js" />
+    <Content Include="JavaScriptSpellCheck\translations\tl.js" />
+    <Content Include="JavaScriptSpellCheck\translations\tr.js" />
+    <Content Include="JavaScriptSpellCheck\translations\tw.js" />
+    <Content Include="JavaScriptSpellCheck\translations\uk.js" />
+    <Content Include="JavaScriptSpellCheck\translations\vi.js" />
+    <Content Include="JavaScriptSpellCheck\translations\yi.js" />
+    <Content Include="JsonTest.html" />
+    <Content Include="js\csshttprequest.js" />
+    <Content Include="js\jquery-1.11.1.js" />
+    <Content Include="js\jquery-3.1.0.min.js" />
+    <Content Include="js\jquery.atd.textarea.js" />
+    <Content Include="js\jquery.clearField.js" />
+    <Content Include="js\jquery.countdown.min.js" />
+    <Content Include="js\jquery.inputsearch.js" />
+    <Content Include="js\jquery.min.map" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Cff.SaferTrader.Web.pfx" />
+    <None Include="connectionStrings.Debug.config">
+      <DependentUpon>connectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="connectionStrings.Release.config">
+      <DependentUpon>connectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <Content Include="JavaScriptSpellCheck\.DS_Store" />
+    <Content Include="JavaScriptSpellCheck\dictionaries\English %28International%29.dic" />
+    <Content Include="JavaScriptSpellCheck\extensions\modalbox\README" />
+    <Content Include="JavaScriptSpellCheck\core\php\engine.php" />
+    <Content Include="JavaScriptSpellCheck\core\settings\default-settings.php" />
+    <Content Include="JavaScriptSpellCheck\core\default.ashx" />
+    <Content Include="JavaScriptSpellCheck\core\index.php" />
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\CFFIISPROD.pubxml" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="Popups\InvoiceBatchSchedulePopupPrint.aspx" />
+    <None Include="Properties\PublishProfiles\CFSQL3 %28QA%29.pubxml" />
+    <None Include="Properties\PublishProfiles\ClientDebtorMgt_WebApp-Local.pubxml" />
+    <None Include="Properties\PublishProfiles\SaferTraderWeb.pubxml" />
+    <None Include="Properties\PublishProfiles\SaferTraderWebApp.pubxml" />
+    <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
+    <None Include="Resources\Cff_WebResource.Designer.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="UserControls\AllClientsReportHelpMessage.ascx.cs">
+      <DependentUpon>AllClientsReportHelpMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AllClientsReportHelpMessage.ascx.designer.cs">
+      <DependentUpon>AllClientsReportHelpMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ChangePassword.ascx.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ChangePassword.ascx.designer.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ExportableGridPanel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ExportablePanel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\gGridViewControls\AddGridTemplateToGridView.cs" />
+    <Compile Include="UserControls\gGridViewControls\AddImageTemplateToGridView .cs" />
+    <Compile Include="UserControls\gGridViewControls\CffCommandField.cs" />
+    <Compile Include="UserControls\gGridViewControls\CffCustomPagerTemplate.cs" />
+    <Compile Include="UserControls\gGridViewControls\CffGenGridView.cs" />
+    <Compile Include="UserControls\gGridViewControls\CffGenGridViewCommon.cs" />
+    <Compile Include="UserControls\gGridViewControls\CffGenGridViewTemplates.cs" />
+    <Compile Include="UserControls\gGridViewControls\CffGridViewRowClickedEventArgs.cs" />
+    <Compile Include="UserControls\gGridViewControls\CffTemplateField.cs" />
+    <Compile Include="UserControls\gGridViewControls\ColumnSortOrder.cs" />
+    <Compile Include="UserControls\gGridViewControls\GridViewBoundHyperLinkTemplate.cs" />
+    <Compile Include="UserControls\gGridViewControls\GridViewCellClickedEventArgs.cs" />
+    <Compile Include="UserControls\gGridViewControls\GridViewCommandButtonTemplate.cs" />
+    <Compile Include="UserControls\gGridViewControls\GridViewEditRowFormTemplate.cs" />
+    <Compile Include="UserControls\gGridViewControls\GridViewImageButtonTemplate.cs" />
+    <Compile Include="UserControls\gGridViewControls\GridViewPagerMode.cs" />
+    <Compile Include="UserControls\GSTInvoiceBox.ascx.cs">
+      <DependentUpon>GSTInvoiceBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GSTInvoiceBox.ascx.designer.cs">
+      <DependentUpon>GSTInvoiceBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Interfaces\IBatchTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControls\Interfaces\IExportable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControls\JQueryUtils.cs" />
+    <Compile Include="UserControls\MainNavigation.ascx.cs">
+      <DependentUpon>MainNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainNavigation.ascx.designer.cs">
+      <DependentUpon>MainNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ManagementContactDetails.ascx.cs">
+      <DependentUpon>ManagementContactDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManagementContactDetails.ascx.designer.cs">
+      <DependentUpon>ManagementContactDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\AccountTransactionsTab.ascx.cs">
+      <DependentUpon>AccountTransactionsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\AccountTransactionsTab.ascx.designer.cs">
+      <DependentUpon>AccountTransactionsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\BatchAdjustmentsTab.ascx.cs">
+      <DependentUpon>BatchAdjustmentsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\BatchAdjustmentsTab.ascx.designer.cs">
+      <DependentUpon>BatchAdjustmentsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\BatchScheduleDetails.ascx.cs">
+      <DependentUpon>BatchScheduleDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\BatchScheduleDetails.ascx.designer.cs">
+      <DependentUpon>BatchScheduleDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\BatchSchedulePanel.ascx.cs">
+      <DependentUpon>BatchSchedulePanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\BatchSchedulePanel.ascx.designer.cs">
+      <DependentUpon>BatchSchedulePanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\BatchSchedulePanelPrint.ascx.cs">
+      <DependentUpon>BatchSchedulePanelPrint.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\BatchSchedulePanelPrint.ascx.designer.cs">
+      <DependentUpon>BatchSchedulePanelPrint.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\CreditsClaimed.ascx.cs">
+      <DependentUpon>CreditsClaimed.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\CreditsClaimed.ascx.designer.cs">
+      <DependentUpon>CreditsClaimed.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\CreditsTab.ascx.cs">
+      <DependentUpon>CreditsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\CreditsTab.ascx.designer.cs">
+      <DependentUpon>CreditsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\IBatchTab.cs" />
+    <Compile Include="UserControls\ReleaseTabs\InvoiceBatchHeader.ascx.cs">
+      <DependentUpon>InvoiceBatchHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\InvoiceBatchHeader.ascx.designer.cs">
+      <DependentUpon>InvoiceBatchHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\InvoicesTab.ascx.cs">
+      <DependentUpon>InvoicesTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\InvoicesTab.ascx.designer.cs">
+      <DependentUpon>InvoicesTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\LikelyRepurchasesTab.ascx.cs">
+      <DependentUpon>LikelyRepurchasesTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\LikelyRepurchasesTab.ascx.designer.cs">
+      <DependentUpon>LikelyRepurchasesTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\NonFactoredTab.ascx.cs">
+      <DependentUpon>NonFactoredTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\NonFactoredTab.ascx.designer.cs">
+      <DependentUpon>NonFactoredTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\OverdueChargesTab.ascx.cs">
+      <DependentUpon>OverdueChargesTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\OverdueChargesTab.ascx.designer.cs">
+      <DependentUpon>OverdueChargesTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RepurchasesTab.ascx.cs">
+      <DependentUpon>RepurchasesTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RepurchasesTab.ascx.designer.cs">
+      <DependentUpon>RepurchasesTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionAdjustmentsTab.ascx.cs">
+      <DependentUpon>RetentionAdjustmentsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionAdjustmentsTab.ascx.designer.cs">
+      <DependentUpon>RetentionAdjustmentsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionDetailsPanel.ascx.cs">
+      <DependentUpon>RetentionDetailsPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionDetailsPanel.ascx.designer.cs">
+      <DependentUpon>RetentionDetailsPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionDetailsTab.ascx.cs">
+      <DependentUpon>RetentionDetailsTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionDetailsTab.ascx.designer.cs">
+      <DependentUpon>RetentionDetailsTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionNotesTab.ascx.cs">
+      <DependentUpon>RetentionNotesTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionNotesTab.ascx.designer.cs">
+      <DependentUpon>RetentionNotesTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionRepurchasesClaimedTab.ascx.cs">
+      <DependentUpon>RetentionRepurchasesClaimedTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\RetentionRepurchasesClaimedTab.ascx.designer.cs">
+      <DependentUpon>RetentionRepurchasesClaimedTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\ScheduleTab.ascx.cs">
+      <DependentUpon>ScheduleTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReleaseTabs\ScheduleTab.ascx.designer.cs">
+      <DependentUpon>ScheduleTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportGridViewCustomButtonCallbackEventArgs.cs" />
+    <Compile Include="UserControls\ReportGridViewCustomButtonCallbackEventHandler.cs" />
+    <Compile Include="UserControls\ReportGridViewCustomCallbackEventArgs.cs" />
+    <Compile Include="UserControls\ReportGridViewCustomCallbackEventHandler.cs" />
+    <Compile Include="UserControls\ReportPanels\AccountTransactionReportPanel.ascx.cs">
+      <DependentUpon>AccountTransactionReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\AccountTransactionReportPanel.ascx.designer.cs">
+      <DependentUpon>AccountTransactionReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\AgedBalancesReportPanelNew.ascx.cs">
+      <DependentUpon>AgedBalancesReportPanelNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\AgedBalancesReportPanelNew.ascx.designer.cs">
+      <DependentUpon>AgedBalancesReportPanelNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CreditStopSuggestionsReportPanel.ascx.cs">
+      <DependentUpon>CreditStopSuggestionsReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CreditStopSuggestionsReportPanel.ascx.designer.cs">
+      <DependentUpon>CreditStopSuggestionsReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CustomerOverpaymentsTransactionReportPanel.ascx.cs">
+      <DependentUpon>CustomerOverpaymentsTransactionReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CustomerOverpaymentsTransactionReportPanel.ascx.designer.cs">
+      <DependentUpon>CustomerOverpaymentsTransactionReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\StatementReportPanel.ascx.cs">
+      <DependentUpon>StatementReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\StatementReportPanel.ascx.designer.cs">
+      <DependentUpon>StatementReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Status.aspx.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Status.aspx.designer.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Unallocated.aspx.cs">
+      <DependentUpon>Unallocated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Unallocated.aspx.designer.cs">
+      <DependentUpon>Unallocated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\UnclaimedCreditNotes.aspx.cs">
+      <DependentUpon>UnclaimedCreditNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\UnclaimedCreditNotes.aspx.designer.cs">
+      <DependentUpon>UnclaimedCreditNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\UnclaimedRepurchases.aspx.cs">
+      <DependentUpon>UnclaimedRepurchases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\UnclaimedRepurchases.aspx.designer.cs">
+      <DependentUpon>UnclaimedRepurchases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RetentionSchedules.aspx.cs">
+      <DependentUpon>RetentionSchedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RetentionSchedules.aspx.designer.cs">
+      <DependentUpon>RetentionSchedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionSearch.aspx.cs">
+      <DependentUpon>TransactionSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransactionSearch.aspx.designer.cs">
+      <DependentUpon>TransactionSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AlphabeticalPagination.ascx.cs">
+      <DependentUpon>AlphabeticalPagination.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AlphabeticalPagination.ascx.designer.cs">
+      <DependentUpon>AlphabeticalPagination.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BalanceRangeFilter.ascx.cs">
+      <DependentUpon>BalanceRangeFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\BalanceRangeFilter.ascx.designer.cs">
+      <DependentUpon>BalanceRangeFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CalendarDateRangePicker.ascx.cs">
+      <DependentUpon>CalendarDateRangePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CalendarDateRangePicker.ascx.designer.cs">
+      <DependentUpon>CalendarDateRangePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AllClientsOrderByFilter.ascx.cs">
+      <DependentUpon>AllClientsOrderByFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AllClientsOrderByFilter.ascx.designer.cs">
+      <DependentUpon>AllClientsOrderByFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ClientOrderByFilter.ascx.cs">
+      <DependentUpon>ClientOrderByFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ClientOrderByFilter.ascx.designer.cs">
+      <DependentUpon>ClientOrderByFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LinkCellClickEventArgs.cs" />
+    <Compile Include="UserControls\ManagementDetailsBox.ascx.cs">
+      <DependentUpon>ManagementDetailsBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ManagementDetailsBox.ascx.designer.cs">
+      <DependentUpon>ManagementDetailsBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PeriodReportTypeFilter.ascx.cs">
+      <DependentUpon>PeriodReportTypeFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PeriodReportTypeFilter.ascx.designer.cs">
+      <DependentUpon>PeriodReportTypeFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AllClientsFilter.ascx.cs">
+      <DependentUpon>AllClientsFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AllClientsFilter.ascx.designer.cs">
+      <DependentUpon>AllClientsFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CustomerNotesAdder.ascx.cs">
+      <DependentUpon>CustomerNotesAdder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CustomerNotesAdder.ascx.designer.cs">
+      <DependentUpon>CustomerNotesAdder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CustomerNotesAdderModalBox.ascx.cs">
+      <DependentUpon>CustomerNotesAdderModalBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CustomerNotesAdderModalBox.ascx.designer.cs">
+      <DependentUpon>CustomerNotesAdderModalBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CustomerNotesEditModalBox.ascx.cs">
+      <DependentUpon>CustomerNotesEditModalBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CustomerNotesEditModalBox.ascx.designer.cs">
+      <DependentUpon>CustomerNotesEditModalBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CustomerNotesFilter.ascx.cs">
+      <DependentUpon>CustomerNotesFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CustomerNotesFilter.ascx.designer.cs">
+      <DependentUpon>CustomerNotesFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DatePicker.ascx.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DatePicker.ascx.designer.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Invoices.aspx.cs">
+      <DependentUpon>Invoices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Invoices.aspx.designer.cs">
+      <DependentUpon>Invoices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Journals.aspx.cs">
+      <DependentUpon>Journals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Journals.aspx.designer.cs">
+      <DependentUpon>Journals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Receipts.aspx.cs">
+      <DependentUpon>Receipts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Receipts.aspx.designer.cs">
+      <DependentUpon>Receipts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SafeTrader.Master.cs">
+      <DependentUpon>SafeTrader.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SafeTrader.Master.designer.cs">
+      <DependentUpon>SafeTrader.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCustomerEventArgs.cs" />
+    <Compile Include="TransactionHistory.aspx.cs">
+      <DependentUpon>TransactionHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransactionHistory.aspx.designer.cs">
+      <DependentUpon>TransactionHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions.aspx.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions.aspx.designer.cs">
+      <DependentUpon>Transactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionArchive.aspx.cs">
+      <DependentUpon>TransactionArchive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransactionArchive.aspx.designer.cs">
+      <DependentUpon>TransactionArchive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InPageMessageBox.ascx.cs">
+      <DependentUpon>InPageMessageBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InPageMessageBox.ascx.designer.cs">
+      <DependentUpon>InPageMessageBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ModalBox.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CallsDueReportPanel.ascx.cs">
+      <DependentUpon>CallsDueReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CallsDueReportPanel.ascx.designer.cs">
+      <DependentUpon>CallsDueReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\ClientActionPanel.ascx.cs">
+      <DependentUpon>ClientActionPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\ClientActionPanel.ascx.designer.cs">
+      <DependentUpon>ClientActionPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\ControlReportPanel.ascx.cs">
+      <DependentUpon>ControlReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\ControlReportPanel.ascx.designer.cs">
+      <DependentUpon>ControlReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CreditLimitExceededReportPanel.ascx.cs">
+      <DependentUpon>CreditLimitExceededReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CreditLimitExceededReportPanel.ascx.designer.cs">
+      <DependentUpon>CreditLimitExceededReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CurrentPaymentsReportPanel.ascx.cs">
+      <DependentUpon>CurrentPaymentsReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CurrentPaymentsReportPanel.ascx.designer.cs">
+      <DependentUpon>CurrentPaymentsReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CustomerInvoiceTransactionReportPanel.ascx.cs">
+      <DependentUpon>CustomerInvoiceTransactionReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CustomerInvoiceTransactionReportPanel.ascx.designer.cs">
+      <DependentUpon>CustomerInvoiceTransactionReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CustomerTransactionReportPanel.ascx.cs">
+      <DependentUpon>CustomerTransactionReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\CustomerTransactionReportPanel.ascx.designer.cs">
+      <DependentUpon>CustomerTransactionReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\InvoiceTransactionReportPanel.ascx.cs">
+      <DependentUpon>InvoiceTransactionReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\InvoiceTransactionReportPanel.ascx.designer.cs">
+      <DependentUpon>InvoiceTransactionReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MessageBox.ascx.cs">
+      <DependentUpon>MessageBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\MessageBox.ascx.designer.cs">
+      <DependentUpon>MessageBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MonthRangePicker.ascx.cs">
+      <DependentUpon>MonthRangePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\MonthRangePicker.ascx.designer.cs">
+      <DependentUpon>MonthRangePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PageDescription.ascx.cs">
+      <DependentUpon>PageDescription.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PageDescription.ascx.designer.cs">
+      <DependentUpon>PageDescription.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PromptDaysPicker.ascx.cs">
+      <DependentUpon>PromptDaysPicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PromptDaysPicker.ascx.designer.cs">
+      <DependentUpon>PromptDaysPicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportNavigation.ascx.cs">
+      <DependentUpon>ReportNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\OverdueChargesReportPanel.ascx.cs">
+      <DependentUpon>OverdueChargesReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\OverdueChargesReportPanel.ascx.designer.cs">
+      <DependentUpon>OverdueChargesReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\PromptReportPanel.ascx.cs">
+      <DependentUpon>PromptReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\PromptReportPanel.ascx.designer.cs">
+      <DependentUpon>PromptReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RedirectionParameter.cs" />
+    <Compile Include="UserControls\Redirector.cs" />
+    <Compile Include="UserControls\ReportPanels\RetentionReleaseEstimateReportPanel.ascx.cs">
+      <DependentUpon>RetentionReleaseEstimateReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\RetentionReleaseEstimateReportPanel.ascx.designer.cs">
+      <DependentUpon>RetentionReleaseEstimateReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\StatusReportPanel.ascx.cs">
+      <DependentUpon>StatusReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\StatusReportPanel.ascx.designer.cs">
+      <DependentUpon>StatusReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\TransactionReportPanelContainer.ascx.cs">
+      <DependentUpon>TransactionReportPanelContainer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\TransactionReportPanelContainer.ascx.designer.cs">
+      <DependentUpon>TransactionReportPanelContainer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SecureTextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControls\StatusPicker.ascx.cs">
+      <DependentUpon>StatusPicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\StatusPicker.ascx.designer.cs">
+      <DependentUpon>StatusPicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\TransactionReportPanel.ascx.cs">
+      <DependentUpon>TransactionReportPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportPanels\TransactionReportPanel.ascx.designer.cs">
+      <DependentUpon>TransactionReportPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TransactionStatusTypesFilter.ascx.cs">
+      <DependentUpon>TransactionStatusTypesFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\TransactionStatusTypesFilter.ascx.designer.cs">
+      <DependentUpon>TransactionStatusTypesFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ValuesController1.cs" />
+    <Compile Include="UserControls\ViewAllButton.cs" />
+    <Compile Include="UserControls\ViewPreviewButton.cs" />
+    <Compile Include="UserControls\PrintButton.cs" />
+    <Compile Include="UserPreferenceSetter.asmx.cs">
+      <DependentUpon>UserPreferenceSetter.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\ReportNavigation.ascx.designer.cs">
+      <DependentUpon>ReportNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationService.asmx.cs">
+      <DependentUpon>ValidationService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="Scripts\jquery-3.0.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.0.0.js" />
+    <Content Include="Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\Dictionary.xml">
+      <Link>Dictionary.xml</Link>
+    </CodeAnalysisDictionary>
+    <Content Include="css\images\ui-bg_diagonals-medium_15_2b2922_40x40.png" />
+    <Content Include="css\images\ui-bg_diagonals-medium_15_7e7777_40x40.png" />
+    <Content Include="css\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\images\ui-bg_flat_100_459e00_40x100.png" />
+    <Content Include="css\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="css\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="css\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\images\ui-icons_808080_256x240.png" />
+    <Content Include="css\images\ui-icons_8dc262_256x240.png" />
+    <Content Include="css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="css\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\jquery.autocomplete.css" />
+    <Content Include="css\popup.css" />
+    <Content Include="css\print.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\superfish.css" />
+    <Content Include="css\ui-datepicker-cff.css" />
+    <Content Include="images\1365584070_bullet_go.png" />
+    <Content Include="images\1365584194_arrow_right_blue_round.png" />
+    <Content Include="images\1365584265_arrow_down.png" />
+    <Content Include="images\batch_down.png" />
+    <Content Include="images\batch_up.png" />
+    <Content Include="images\btn_joinmonex.png" />
+    <Content Include="images\bullet_blue_collapse_small.png" />
+    <Content Include="images\bullet_blue_expand_small.png" />
+    <Content Include="images\CFFlogo_HiRes.jpg" />
+    <Content Include="images\control-180.gif" />
+    <Content Include="images\control-double-180.gif" />
+    <Content Include="images\control-double.gif" />
+    <Content Include="images\control.gif" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\gifloaderAnim.gif" />
+    <Content Include="images\inactive-control-180.gif" />
+    <Content Include="images\inactive-control-double-180.gif" />
+    <Content Include="images\inactive-control-double.gif" />
+    <Content Include="images\inactive-control.gif" />
+    <Content Include="images\minus.gif" />
+    <Content Include="images\plus.gif" />
+    <Content Include="images\popupLogo.png" />
+    <Content Include="js\cff.js" />
+    <Content Include="js\jquery-1.10.1.js" />
+    <Content Include="js\jquery-1.7.min.js" />
+    <Content Include="js\jquery-migrate-1.0.0.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.query-object.js" />
+    <Content Include="js\json3.js" />
+    <Content Include="js\superfish.js" />
+    <Content Include="js\SuperFish\hoverIntent.js" />
+    <Content Include="js\SuperFish\jquery.js" />
+    <Content Include="js\SuperFish\superfish.js" />
+    <Content Include="js\SuperFish\supersubs.js" />
+    <Content Include="js\supersubs.js" />
+    <Content Include="js\activateTabs.js" />
+    <Content Include="js\eventlisteners.js" />
+    <Content Include="js\jquery-1.11.0.js" />
+    <Content Include="js\jquery.easing.compatibility.js" />
+    <Content Include="js\jquery.ui.core.accordion-1.5.3.min.js" />
+    <Content Include="js\json.js" />
+    <Content Include="js\PageMethods.js" />
+    <Content Include="js\PostBackRitalin.min.js" />
+    <Content Include="js\SuperFish\jquery.bgiframe.min.js" />
+    <Content Include="js\ui.1.10.4\Gruntfile.js" />
+    <Content Include="js\ui.1.10.4\jquery-1.10.2.js" />
+    <Content Include="js\ui.1.10.4\themes\images\animated-overlay.gif" />
+    <Content Include="js\ui.1.10.4\themes\images\mainNavigation_bg.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_222222_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_454545_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_888888_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="js\ui.1.10.4\themes\jquery-ui.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.accordion.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.all.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.autocomplete.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.base.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.button.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.core.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.datepicker.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.dialog.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.menu.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.progressbar.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.resizable.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.selectable.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.slider.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.spinner.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.tabs.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.theme.css" />
+    <Content Include="js\ui.1.10.4\themes\jquery.ui.tooltip.css" />
+    <Content Include="js\ui.1.10.4\themes\redmond\jquery-ui.css" />
+    <Content Include="js\ui.1.10.4\themes\smoothness\jquery-ui.css" />
+    <Content Include="js\ui.1.10.4\ui\jquery-ui.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.blockUI.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.accordion.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.autocomplete.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.button.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.core.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.datepicker.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.dialog.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.draggable.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.droppable.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-blind.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-bounce.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-clip.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-drop.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-explode.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-fade.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-fold.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-highlight.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-pulsate.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-scale.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-shake.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-slide.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect-transfer.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.effect.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.menu.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.mouse.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.position.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.progressbar.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.resizable.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.selectable.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.slider.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.sortable.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.spinner.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.tabs.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.tooltip.js" />
+    <Content Include="js\ui.1.10.4\ui\jquery.ui.widget.js" />
+    <Content Include="js\ui\effects.blind.js" />
+    <Content Include="js\ui\effects.bounce.js" />
+    <Content Include="js\ui\effects.clip.js" />
+    <Content Include="js\ui\effects.core.js" />
+    <Content Include="js\ui\effects.drop.js" />
+    <Content Include="js\ui\effects.explode.js" />
+    <Content Include="js\ui\effects.fold.js" />
+    <Content Include="js\ui\effects.highlight.js" />
+    <Content Include="js\ui\effects.pulsate.js" />
+    <Content Include="js\ui\effects.scale.js" />
+    <Content Include="js\ui\effects.shake.js" />
+    <Content Include="js\ui\effects.slide.js" />
+    <Content Include="js\ui\effects.transfer.js" />
+    <Content Include="js\ui\ExpandPanelGridView.js" />
+    <Content Include="js\ui\jquery-1.7.js" />
+    <Content Include="js\ui\jquery-1.7.min.js" />
+    <Content Include="js\ui\jquery.ui.all.js" />
+    <Content Include="js\ui\ui.accordion.js" />
+    <Content Include="js\ui\ui.core.js" />
+    <Content Include="js\ui\ui.datepicker.js" />
+    <Content Include="js\ui\ui.dialog.js" />
+    <Content Include="js\ui\ui.draggable.js" />
+    <Content Include="js\ui\ui.droppable.js" />
+    <Content Include="js\ui\ui.resizable.js" />
+    <Content Include="js\ui\ui.selectable.js" />
+    <Content Include="js\ui\ui.slider.js" />
+    <Content Include="js\ui\ui.sortable.js" />
+    <Content Include="js\ui\ui.tabs.js" />
+    <Content Include="Popups\checkEmail.aspx" />
+    <Content Include="Popups\ClientNotesPopup.aspx" />
+    <Content Include="Popups\CreditsClaimedPopup.aspx" />
+    <Content Include="Popups\CustomerNotesPopup.aspx" />
+    <Content Include="Popups\InvoiceBatchAdjustmentsPopup.aspx" />
+    <Content Include="Popups\InvoiceBatchCreditsPopup.aspx" />
+    <Content Include="Popups\InvoiceBatchesPopup.aspx" />
+    <Content Include="Popups\InvoiceBatchInvoicesPopup.aspx" />
+    <Content Include="Popups\InvoiceBatchNonFactoredInvoicesPopup.aspx" />
+    <Content Include="Popups\InvoiceBatchRepurchasesPopup.aspx" />
+    <Content Include="Popups\InvoiceBatchSchedulePopup.aspx" />
+    <Content Include="Popups\LettersPopup.aspx" />
+    <Content Include="Popups\OverdueChargesPopup.aspx" />
+    <Content Include="Popups\PermanentClientNotesPopup.aspx" />
+    <Content Include="Popups\PermanentCustomerNotesPopup.aspx" />
+    <Content Include="Popups\RepurchasesClaimedPopup.aspx" />
+    <Content Include="Popups\RetentionAdjustmentsPopup.aspx" />
+    <Content Include="Popups\RetentionLikelyRepurchasesPopup.aspx" />
+    <Content Include="Popups\RetentionSchedulePopup.aspx" />
+    <Content Include="Popups\RetnAccountTransactionsPopup.aspx" />
+    <Content Include="Popups\StatementReportPopup.aspx" />
+    <Content Include="ReportsServices.asmx" />
+    <Content Include="Reports\AgedBalances.aspx" />
+    <Content Include="Reports\CreditStopSuggestions.aspx" />
+    <Content Include="SafeTrader.Master" />
+    <Content Include="Transactions.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="js\ui.1.10.4\ui.accordion.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.autocomplete.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.button.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.core.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.datepicker.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.dialog.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.draggable.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.droppable.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-blind.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-bounce.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-clip.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-drop.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-explode.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-fade.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-fold.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-highlight.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-pulsate.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-scale.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-shake.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-slide.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect-transfer.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.effect.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.menu.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.mouse.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.position.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.progressbar.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.resizable.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.selectable.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.slider.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.sortable.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.spinner.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.tabs.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.tooltip.jquery.json" />
+    <Content Include="js\ui.1.10.4\ui.widget.jquery.json" />
+    <Content Include="Popups\Popup.Master" />
+    <None Include="Properties\PublishProfiles\CFFIISDev.pubxml" />
+    <None Include="Properties\PublishProfiles\CFFIISLocal.pubxml" />
+    <None Include="Properties\PublishProfiles\CFFIISQA.pubxml" />
+    <None Include="Properties\PublishProfiles\CFFIISQL3.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="AccountToAccess.aspx" />
+    <Content Include="AgreementPage.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\btn_sm_add.png" />
+    <Content Include="images\btn_sm_cancel.png" />
+    <Content Include="images\btn_view_estimate.png" />
+    <Content Include="images\criteriaField_label.png" />
+    <Content Include="images\gcancel.png" />
+    <Content Include="images\gcommit.png" />
+    <Content Include="ImportMYOB.aspx" />
+    <Content Include="ClientAutoCompleteHelper.asmx" />
+    <Content Include="connectionStrings.config">
+      <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <Content Include="CustomerAutoCompleteHelper.asmx" />
+    <Content Include="downloading.aspx" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\autocomplete_label_suggestions_tip.gif" />
+    <Content Include="images\btn_continue.png" />
+    <Content Include="images\btn_gcontinue.png" />
+    <Content Include="images\btn_leave_now.png" />
+    <Content Include="images\btn_ok.png" />
+    <Content Include="images\grad-bot.png" />
+    <Content Include="images\grip_toggle_left_arrow.gif" />
+    <Content Include="images\grip_toggle_right_arrow.gif" />
+    <Content Include="images\headerBackground.gif" />
+    <Content Include="images\icon_cut.png" />
+    <Content Include="images\preview_toggle_collapse.png" />
+    <Content Include="images\preview_toggle_expand.png" />
+    <Content Include="images\printLogo_hiRes.jpg" />
+    <Content Include="js\jquery.querystring.js" />
+    <Content Include="KeepSessionAlive.aspx" />
+    <Content Include="EndSession.aspx" />
+    <Content Include="images\bg_search_input.png" />
+    <Content Include="images\bg_utilities.gif" />
+    <Content Include="images\btn_collapse.png" />
+    <Content Include="images\btn_edit.png" />
+    <Content Include="images\btn_expand.png" />
+    <Content Include="images\btn_pagination-03.png" />
+    <Content Include="images\btn_pagination-04.png" />
+    <Content Include="images\btn_pagination.gif" />
+    <Content Include="images\btn_pagination.png" />
+    <Content Include="images\btn_sm_edit.png" />
+    <Content Include="images\btn_sm_update.png" />
+    <Content Include="images\btn_view_all_records.png" />
+    <Content Include="images\btn_view_pages.png" />
+    <Content Include="images\buttons.png" />
+    <Content Include="images\cross.png" />
+    <Content Include="images\customer_info.png" />
+    <Content Include="images\header_bg.gif" />
+    <Content Include="images\icon_information_grey.png" />
+    <Content Include="images\loginFooterBg.gif" />
+    <Content Include="images\loginHeaderBg.gif" />
+    <Content Include="LogOnRedirection.aspx" />
+    <Content Include="Contacts.aspx" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="images\ajax_loader.gif" />
+    <Content Include="images\autocomplete_label_suggestions.png" />
+    <Content Include="images\autocomplete_tip_label.png" />
+    <Content Include="images\batch_next.png" />
+    <Content Include="images\batch_previous.png" />
+    <Content Include="images\batch_tab_active_left.png" />
+    <Content Include="images\batch_tab_active_right.png" />
+    <Content Include="images\batch_tab_inactive_left.png" />
+    <Content Include="images\batch_tab_inactive_right.png" />
+    <Content Include="images\btn_cancel.png" />
+    <Content Include="images\btn_login.png" />
+    <Content Include="images\btn_save.png" />
+    <Content Include="images\btn_search_blue.png" />
+    <Content Include="images\btn_search_disabled.png" />
+    <Content Include="images\btn_update.png" />
+    <Content Include="images\btn_view_batch.png" />
+    <Content Include="images\btn_view_batch_focused.png" />
+    <Content Include="images\btn_view_retention.png" />
+    <Content Include="images\btn_view_retention_focused.png" />
+    <Content Include="images\calendar.png" />
+    <Content Include="images\chart_bar.png" />
+    <Content Include="images\chart_bar_bw.gif" />
+    <Content Include="images\collapse.png" />
+    <Content Include="images\contact_card.png" />
+    <Content Include="images\contentHeader_bg.png" />
+    <Content Include="images\content_header_h3_bg.png" />
+    <Content Include="images\customer_info_bw.gif" />
+    <Content Include="images\datepicker.gif" />
+    <Content Include="images\dxgvHeader_border_right.gif" />
+    <Content Include="images\exclamation.png" />
+    <Content Include="images\expand.png" />
+    <Content Include="images\fieldbg.gif" />
+    <Content Include="images\folder_page.png" />
+    <Content Include="images\folder_page_white.png" />
+    <Content Include="images\icon_information.png" />
+    <Content Include="images\icon_invoiceBatches.png" />
+    <Content Include="images\jquery\217bc0_11x11_icon_arrows_leftright.gif" />
+    <Content Include="images\jquery\217bc0_11x11_icon_arrows_updown.gif" />
+    <Content Include="images\jquery\217bc0_11x11_icon_close.gif" />
+    <Content Include="images\jquery\217bc0_11x11_icon_doc.gif" />
+    <Content Include="images\jquery\217bc0_11x11_icon_folder_closed.gif" />
+    <Content Include="images\jquery\217bc0_11x11_icon_folder_open.gif" />
+    <Content Include="images\jquery\217bc0_11x11_icon_minus.gif" />
+    <Content Include="images\jquery\217bc0_11x11_icon_plus.gif" />
+    <Content Include="images\jquery\217bc0_7x7_arrow_down.gif" />
+    <Content Include="images\jquery\217bc0_7x7_arrow_left.gif" />
+    <Content Include="images\jquery\217bc0_7x7_arrow_right.gif" />
+    <Content Include="images\jquery\217bc0_7x7_arrow_up.gif" />
+    <Content Include="images\jquery\469bdd_11x11_icon_arrows_leftright.gif" />
+    <Content Include="images\jquery\469bdd_11x11_icon_arrows_updown.gif" />
+    <Content Include="images\jquery\469bdd_11x11_icon_doc.gif" />
+    <Content Include="images\jquery\469bdd_11x11_icon_minus.gif" />
+    <Content Include="images\jquery\469bdd_11x11_icon_plus.gif" />
+    <Content Include="images\jquery\469bdd_11x11_icon_resize_se.gif" />
+    <Content Include="images\jquery\469bdd_7x7_arrow_down.gif" />
+    <Content Include="images\jquery\469bdd_7x7_arrow_left.gif" />
+    <Content Include="images\jquery\469bdd_7x7_arrow_right.gif" />
+    <Content Include="images\jquery\469bdd_7x7_arrow_up.gif" />
+    <Content Include="images\jquery\6da8d5_11x11_icon_arrows_leftright.gif" />
+    <Content Include="images\jquery\6da8d5_11x11_icon_arrows_updown.gif" />
+    <Content Include="images\jquery\6da8d5_11x11_icon_close.gif" />
+    <Content Include="images\jquery\6da8d5_11x11_icon_doc.gif" />
+    <Content Include="images\jquery\6da8d5_11x11_icon_folder_closed.gif" />
+    <Content Include="images\jquery\6da8d5_11x11_icon_folder_open.gif" />
+    <Content Include="images\jquery\6da8d5_11x11_icon_minus.gif" />
+    <Content Include="images\jquery\6da8d5_11x11_icon_plus.gif" />
+    <Content Include="images\jquery\6da8d5_7x7_arrow_down.gif" />
+    <Content Include="images\jquery\6da8d5_7x7_arrow_left.gif" />
+    <Content Include="images\jquery\6da8d5_7x7_arrow_right.gif" />
+    <Content Include="images\jquery\6da8d5_7x7_arrow_up.gif" />
+    <Content Include="images\jquery\d0e5f5_40x100_textures_05_inset_soft_75.png" />
+    <Content Include="images\jquery\dfeffc_40x100_textures_05_inset_soft_85.png" />
+    <Content Include="images\jquery\f5f8f9_40x100_textures_05_inset_soft_100.png" />
+    <Content Include="images\jquery\f9bd01_11x11_icon_arrows_leftright.gif" />
+    <Content Include="images\jquery\f9bd01_11x11_icon_arrows_updown.gif" />
+    <Content Include="images\jquery\f9bd01_11x11_icon_close.gif" />
+    <Content Include="images\jquery\f9bd01_11x11_icon_doc.gif" />
+    <Content Include="images\jquery\f9bd01_11x11_icon_folder_closed.gif" />
+    <Content Include="images\jquery\f9bd01_11x11_icon_folder_open.gif" />
+    <Content Include="images\jquery\f9bd01_11x11_icon_minus.gif" />
+    <Content Include="images\jquery\f9bd01_11x11_icon_plus.gif" />
+    <Content Include="images\jquery\f9bd01_7x7_arrow_down.gif" />
+    <Content Include="images\jquery\f9bd01_7x7_arrow_left.gif" />
+    <Content Include="images\jquery\f9bd01_7x7_arrow_right.gif" />
+    <Content Include="images\jquery\f9bd01_7x7_arrow_up.gif" />
+    <Content Include="images\jquery\fcfdfd_40x100_textures_06_inset_hard_100.png" />
+    <Content Include="images\loginField_label_password.png" />
+    <Content Include="images\loginField_label_username.png" />
+    <Content Include="images\login_bg.png" />
+    <Content Include="images\nav_dropdown_item_seperator.png" />
+    <Content Include="images\nav_dropdown_item_with_ul.gif" />
+    <Content Include="images\nav_tab_right_current_with_dropdown.png" />
+    <Content Include="images\nav_tab_right_with_dropdown.png" />
+    <Content Include="images\nav_tab_right_with_dropdown_hover.png" />
+    <Content Include="images\note.png" />
+    <Content Include="images\notes.png" />
+    <Content Include="images\note_edit.png" />
+    <Content Include="images\page.png" />
+    <Content Include="images\page_add.png" />
+    <Content Include="images\page_delete.png" />
+    <Content Include="images\page_edit.png" />
+    <Content Include="images\page_save.png" />
+    <Content Include="images\page_white_stack.png" />
+    <Content Include="images\pagination_item_bg.png" />
+    <Content Include="images\progress.gif" />
+    <Content Include="images\search.png" />
+    <Content Include="images\search_bg.gif" />
+    <Content Include="images\search_bg.jpg" />
+    <Content Include="images\search_button_18x18.png" />
+    <Content Include="images\subnav_a_bg.png" />
+    <Content Include="images\subnav_li_bg.png" />
+    <Content Include="images\textinputbg.gif" />
+    <Content Include="images\verical_border.png" />
+    <Content Include="images\view_batch_a_bg.png" />
+    <Content Include="images\view_batch_span_bg.png" />
+    <Content Include="InvoiceBatches.aspx" />
+    <Content Include="js\hoverIntent.js" />
+    <Content Include="js\jquery.bgiframe.min.js" />
+    <Content Include="js\jquery.spellcheck.js" />
+    <Content Include="LogOn.aspx" />
+    <Content Include="Notes.aspx" />
+    <Content Include="Reportfiles\readme.aspx" />
+    <Content Include="Reports.Master" />
+    <Content Include="CustomerSearch.ashx" />
+    <Content Include="ClientSearch.ashx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\arrow_down.gif" />
+    <Content Include="images\arrow_up.gif" />
+    <Content Include="images\body_bg.png" />
+    <Content Include="images\btn_export.png" />
+    <Content Include="images\btn_go.png" />
+    <Content Include="images\btn_print.png" />
+    <Content Include="images\btn_search.png" />
+    <Content Include="images\btn_update.gif" />
+    <Content Include="images\btn_update_loading.gif" />
+    <Content Include="images\header_bg.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\mainNavigation_bg.png" />
+    <Content Include="images\nav_tab_current_left.png" />
+    <Content Include="images\nav_tab_current_right.png" />
+    <Content Include="images\nav_tab_dropdown_arrow.png" />
+    <Content Include="images\nav_tab_left.png" />
+    <Content Include="images\nav_tab_left_current.png" />
+    <Content Include="images\nav_tab_left_hover.png" />
+    <Content Include="images\nav_tab_right.png" />
+    <Content Include="images\nav_tab_right_current.png" />
+    <Content Include="images\nav_tab_right_hover.png" />
+    <Content Include="images\searchField_bg.png" />
+    <Content Include="images\searchField_label_client.png" />
+    <Content Include="images\searchField_label_customer.png" />
+    <Content Include="images\sf_with_ul_arrow.png" />
+    <Content Include="images\shadow.png" />
+    <Content Include="images\shadow_bg.png" />
+    <Content Include="images\sidebar_panel_bg.png" />
+    <Content Include="images\sidebar_panel_btm_bg.png" />
+    <Content Include="images\sidebar_title_arrow_collapse.png" />
+    <Content Include="images\sidebar_title_arrow_expand.png" />
+    <Content Include="images\sidebar_title_bg.png" />
+    <Content Include="images\side_bg_mid.png" />
+    <Content Include="images\subnav_current_left.png" />
+    <Content Include="images\subnav_current_right.png" />
+    <Content Include="images\subnav_left.png" />
+    <Content Include="images\subnav_right.png" />
+    <Content Include="images\tab_heading_bg.png" />
+    <Content Include="Reports\AccountTransRpt.aspx" />
+    <Content Include="Reports\CallsDue.aspx" />
+    <Content Include="Reports\ClientAction.aspx" />
+    <Content Include="Reports\Control.aspx" />
+    <Content Include="Reports\CreditBalanceTransfers.aspx" />
+    <Content Include="Reports\CreditLimitExceeded.aspx" />
+    <Content Include="Reports\CreditNotes.aspx" />
+    <Content Include="Reports\CurrentOverpaid.aspx" />
+    <Content Include="Reports\CurrentShortPaid.aspx" />
+    <Content Include="Reports\CustomerWatch.aspx" />
+    <Content Include="Reports\Default.aspx" />
+    <Content Include="Reports\Discounts.aspx" />
+    <Content Include="Reports\OverdueCharges.aspx" />
+    <Content Include="Reports\Overpayments.aspx" />
+    <Content Include="Reports\Prompt.aspx" />
+    <Content Include="Reports\Repurchases.aspx" />
+    <Content Include="Reports\RetentionReleaseEstimate.aspx" />
+    <Content Include="Reports\Statement.aspx" />
+    <Content Include="UserControls\ChangePassword.ascx" />
+    <Content Include="UserControls\ReleaseTabs\AccountTransactionsTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\BatchAdjustmentsTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\BatchScheduleDetails.ascx" />
+    <Content Include="UserControls\ReleaseTabs\BatchSchedulePanel.ascx" />
+    <Content Include="UserControls\ReleaseTabs\BatchSchedulePanelPrint.ascx" />
+    <Content Include="UserControls\ReleaseTabs\CreditsClaimed.ascx" />
+    <Content Include="UserControls\ReleaseTabs\CreditsTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\InvoiceBatchHeader.ascx" />
+    <Content Include="UserControls\ReleaseTabs\InvoicesTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\LikelyRepurchasesTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\NonFactoredTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\OverdueChargesTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\RepurchasesTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\RetentionAdjustmentsTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\RetentionDetailsPanel.ascx" />
+    <Content Include="UserControls\ReleaseTabs\RetentionDetailsTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\RetentionNotesTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\RetentionRepurchasesClaimedTab.ascx" />
+    <Content Include="UserControls\ReleaseTabs\ScheduleTab.ascx" />
+    <Content Include="UserControls\ReportPanels\AccountTransactionReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\AgedBalancesReportPanelNew.ascx" />
+    <Content Include="UserControls\ReportPanels\CreditStopSuggestionsReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\CustomerOverpaymentsTransactionReportPanel.ascx" />
+    <Content Include="UserControls\TransactionStatusTypesFilter.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="UserControls\GSTInvoiceBox.ascx" />
+    <Content Include="UserControls\MainNavigation.ascx" />
+    <Content Include="UserControls\ManagementContactDetails.ascx" />
+    <Content Include="UserControls\AllClientsReportHelpMessage.ascx" />
+    <Content Include="UserControls\ReportPanels\StatementReportPanel.ascx" />
+    <Content Include="Reports\Status.aspx" />
+    <Content Include="Reports\Unallocated.aspx" />
+    <Content Include="Reports\UnclaimedCreditNotes.aspx" />
+    <Content Include="Reports\UnclaimedRepurchases.aspx" />
+    <Content Include="RetentionSchedules.aspx" />
+    <Content Include="TransactionSearch.aspx" />
+    <Content Include="UserControls\AlphabeticalPagination.ascx" />
+    <Content Include="UserControls\BalanceRangeFilter.ascx" />
+    <Content Include="UserControls\CalendarDateRangePicker.ascx" />
+    <Content Include="UserControls\AllClientsFilter.ascx" />
+    <Content Include="UserControls\AllClientsOrderByFilter.ascx" />
+    <Content Include="UserControls\ClientOrderByFilter.ascx" />
+    <Content Include="UserControls\ManagementDetailsBox.ascx" />
+    <Content Include="UserControls\PeriodReportTypeFilter.ascx" />
+    <Content Include="UserControls\CustomerNotesAdder.ascx" />
+    <Content Include="UserControls\CustomerNotesAdderModalBox.ascx" />
+    <Content Include="UserControls\CustomerNotesEditModalBox.ascx" />
+    <Content Include="UserControls\CustomerNotesFilter.ascx" />
+    <Content Include="UserControls\DatePicker.ascx" />
+    <Content Include="Reports\Invoices.aspx" />
+    <Content Include="Reports\Journals.aspx" />
+    <Content Include="Reports\Receipts.aspx" />
+    <Content Include="TransactionArchive.aspx" />
+    <Content Include="TransactionHistory.aspx" />
+    <Content Include="UserControls\InPageMessageBox.ascx" />
+    <Content Include="UserControls\ReportPanels\CallsDueReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\ClientActionPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\ControlReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\CreditLimitExceededReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\CurrentPaymentsReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\CustomerInvoiceTransactionReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\CustomerTransactionReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\InvoiceTransactionReportPanel.ascx" />
+    <Content Include="UserControls\MessageBox.ascx" />
+    <Content Include="UserControls\MonthRangePicker.ascx" />
+    <Content Include="UserControls\PageDescription.ascx" />
+    <Content Include="UserControls\PromptDaysPicker.ascx" />
+    <Content Include="UserControls\ReportNavigation.ascx" />
+    <Content Include="UserControls\ReportPanels\OverdueChargesReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\PromptReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\RetentionReleaseEstimateReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\StatusReportPanel.ascx" />
+    <Content Include="UserControls\ReportPanels\TransactionReportPanelContainer.ascx" />
+    <Content Include="UserControls\StatusPicker.ascx" />
+    <Content Include="UserControls\ReportPanels\TransactionReportPanel.ascx" />
+    <Content Include="UserPreferenceSetter.asmx" />
+    <Content Include="ValidationService.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Cff_WebResource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Cff_WebResource.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Resources\Cff_WebResource.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="js\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CFF Utilities\Letters\Letters - Dev Branch 1\Letters\Letters.csproj">
+      <Project>{1bc8ff1f-813b-44dd-9a05-cd1f3b21b936}</Project>
+      <Name>Letters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cff.SaferTrader.Core\Cff.SaferTrader.Core.csproj">
+      <Project>{121ce097-96fb-4054-9fea-dd10b14abd7d}</Project>
+      <Name>Cff.SaferTrader.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GenericGridViewHelper\GenericGridViewHelper.csproj">
+      <Project>{0d696565-aa61-4b3b-8a87-a01eb9f2b4ca}</Project>
+      <Name>GenericGridViewHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>images\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49255</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59257/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Label="SlowCheetah">
+    <SlowCheetahToolsPath>$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\SlowCheetah.2.5.15\tools\))</SlowCheetahToolsPath>
+    <SlowCheetah_EnableImportFromNuGet Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='' ">true</SlowCheetah_EnableImportFromNuGet>
+    <SlowCheetah_NuGetImportPath Condition=" '$(SlowCheetah_NuGetImportPath)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\Properties\SlowCheetah\SlowCheetah.Transforms.targets ))</SlowCheetah_NuGetImportPath>
+    <SlowCheetahTargets Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='true' and Exists('$(SlowCheetah_NuGetImportPath)') ">$(SlowCheetah_NuGetImportPath)</SlowCheetahTargets>
+  </PropertyGroup>
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" Label="SlowCheetah" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>

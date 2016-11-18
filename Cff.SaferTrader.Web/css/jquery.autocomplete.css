@@ -1,0 +1,112 @@
+.ac_results { /* div containing the list */
+	padding: 30px 0 0 0;
+	overflow: hidden;
+	border:1px solid #85CA7D;
+	z-index: 99999;
+	font-family:Arial,Helvetica,sans-serif;
+	background:#444 url(../images/autocomplete_label_suggestions_tip.gif) 12px 12px no-repeat;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	color:#fff;
+	border-top:4px solid #4f4f4f;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 3px 12px 3px 12px;
+	cursor: pointer;
+	display: block;
+	
+	
+	/* border-bottom:1px solid #fff;
+	if width will be 100% horizontal scrollbar will apear p
+	when scroll mode will be used
+	*/
+	/*width: 100%; */
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+	border-bottom:1px solid #4f4f4f;
+	background-color: #494949;
+}
+
+.ac_loading {
+	background-image:  url('../images/ajax_loader.gif');
+	background-size: 30px 24px;
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+.ac_results li.ac_odd {
+	background-color: #494949;
+}
+
+.ac_results li.ac_over {
+	background-color: #666666;
+	color: #fff;
+}
+
+.ac_results strong {
+	color: #55AC4C;
+	font-weight:bold;
+}
+.ac_over strong {
+	color:#55AC4C;
+	font-weight:bold;
+}
+
+
+.ui-tooltip {
+    background: #4a4a4a;
+    color: #96f226;
+    border: 2px solid #454545;
+    border-radius: 0px;
+    box-shadow: 0 0 
+}
+
+.ui-autocomplete
+{
+    background: #4a4a4a;
+    border-radius: 0px;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;     /* prevent horizontal scrollbar */
+}
+
+ /* IE 6 doesn't support max-height
+  * we use height instead, but this forces the menu to always be this tall
+  */
+ * html .ui-autocomplete 
+ {
+   height: 500px;
+ }
+
+ .ui-autocomplete.source:hover 
+ {
+    background: #454545;
+    color: navy;
+}
+
+.ui-menu .ui-menu-item a
+{
+    color: #96f226;
+    border-radius: 0px;
+    border: 1px solid #454545;
+    font-size:medium;
+}
+
+.ui-menu .ui-menu-item a:hover
+{
+    color: blue;
+    background-color: whitesmoke; /*#454545;*/
+}

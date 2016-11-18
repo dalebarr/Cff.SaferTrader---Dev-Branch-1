@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Cff.SaferTrader.Core.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BatchDetailsPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">InvoiceBatches.aspx</Value>
+    </Setting>
+    <Setting Name="DashboardPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Dashboard.aspx</Value>
+    </Setting>
+    <Setting Name="NumberOfClientsToReturn" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="NumberOfCustomersToReturn" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="TransactionSearchPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TransactionSearch.aspx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Reports.Master.cs" Inherits="Cff.SaferTrader.Web.ReportsMaster"  MasterPageFile="~/SafeTrader.Master" %>
+
+<%@ MasterType VirtualPath="~/SafeTrader.Master" %>
+<%@ Register Src="~/UserControls/ReportNavigation.ascx" TagPrefix="uc" TagName="ReportNavigation" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceholder" runat="server">
+    <asp:Panel  runat="server" ID="ReportMasterPanelHeader">
+            <asp:ContentPlaceHolder ID="ReportHeaderPlaceholder" runat="server">
+        </asp:ContentPlaceHolder>    
+    </asp:Panel>
+
+    <asp:Panel runat="server" ID="ReportMasterPanelData">
+        <div id="divNavDetailsPanel" runat="server" enableviewstate="true" style="width:15%;float:left;">
+            <asp:UpdatePanel ID="GridUpdatePanel" runat="server" UpdateMode="Conditional" EnableViewState="true">
+                <Triggers>
+                     <asp:AsyncPostBackTrigger ControlID="SearchButton" />
+                </Triggers>
+                <ContentTemplate>     
+                    <div style="width:auto;">
+                        <div id="subNavViewer"  style="width:90%;float:left">
+                            <uc:ReportNavigation ID="ReportNavigation" runat="server" />
+                         </div>
+                         <div id="lhToggle" style="width:3%;float:left" onclick="toggleReportDetailsPanel();">
+                            <div id="lhToggleIcon">
+                            </div>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+
+        <div id="ReportDetailsPanel" style="width:80%;float:left;">
+             <div id="NoReport" class="NoReport" runat="server">
+                <asp:Literal ID="NoReportLiteral" runat="server"></asp:Literal>
+             </div>
+            <div>
+                <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional" EnableViewState="true">
+                      <ContentTemplate>     
+                           <asp:ContentPlaceHolder ID="ReportViewerContentPlaceholder" runat="server" >
+                            </asp:ContentPlaceHolder>
+                      </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+      </div>   
+   </asp:Panel>
+
+   <script type="text/javascript">
+       function toggleReportDetailsPanel() {
+           if ($("div#<%=divNavDetailsPanel.ClientID%>").width() > 250)
+           {
+               $("div#ReportDetailsPanel").css("width", "92%");
+               $("div#<%=divNavDetailsPanel.ClientID%>").css("width", "2%");
+           } else {
+               $("div#ReportDetailsPanel").css("width", "80%");
+               $("div#<%=divNavDetailsPanel.ClientID%>").css("width", "15%");
+           }
+       }
+
+        Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(function (evt, args) {
+            try {
+                attachClientAutoComplete();
+            } catch (Error1) {
+               //alert('ERROR@@pageLoadedReportMaster::' + Error1);
+            }
+        });
+    </script>
+</asp:Content>
+
+<asp:Content runat="server" ID="customerInformationContent" ContentPlaceHolderID="CustomerInformationContentPlaceholder">
+</asp:Content>
+
+ 

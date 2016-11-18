@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Popup.master.cs" Inherits="Cff.SaferTrader.Web.Popups.Popup" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=8,9,10,chrome=1" />
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print"  />
+    <link rel="stylesheet" href="../css/popup.css" type="text/css"  media="screen" />
+    <title>Cashflow Funding Limited | Debtor Management</title>
+</head>
+<body onload="window.focus();" style="color: #000; background: white; font-size: 9pt; line-height: 1.5em; font-family:Helvetica, Arial, Verdana, sans-serif;">
+    <div id="printControlBar">
+        <div class="screenLogo">
+            <img src="../images/popupLogo.png" width="215" height="25" alt="popup Logo" />
+        </div>
+        <div class="printLogo">
+            <img src="../images/CFFlogo_HiRes.jpg" width="215" height="35" alt="print Logo" />
+        </div>
+        <div class="screenLogo">
+            <input name="print" type="image" value="Print" src="../images/btn_print_new.png" alt="Print" onclick="window.print()" />
+        </div>
+    </div>
+    <h2 style="margin-top: 50px;text-align:center;">
+        <asp:ContentPlaceHolder ID="PopupHeaderContentPlaceholder" runat="server">
+        </asp:ContentPlaceHolder>
+    </h2>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="PopupBodyContentPlaceholder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,212 @@
+
+/*** Set up ***/
+
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+	font-size:		13px;
+	font-family:	Arial, Helvetica, sans-serif
+}
+.sf-menu {
+	line-height:	1.0;
+	font-weight:	bold;
+    
+    float:left;
+	margin:	0;
+	padding:0;
+	position:absolute;
+	left:12px;
+	bottom:0px;
+}
+
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			14em; /* left offset of submenus need to match (see below) */
+	border-bottom:	1px solid #60975a;
+	border-left:	1px solid #60975a;
+	border-right:	1px solid #60975a;
+	background: 	#01843f;
+	margin-left:	1px;
+	padding:		5px 0 13px 0;
+	font-weight:	normal;
+}
+
+.sf-menu ul ul {
+	width:17em;
+}
+
+.sf-menu ul li {
+	width:			100%;		
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+	cursor:pointer;
+    background: 	url(../images/nav_tab_left_hover.png) top left no-repeat;
+	outline:		none;
+}
+
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			2.6em; /* match top ul list item height */
+	z-index:		99;
+}
+
+ul.sf-menu {
+	top:			0;
+}
+
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			14em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			14em; /* match ul width */
+	top:			0;
+}
+
+
+.sf-menu li a {
+	padding: 		11px 20px 10px 14px;
+	text-decoration:none;
+
+	display:		block;
+	position:		relative;
+	background: 	url(../images/nav_tab_right_hover.png) top right no-repeat;
+	margin-left:	6px;
+	outline:		none;
+}
+
+.sf-menu li a, .sf-menu li a:visited { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#fff;
+}
+.sf-menu li.current a, .sf-menu li.current a:visited  { 
+	color:			#4f4f4f;
+}
+.sf-menu li.current ul li a, .sf-menu li.current ul li a:visited {
+	color:#fff;
+}
+
+
+
+
+/* Left Tab Corners */
+
+.sf-menu li:hover, .sf-menu li.sfHover {
+	background:		url(../images/nav_tab_left.png) top left no-repeat;
+	outline:		none;
+}
+.sf-menu li.current {
+	background: 	url(../images/nav_tab_left_current.png) top left no-repeat;
+	outline:		none;
+}
+.sf-menu li.current:hover, .sf-menu li.sfHover {
+	background: 	url(../images/nav_tab_left.png) top left no-repeat;
+	outline:		none;
+}
+
+
+
+/* Right Tab Corners */
+.sf-menu li a.sf-with-ul {
+	background: 	url(../images/nav_tab_right_with_dropdown_hover.png) top right no-repeat;
+}
+
+.sf-menu li.current a.sf-with-ul {
+	background: 	url(../images/nav_tab_right_current_with_dropdown.png) top right no-repeat;
+}
+
+.sf-menu li a:hover, .sf-menu li.sfHover a {
+	background: 	url(../images/nav_tab_right.png) top right no-repeat;
+	outline:		none;
+}
+
+.sf-menu li a.sf-with-ul:hover, .sf-menu li.sfHover a.sf-with-ul, .sf-menu li.current a.sf-with-ul:hover {
+	background: 	url(../images/nav_tab_right_with_dropdown.png) top right no-repeat;
+	outline:		none;
+}
+
+.sf-menu li.current a, .sf-menu li.current a:hover {
+	display:		block;
+	position:		relative;
+	background: 	url(../images/nav_tab_right_current.png) top right no-repeat;
+	outline:		none;
+}
+
+.sf-menu li.current:hover a, .sf-menu li.sfHover a, .sf-menu li.current:focus a {
+	color:			#fff !important;
+	background: 	url(../images/nav_tab_right_hover.png) top right no-repeat;
+	outline:		none;
+}
+
+.sf-menu li.current:hover a.sf-with-ul, .sf-menu li.sfHover a.sf-with-ul, .sf-menu li.current:focus a.sf-with-ul {
+	color:			#fff !important;
+	background: 	url(../images/nav_tab_right_with_dropdown.png) top right no-repeat;
+	outline:		none;
+}
+
+
+
+/* Dropdowns */
+
+.sf-menu li ul li a {
+	padding: 		8px 10px 8px 14px;
+	margin:0;
+	text-decoration: none;
+	background: none !important;
+}
+
+.sf-menu li ul li a:hover, .sf-menu li ul li a.sf-with-ul:hover {
+	text-decoration:none;
+	background-color: #85CA7D !important;
+}
+
+
+.sf-menu li ul li {
+	background: url(../images/nav_dropdown_item_seperator.png) 14px bottom no-repeat !important;
+	padding: 0;
+}
+
+.sf-menu li ul li ul li {
+	background:		none;
+}
+
+
+.sf-menu li ul li:hover, .sf-menu li ul li.sfHover,
+.sf-menu li ul li a:focus, .sf-menu li ul li a:hover, .sf-menu li ul li a:active {
+	background:		none;
+}
+
+.sf-menu li ul li a.sf-with-ul {
+	background-image: url(../images/nav_dropdown_item_with_ul.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:93% 50% !important;
+
+	padding-right: 	36px;
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+
+}
+
+/*** arrows **/
+
+.sf-sub-indicator {
+	display:none;
+	
+}

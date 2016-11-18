@@ -1,0 +1,128 @@
+﻿.ui-datepicker-div, #ui-datepicker-div
+{
+    width: 190px;
+}
+
+.ui-datepicker .ui-datepicker-header
+{
+    position:relative;
+    height:22px;
+    width:100%;
+    padding-top:1px;
+    margin-top:1px;
+    float:left;
+}
+
+.ui-datepicker-calendar{
+    padding-top:2px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    width:55%;
+    padding:0;
+    margin:0;
+    float:left;
+    text-align:left;
+}
+
+.ui-helper-clearfix
+{
+    padding-left:0px;
+    margin-left:0px;
+}
+
+.ui-corner-all
+{
+    padding-left:0px;
+    margin-left:0px;
+}
+
+
+.ui-datepicker-prev .ui-corner-all{
+  width:16px;
+}
+
+.ui-datepicker-next .ui-corner-all{
+  width:16px;
+}
+
+.ui-datepicker-header .ui-widget-header .ui-helper-clearfix .ui-corner-all
+{
+    width:99%;
+    padding-top:1px;
+    margin-top:1px;
+    float:left;
+}
+.ui-datepicker .ui-datepicker-next {
+    left:160px;
+}
+
+
+.ui-datepicker-yearDiv {
+    float: left;
+    width: 30%;
+    margin-left: 0px;
+    padding-left: 25px;
+}
+
+
+.ui-datepicker-monthDiv {
+    float: right;
+    width: 3%;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+.ui-datepicker select.ui-datepicker-monthCFF{
+     width:30%;
+     float:right;
+     border:0px;
+     padding:0;
+     margin:0;
+}
+
+.ui-datepicker select.ui-datepicker-yearCFF{
+     width:30%;
+     border:0px;
+     padding:0;
+     margin:0;
+     float:left;
+     font-size:7.5pt;
+}
+
+.ui-datepicker select.ui-datepicker-month
+{
+    width: 30%;
+    border:0px;
+    margin-left:10px;
+     float:right;
+}
+
+.ui-datepicker select.ui-datepicker-year {
+    width: 36%;
+    border: 0px;
+    padding-left: 10px;
+    float: left;
+}
+
+
+.ui-datepicker-header select {
+    top:0.3em;
+}
+
+.ui-state-hover, 
+.ui-widget-header .ui-state-hover, 
+.ui-widget-content .ui-state-hover, 
+.ui-state-focus, 
+.ui-widget-header .ui-state-focus,
+.ui-widget-content .ui-state-focus {
+    color: white;
+    background: green;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span
+{
+     background-color: #d0e5f5;
+}

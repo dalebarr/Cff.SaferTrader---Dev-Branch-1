@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{121CE097-96FB-4054-9FEA-DD10B14ABD7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cff.SaferTrader.Core</RootNamespace>
+    <AssemblyName>Cff.SaferTrader.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Cff.SaferTrader.Core.pfx</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'WebOnly|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\WebOnly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\Libraries\BLL\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=57fff0696502f4b4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\OpenXmlLib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelLibrary">
+      <HintPath>..\Libraries\BLL\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Libraries\NPOI 1.2.4 assembly\.net 4.0\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Libraries\log4net 1.2.10\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Libraries\NPOI 1.2.4 assembly\.net 4.0\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenXmlPowerToolsSubset">
+      <HintPath>..\Libraries\OpenXmlLib\OpenXmlPowerToolsSubset.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.32.2608.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\BLL\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PostBackRitalin">
+      <HintPath>..\Libraries\postback-ritalin-0.10\PostBackRitalin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Yogesh.ExcelXml">
+      <HintPath>..\Libraries\Yogesh 3.35\Yogesh.ExcelXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Yogesh.Extensions">
+      <HintPath>..\Libraries\Yogesh 3.35\Yogesh.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="ActivityType.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="AgeingBalances.cs" />
+    <Compile Include="AllClients.cs" />
+    <Compile Include="AlphabeticalPaginationEventArgs.cs" />
+    <Compile Include="ArchivedTransaction.cs" />
+    <Compile Include="ArgumentChecker.cs" />
+    <Compile Include="BankDetails.cs" />
+    <Compile Include="BatchRecord.cs" />
+    <Compile Include="Builders\AccountTransactionReportBuilder.cs" />
+    <Compile Include="Builders\AddressBuilder.cs" />
+    <Compile Include="Builders\AgeingBalancesBuilder.cs" />
+    <Compile Include="Builders\BankDetailsBuilder.cs" />
+    <Compile Include="Builders\CffClientBuilder.cs" />
+    <Compile Include="Builders\CffClientInformationBuilder.cs" />
+    <Compile Include="Builders\CffCustomerBuilder.cs" />
+    <Compile Include="Builders\CffCustomerBuilderNew.cs" />
+    <Compile Include="Builders\CffCustomerContactBuilder.cs" />
+    <Compile Include="Builders\CffCustomerInformationBuilder.cs" />
+    <Compile Include="Builders\CffMgtDetailsBuilder.cs" />
+    <Compile Include="Builders\ClientContactBuilder.cs" />
+    <Compile Include="BalanceRange.cs" />
+    <Compile Include="Builders\ClientCustomerTermBuilder.cs" />
+    <Compile Include="Builders\ClientInformationBuilder.cs" />
+    <Compile Include="Builders\CreditLimitExceededReportRecordBuilder.cs" />
+    <Compile Include="Builders\CreditStopSuggestionsReportRecordBuilder.cs" />
+    <Compile Include="Builders\CurrentsPaymentReportRecordBuilder.cs" />
+    <Compile Include="Builders\CustomerContactBuilder.cs" />
+    <Compile Include="Builders\CustomerInvoicesTransactionReportRecordBuilder.cs" />
+    <Compile Include="Builders\CustomerOverpaymentsTransactionReportRecordBuilder.cs" />
+    <Compile Include="Builders\CustomerTransactionReportRecordBuilder.cs" />
+    <Compile Include="Builders\HistoricalTransactionBuilder.cs" />
+    <Compile Include="Builders\LikelyRepurchasesLineBuilder.cs" />
+    <Compile Include="Builders\ManagementDetailsBuilder.cs" />
+    <Compile Include="Builders\OverdueFeeBuidler.cs" />
+    <Compile Include="Builders\PurchaserDetailsBuilder.cs" />
+    <Compile Include="Builders\StatementReportBuilder.cs" />
+    <Compile Include="Builders\StatementReportRecordBuilder.cs" />
+    <Compile Include="Builders\TransactionBuilder.cs" />
+    <Compile Include="Builders\TransactionSummaryBuilder.cs" />
+    <Compile Include="CallbackParameter.cs" />
+    <Compile Include="CffClientInformation.cs" />
+    <Compile Include="CffCustomerContact.cs" />
+    <Compile Include="CffCustomerExt.cs" />
+    <Compile Include="CffMgtDetails.cs" />
+    <Compile Include="CffOnlineFormApplication.cs" />
+    <Compile Include="CffOnlineFormApplicationExt.cs" />
+    <Compile Include="CffTimeoutException.cs" />
+    <Compile Include="ClientManagementUser.cs" />
+    <Compile Include="ClientNote.cs" />
+    <Compile Include="ClientInformation.cs" />
+    <Compile Include="ClientInformationAndAgeingBalances.cs" />
+    <Compile Include="ClientOrderByType.cs" />
+    <Compile Include="ClientStaffUser.cs" />
+    <Compile Include="Common\CEventArgs.cs" />
+    <Compile Include="Common\StringEnum.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="CustomerTransactionReport.cs" />
+    <Compile Include="CustomerTransactionReportRecord.cs" />
+    <Compile Include="DebtorAdmin.cs" />
+    <Compile Include="Dynamic.cs" />
+    <Compile Include="ClientAndCustomerContacts.cs" />
+    <Compile Include="ClientContact.cs" />
+    <Compile Include="EmployeeAdministratorUser.cs" />
+    <Compile Include="EmployeeManagementUser.cs" />
+    <Compile Include="EmployeeStaffUser.cs" />
+    <Compile Include="ICffCustomer.cs" />
+    <Compile Include="IDocument.cs" />
+    <Compile Include="IPrintable.cs" />
+    <Compile Include="IReader.cs" />
+    <Compile Include="IRetentionNote.cs" />
+    <Compile Include="IReportManager.cs" />
+    <Compile Include="ISecurityManager.cs" />
+    <Compile Include="ISessionCache.cs" />
+    <Compile Include="Letters\DocumentMailer.cs" />
+    <Compile Include="Letters\exportXML.cs" />
+    <Compile Include="Letters\IOutput.cs" />
+    <Compile Include="Letters\IOutputNew.cs" />
+    <Compile Include="Letters\LetterDetails.cs" />
+    <Compile Include="Letters\MailEvents.cs" />
+    <Compile Include="Letters\MiscDocEvents.cs" />
+    <Compile Include="Letters\PrintableLetters.cs" />
+    <Compile Include="Letters\stpCaller.cs" />
+    <Compile Include="LikelyRepurchasesLine.cs" />
+    <Compile Include="LinkHelper.cs" />
+    <Compile Include="NullRetentionNote.cs" />
+    <Compile Include="ExcelDocument.cs" />
+    <Compile Include="Presenters\AccountTransactionTabPresenter.cs" />
+    <Compile Include="Presenters\LikelyRepurchasesTabPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\CreditStopSuggestionsPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\AccountTransactionsPresenter.cs" />
+    <Compile Include="PrintableAccountTransactions.cs" />
+    <Compile Include="PrintableCreditsClaimed.cs" />
+    <Compile Include="PrintableLikelyRepurchases.cs" />
+    <Compile Include="PrintableOverdueCharges.cs" />
+    <Compile Include="PrintableRepurchasesClaimed.cs" />
+    <Compile Include="PrintableRetentionAdjustments.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AccountTransactionReport.cs" />
+    <Compile Include="Reports\AccountTransactionReportBase.cs" />
+    <Compile Include="Reports\AccountTransactionReportRecord.cs" />
+    <Compile Include="Reports\CreditStopSuggestionsReport.cs" />
+    <Compile Include="Reports\CreditStopSuggestionsReportRecord.cs" />
+    <Compile Include="Reports\CustomerOverpaymentsTransactionReport.cs" />
+    <Compile Include="Reports\CustomerOverpaymentsTransactionReportRecord.cs" />
+    <Compile Include="Repositories\CffMgtDetailsRepository.cs" />
+    <Compile Include="Repositories\ContactsRepository.cs" />
+    <Compile Include="Repositories\ICffMgtDetails.cs" />
+    <Compile Include="Repositories\UserClientsRepository.cs" />
+    <Compile Include="RetentionAdjustments.cs" />
+    <Compile Include="ScopeManager\AdministratorSearchScopeManager.cs" />
+    <Compile Include="Presenters\DashboardPresenter.cs" />
+    <Compile Include="ScopeManager\ClientManagementSearchScopeManager.cs" />
+    <Compile Include="ScopeManager\ClientStaffSearchScopeManager.cs" />
+    <Compile Include="ScopeManager\CustomerSearchScopeManager.cs" />
+    <Compile Include="ScopeManager\ISearchScopeManager.cs" />
+    <Compile Include="Presenters\MainNavigationPresenter.cs" />
+    <Compile Include="QueryString.cs" />
+    <Compile Include="Repositories\IRetentionNotesTabRepository.cs" />
+    <Compile Include="Presenters\RetentionNotesTabPresenter.cs" />
+    <Compile Include="Repositories\RetentionNotesTabRepository.cs" />
+    <Compile Include="CffUserTypeNotFoundException.cs" />
+    <Compile Include="ReportManager\AdministratorReportManager.cs" />
+    <Compile Include="ReportManager\ClientManagementReportManager.cs" />
+    <Compile Include="ScopeManager\ManagementSearchScopeManager.cs" />
+    <Compile Include="ScopeManager\SearchScopeManagerFactory.cs" />
+    <Compile Include="ScopeManager\StaffSearchScopeManager.cs" />
+    <Compile Include="SecurityManager\CAuth.cs" />
+    <Compile Include="SecurityManager\ClientManagementSecurityManager.cs" />
+    <Compile Include="SecurityManager\ClientStaffSecurityManager.cs" />
+    <Compile Include="ReportManager\ClientStaffReportManager.cs" />
+    <Compile Include="ReportManager\CustomerReportManager.cs" />
+    <Compile Include="ReportManager\ManagementReportManager.cs" />
+    <Compile Include="SecurityManager\CustomerSecurityManager.cs" />
+    <Compile Include="SecurityManager\AdministratorSecurityManager.cs" />
+    <Compile Include="ReportManager\ReportManagerFactory.cs" />
+    <Compile Include="SecurityManager\ManagementSecurityManager.cs" />
+    <Compile Include="ReportManager\ReportScopeManager.cs" />
+    <Compile Include="SecurityManager\SecurityManagerFactory.cs" />
+    <Compile Include="ReportManager\StaffReportManager.cs" />
+    <Compile Include="SecurityManager\StaffSecurityManager.cs" />
+    <Compile Include="Services\CffUserNotFoundException.cs" />
+    <Compile Include="Services\IScopeService.cs" />
+    <Compile Include="Services\ScopeService.cs" />
+    <Compile Include="CffUserActivation.cs" />
+    <Compile Include="IRetentionTab.cs" />
+    <Compile Include="ManagementDetails.cs" />
+    <Compile Include="Note.cs" />
+    <Compile Include="PermanentClientNote.cs" />
+    <Compile Include="PermanentCustomerNote.cs" />
+    <Compile Include="Presenters\ReportPresenters\AgedBalancesPresenter.cs" />
+    <Compile Include="PopupHelper.cs" />
+    <Compile Include="Presenters\LogOnPresenter.cs" />
+    <Compile Include="Presenters\ManagementDetailsBoxPresenter.cs" />
+    <Compile Include="Presenters\NotesPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\CallsDuePresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\ClientActionPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\ControlReportPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\CreditLimitExceededPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\CurrentOverpaidPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\CurrentShortPaidPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\CustomerWatchPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\DiscountsPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\OverdueChargesPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\ReportPresenterTemplate.cs" />
+    <Compile Include="Presenters\ReportPresenters\RetentionReleaseEstimatePresenter.cs" />
+    <Compile Include="Presenters\ReportPresenters\StatusPresenter.cs" />
+    <Compile Include="Presenters\StatementPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\CreditBalanceTransfersPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\CreditNotesPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\InvoicesPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\JournalsPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\OverpaymentsPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\ReceiptsPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\RepurchasesPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\TransactionReportPresenterTemplate.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\UnallocatedPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\UnclaimedCreditNotesPresenter.cs" />
+    <Compile Include="Presenters\TransactionReportPresenters\UnclaimedRepurchasesPresenter.cs" />
+    <Compile Include="PrintableClientNotes.cs" />
+    <Compile Include="PrintableCustomerNotes.cs" />
+    <Compile Include="PrintableInvoiceBatchCharges.cs" />
+    <Compile Include="PrintableInvoiceBatchCredits.cs" />
+    <Compile Include="PrintableInvoiceBatchInvoices.cs" />
+    <Compile Include="PrintableInvoiceBatchRepurchases.cs" />
+    <Compile Include="PrintableInvoiceBatchSchedule.cs" />
+    <Compile Include="PrintablePermanentClientNotes.cs" />
+    <Compile Include="PrintablePermanentCustomerNotes.cs" />
+    <Compile Include="PrintableRetentionSchedule.cs" />
+    <Compile Include="PurchaserDetails.cs" />
+    <Compile Include="RecordLimiter.cs" />
+    <Compile Include="Reports\ClientActionReport.cs" />
+    <Compile Include="CffCustomerInformation.cs" />
+    <Compile Include="CustomerContact.cs" />
+    <Compile Include="CustomerUser.cs" />
+    <Compile Include="ClientAndCustomerInformation.cs" />
+    <Compile Include="FacilityType.cs" />
+    <Compile Include="ICffClient.cs" />
+    <Compile Include="ICffUser.cs" />
+    <Compile Include="BatchTab.cs" />
+    <Compile Include="BatchType.cs" />
+    <Compile Include="Builders\BatchChargeBuilder.cs" />
+    <Compile Include="BatchScheduleFinanceInfo.cs" />
+    <Compile Include="Builders\ChargeBuilder.cs" />
+    <Compile Include="Builders\CreditLineBuilder.cs" />
+    <Compile Include="Builders\CreditsClaimedBuilder.cs" />
+    <Compile Include="Builders\DeductablesBuilder.cs" />
+    <Compile Include="Builders\InvoiceBatchBuilder.cs" />
+    <Compile Include="Builders\InvoiceBuilder.cs" />
+    <Compile Include="Builders\ReleaseSummaryBuilder.cs" />
+    <Compile Include="Builders\ControlReportBuilder.cs" />
+    <Compile Include="Builders\DatePickerBuilder.cs" />
+    <Compile Include="Builders\DebtorsLedgerBuilder.cs" />
+    <Compile Include="Builders\FactorsLedgerBuilder.cs" />
+    <Compile Include="Builders\InvoicesTransactionReportRecordBuilder.cs" />
+    <Compile Include="Builders\AgedBalancesReportRecordBuilder.cs" />
+    <Compile Include="Builders\OverdueChargesReportRecordBuilder.cs" />
+    <Compile Include="Builders\PromptReportRecordBuilder.cs" />
+    <Compile Include="Builders\RetentionDeductableBuilder.cs" />
+    <Compile Include="Builders\RetentionDetailsBuilder.cs" />
+    <Compile Include="Builders\RetentionInfoBuilder.cs" />
+    <Compile Include="Builders\RetentionReleaseEstimateReportRecordBuilder.cs" />
+    <Compile Include="CffClient.cs" />
+    <Compile Include="CffCustomer.cs" />
+    <Compile Include="ChargeCollection.cs" />
+    <Compile Include="ChargeType.cs" />
+    <Compile Include="ClaimedRetentionRepurchase.cs" />
+    <Compile Include="ClientAttribute.cs" />
+    <Compile Include="CreditNoteSearchResult.cs" />
+    <Compile Include="EndOfMonthHelper.cs" />
+    <Compile Include="InvoiceNumber.cs" />
+    <Compile Include="OverdueFee.cs" />
+    <Compile Include="Presenters\ContactsPresenter.cs" />
+    <Compile Include="Presenters\CustomerNotesEditorPresenter.cs" />
+    <Compile Include="Presenters\RetentionRepurchasesClaimedTabPresenter.cs" />
+    <Compile Include="Builders\RetentionScheduleBuilder.cs" />
+    <Compile Include="Builders\RetentionSummaryBuilder.cs" />
+    <Compile Include="Builders\StatusReportRecordBuilder.cs" />
+    <Compile Include="Builders\SubledgerBuilder.cs" />
+    <Compile Include="Builders\TransactionReportRecordBuilder.cs" />
+    <Compile Include="Builders\TransactionsAfterEndOfMonthBuilder.cs" />
+    <Compile Include="Calendar.cs" />
+    <Compile Include="Charge.cs" />
+    <Compile Include="ClaimedCredit.cs" />
+    <Compile Include="CleverReader.cs" />
+    <Compile Include="ClientCustomerTerm.cs" />
+    <Compile Include="CreditLine.cs" />
+    <Compile Include="CustomerNote.cs" />
+    <Compile Include="GstHelper.cs" />
+    <Compile Include="IDate.cs" />
+    <Compile Include="Invoice.cs" />
+    <Compile Include="NullDate.cs" />
+    <Compile Include="Percentage.cs" />
+    <Compile Include="Presenters\BatchChargesTabPresenter.cs" />
+    <Compile Include="Presenters\ChargesTabPresenter.cs" />
+    <Compile Include="Presenters\CreditsClaimedTabPresenter.cs" />
+    <Compile Include="Presenters\CreditsTabPresenter.cs" />
+    <Compile Include="Presenters\InvoicesTabPresenter.cs" />
+    <Compile Include="Presenters\NonFactoredTabPresenter.cs" />
+    <Compile Include="Presenters\RepurchasesTabPresenter.cs" />
+    <Compile Include="Presenters\RetentionDetailsTabPresenter.cs" />
+    <Compile Include="Presenters\ScheduleTabPresenter.cs" />
+    <Compile Include="Presenters\RetentionSchedulePresenter.cs" />
+    <Compile Include="Presenters\TransactionSearchPresenter.cs" />
+    <Compile Include="CustomerNotesParser.cs" />
+    <Compile Include="InvoiceBatch.cs" />
+    <Compile Include="Builders\BatchScheduleFinanceInfoBuilder.cs" />
+    <Compile Include="Reports\CallsDueReport.cs" />
+    <Compile Include="Reports\CallsDueReportRecord.cs" />
+    <Compile Include="Reports\ClientActionReportRecord.cs" />
+    <Compile Include="Reports\CurrentPaymentsReport.cs" />
+    <Compile Include="Reports\CurrentPaymentsReportRecord.cs" />
+    <Compile Include="Reports\CustomerInvoicesTransactionReport.cs" />
+    <Compile Include="Reports\CustomerInvoicesTransactionReportRecord.cs" />
+    <Compile Include="Reports\PeriodReportType.cs" />
+    <Compile Include="Reports\CreditLimitExceededReport.cs" />
+    <Compile Include="Reports\CreditLimitExceededReportRecord.cs" />
+    <Compile Include="Reports\FactoredPromptReport.cs" />
+    <Compile Include="Builders\CallsDueReportRecordBuilder.cs" />
+    <Compile Include="OrderByHelper.cs" />
+    <Compile Include="Reports\StatementReport.cs" />
+    <Compile Include="Reports\StatementReportRecord.cs" />
+    <Compile Include="Repositories\CffUserRepository.cs" />
+    <Compile Include="Builders\ClientAttributeBuilder.cs" />
+    <Compile Include="Builders\ClientActionReportRecordBuilder.cs" />
+    <Compile Include="Repositories\ICffUserRepository.cs" />
+    <Compile Include="Builders\ClaimedRetentionRepurchaseBuilder.cs" />
+    <Compile Include="Repositories\IContactsRepository.cs" />
+    <Compile Include="Repositories\IManagementRepository.cs" />
+    <Compile Include="Repositories\INotesRepository.cs" />
+    <Compile Include="Repositories\IRetentionRepository.cs" />
+    <Compile Include="Repositories\ITransactionSearchRepository.cs" />
+    <Compile Include="Builders\RepurchasesLineBuilder.cs" />
+    <Compile Include="Repositories\ManagementRepository.cs" />
+    <Compile Include="Repositories\NotesRepository.cs" />
+    <Compile Include="Repositories\RetentionRepository.cs" />
+    <Compile Include="Builders\ScheduleBuilder.cs" />
+    <Compile Include="Repositories\TransactionSearchRepository.cs" />
+    <Compile Include="RepurchasesLine.cs" />
+    <Compile Include="RetentionDeductable.cs" />
+    <Compile Include="RetentionDetails.cs" />
+    <Compile Include="RetentionInfo.cs" />
+    <Compile Include="RetentionNote.cs" />
+    <Compile Include="RetentionSchedule.cs" />
+    <Compile Include="RetentionSummary.cs" />
+    <Compile Include="BatchSchedule.cs" />
+    <Compile Include="Scope.cs" />
+    <Compile Include="SearchScope.cs" />
+    <Compile Include="Services\CffUserService.cs" />
+    <Compile Include="Services\ICffUserService.cs" />
+    <Compile Include="AllClientsOrderByType.cs" />
+    <Compile Include="Services\IRedirectionService.cs" />
+    <Compile Include="Services\IReportsService.cs" />
+    <Compile Include="Services\ITransactionReportsService.cs" />
+    <Compile Include="Services\RedirectionService.cs" />
+    <Compile Include="Services\ReportsService.cs" />
+    <Compile Include="Services\TransactionReportsService.cs" />
+    <Compile Include="TransactionsAfterEndOfMonth.cs" />
+    <Compile Include="TransactionSearchResult.cs" />
+    <Compile Include="TransactionSearchType.cs" />
+    <Compile Include="CffPrincipal.cs" />
+    <Compile Include="TransactionSummary.cs" />
+    <Compile Include="UserType.cs" />
+    <Compile Include="NoteType.cs" />
+    <Compile Include="Presenters\CustomerNotesAdderPresenter.cs" />
+    <Compile Include="Presenters\InvoiceBatchesPresenter.cs" />
+    <Compile Include="Presenters\PromptReportPresenter.cs" />
+    <Compile Include="Repositories\DictionaryRepository.cs" />
+    <Compile Include="Repositories\IDictionaryRepository.cs" />
+    <Compile Include="Reports\AgedBalancesReportType.cs" />
+    <Compile Include="Reports\AgedBalancesReport.cs" />
+    <Compile Include="Reports\AgedBalancesReportRecord.cs" />
+    <Compile Include="Reports\Deductables.cs" />
+    <Compile Include="Reports\ReleaseSummary.cs" />
+    <Compile Include="Reports\CreditBalanceTransferTransaction.cs" />
+    <Compile Include="Reports\ControlReport.cs" />
+    <Compile Include="Reports\CreditTransaction.cs" />
+    <Compile Include="Reports\DebtorsLedger.cs" />
+    <Compile Include="Reports\DiscountTransaction.cs" />
+    <Compile Include="Reports\FactorsLedger.cs" />
+    <Compile Include="Reports\Fee.cs" />
+    <Compile Include="Reports\InvoicesTransactionReport.cs" />
+    <Compile Include="Reports\InvoicesTransactionReportRecord.cs" />
+    <Compile Include="Reports\InvoiceTransaction.cs" />
+    <Compile Include="Reports\ReportBase.cs" />
+    <Compile Include="Reports\ISubledgerTransaction.cs" />
+    <Compile Include="Reports\TransactionReportBase.cs" />
+    <Compile Include="Reports\JournalTransaction.cs" />
+    <Compile Include="Reports\OverdueChargesReport.cs" />
+    <Compile Include="Reports\OverdueChargesReportRecord.cs" />
+    <Compile Include="Reports\OverpaymentTransaction.cs" />
+    <Compile Include="Reports\PromptReport.cs" />
+    <Compile Include="Reports\PromptReportRecord.cs" />
+    <Compile Include="Reports\ReceiptTransaction.cs" />
+    <Compile Include="Reports\ReportType.cs" />
+    <Compile Include="Reports\RepurchaseTransaction.cs" />
+    <Compile Include="Reports\RetentionReleaseEstimateReport.cs" />
+    <Compile Include="Reports\RetentionReleaseEstimateReportRecord.cs" />
+    <Compile Include="Reports\StatusReport.cs" />
+    <Compile Include="Reports\StatusReportRecord.cs" />
+    <Compile Include="Reports\Subledger.cs" />
+    <Compile Include="Reports\TransactionReport.cs" />
+    <Compile Include="Reports\TransactionReportRecord.cs" />
+    <Compile Include="Repositories\DataRowReader.cs" />
+    <Compile Include="Date.cs" />
+    <Compile Include="DateRange.cs" />
+    <Compile Include="HistoricalTransaction.cs" />
+    <Compile Include="ICalendar.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Presenters\ClientSearchPresenter.cs" />
+    <Compile Include="Presenters\CustomerSearchPresenter.cs" />
+    <Compile Include="Presenters\SafeTraderPresenter.cs" />
+    <Compile Include="Presenters\TransactionArchivePresenter.cs" />
+    <Compile Include="Presenters\TransactionHistoryPresenter.cs" />
+    <Compile Include="RelativePathComputer.cs" />
+    <Compile Include="Repositories\ClientRepository.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\IClientRepository.cs" />
+    <Compile Include="Repositories\ICustomerRepository.cs" />
+    <Compile Include="Repositories\IBatchRepository.cs" />
+    <Compile Include="Repositories\BatchRepository.cs" />
+    <Compile Include="Repositories\IReportRepository.cs" />
+    <Compile Include="Repositories\ReportRepository.cs" />
+    <Compile Include="Repositories\RepositoryFactory.cs" />
+    <Compile Include="Repositories\SqlHelper.cs" />
+    <Compile Include="Repositories\SqlManager.cs" />
+    <Compile Include="SessionWrapper.cs" />
+    <Compile Include="TransactionStatus.cs" />
+    <Compile Include="TransactionType.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\ITransactionRepository.cs" />
+    <Compile Include="Repositories\TransactionRepository.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Presenters\TransactionsPresenter.cs" />
+    <Compile Include="Views\IBatchChargesTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IChargesTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IClientSearchView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IContactsView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ICreditsClaimedTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ICreditsTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ICustomerNotesAdderView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ICustomerNotesEditorView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ICustomerSearchView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IDashboardView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IExportable.cs" />
+    <Compile Include="Views\IInvoiceBatchesView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IInvoicesTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ILikelyRepurchasesTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ILogOnView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IMainNavigationView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IManagementDetailsBoxView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\INonFactoredTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\INotesView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IPrintableView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IPromptReportView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IRedirectableView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IRepurchasesTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IRetentionDetailsTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IRetentionNotesTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IRetentionRepurchasesClaimedTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IRetentionSchedulesView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ISafeTraderView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IScheduleTabView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IScopedView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\IStatementView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ITransactionArchiveView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ITransactionHistoryView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ITransactionReportView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ITransactionSearchView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ITransactionsView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\ReportView\IAgedBalancesView.cs" />
+    <Compile Include="Views\ReportView\ICallsDueView.cs" />
+    <Compile Include="Views\ReportView\IClientActionView.cs" />
+    <Compile Include="Views\ReportView\IControlView.cs" />
+    <Compile Include="Views\ReportView\ICreditLimitExceededView.cs" />
+    <Compile Include="Views\ReportView\ICreditStopSuggestionsView.cs" />
+    <Compile Include="Views\ReportView\ICurrentOverpaidView.cs" />
+    <Compile Include="Views\ReportView\ICurrentShortPaidView.cs" />
+    <Compile Include="Views\ReportView\ICustomerWatchView.cs" />
+    <Compile Include="Views\ReportView\IOverdueChargesView.cs" />
+    <Compile Include="Views\ReportView\IReportView.cs" />
+    <Compile Include="Views\ReportView\IRetentionReleaseEstimateView.cs" />
+    <Compile Include="Views\ReportView\IStatusView.cs" />
+    <Compile Include="Views\TransactionReportView\IAccountTransactionsView.cs" />
+    <Compile Include="Views\TransactionReportView\ICreditBalanceTransfersView.cs" />
+    <Compile Include="Views\TransactionReportView\ICreditNotesView.cs" />
+    <Compile Include="Views\TransactionReportView\IDiscountsView.cs" />
+    <Compile Include="Views\TransactionReportView\IInvoicesView.cs" />
+    <Compile Include="Views\TransactionReportView\IJournalsView.cs" />
+    <Compile Include="Views\TransactionReportView\IOverpaymentsView.cs" />
+    <Compile Include="Views\TransactionReportView\IReceiptsView.cs" />
+    <Compile Include="Views\TransactionReportView\IRepurchasesView.cs" />
+    <Compile Include="Views\TransactionReportView\IUnallocatedView.cs" />
+    <Compile Include="Views\TransactionReportView\IUnclaimedCreditNotesView.cs" />
+    <Compile Include="Views\TransactionReportView\IUnclaimedRepurchasesView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cff.SaferTrader.Core.pfx" />
+    <None Include="ClassDiagramCore.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CFF Client\CFF  Client\DataEntry.NET\DataEntry.vbproj">
+      <Project>{fc25ccba-48be-4b5c-afb0-6e2feedad941}</Project>
+      <Name>DataEntry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GenericGridViewHelper\GenericGridViewHelper.csproj">
+      <Project>{0d696565-aa61-4b3b-8a87-a01eb9f2b4ca}</Project>
+      <Name>GenericGridViewHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

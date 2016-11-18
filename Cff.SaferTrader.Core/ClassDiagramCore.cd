@@ -1,0 +1,2946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Cff.SaferTrader.Core.ActivityType" Collapsed="true">
+    <Position X="57.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAgGAQAAGgIAAAAAQAQQAEAAEAIAAkIAAAAgE=</HashCode>
+      <FileName>ActivityType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Address" Collapsed="true">
+    <Position X="59.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEAAAABAAAAEAAAAAAAAAAAAAIAAAQCAAAEAAAA=</HashCode>
+      <FileName>Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.AgeingBalances" Collapsed="true">
+    <Position X="73.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAQAAAAAAEiQABAIgAARQAAAAQAQAACAAAA=</HashCode>
+      <FileName>AgeingBalances.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.AllClients" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="76.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAAAAAQAAAIEABAAQAAAAEAEAAAAAAAAAAAwA=</HashCode>
+      <FileName>AllClients.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.AllClientsOrderByType" Collapsed="true">
+    <Position X="78.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAHAASAAwAAAAAAwAAQAAAUAjAAEoIACACggAAAA=</HashCode>
+      <FileName>AllClientsOrderByType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.AlphabeticalPaginationEventArgs" Collapsed="true">
+    <Position X="80.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>AlphabeticalPaginationEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ArchivedTransaction" Collapsed="true">
+    <Position X="11.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAACEAAAAwAAAAEgAAACIAAEBgAABAQAAAQEAAgA=</HashCode>
+      <FileName>ArchivedTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ArgumentChecker" Collapsed="true">
+    <Position X="82" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAhAAAAEAAAAAAAAACAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>ArgumentChecker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.BalanceRange" Collapsed="true">
+    <Position X="83.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>BalanceRange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.BankDetails" Collapsed="true">
+    <Position X="57.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAACAgAEAAAAAAAAAAAAQA=</HashCode>
+      <FileName>BankDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.BatchRecord" Collapsed="true">
+    <Position X="9.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAABAEAAAA=</HashCode>
+      <FileName>BatchRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.BatchSchedule" Collapsed="true">
+    <Position X="64.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQQACwQEAAAASAAAAEgEAQABBwAAAQMBgAgAAQEAAAk=</HashCode>
+      <FileName>BatchSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.BatchScheduleFinanceInfo" Collapsed="true">
+    <Position X="66.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQQAAACEohAIAIABCAEAAQAACAQBQAgMgEAEGIEAAAA=</HashCode>
+      <FileName>BatchScheduleFinanceInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.BatchType" Collapsed="true">
+    <Position X="69.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAABAAQAAAMAAAAAAQAAAAUAAAAAAAQAAAEAgg=</HashCode>
+      <FileName>BatchType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Calendar" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="71.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAACAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Calendar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CallbackParameter" Collapsed="true">
+    <Position X="73.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAEgAAAAIAAAACAABAAgAAAAAAAAAA=</HashCode>
+      <FileName>CallbackParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CffClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="78.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAAAAAQAAAIEABAAQAAAAEAAAAAAAAAAAAAwA=</HashCode>
+      <FileName>CffClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CffClientInformation" Collapsed="true">
+    <Position X="82" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAIAIAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CffClientInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CffCustomer" Collapsed="true">
+    <Position X="57.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAAAAAQAAAIEAAAAQAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>CffCustomer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CffCustomerInformation" Collapsed="true">
+    <Position X="61" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECEACBAhgAEABIAJAAwECAAIBAgAAAAIAABAQAAAQAA=</HashCode>
+      <FileName>CffCustomerInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CffPrincipal" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACkDAAAgAQAAAAAAAAAAAAAAABAAEAAAAAAAAA=</HashCode>
+      <FileName>CffPrincipal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CffTimeoutException" Collapsed="true">
+    <Position X="66.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CffTimeoutException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CffUserTypeNotFoundException" Collapsed="true">
+    <Position X="71.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>CffUserTypeNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Charge" Collapsed="true">
+    <Position X="73.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAgAAAAIAAAAACAAgABgAIAAQAAAAAAAgg=</HashCode>
+      <FileName>Charge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ChargeCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="76.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAAAAAAAABAQAAAABASAAAAAAAAEAAAAAABQIAI=</HashCode>
+      <FileName>ChargeCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ChargeType" Collapsed="true">
+    <Position X="80.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABqgBQAAAAAAAAEAAAgQDQCAAExAgAxAUAA8ABASqA=</HashCode>
+      <FileName>ChargeType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClaimedCredit" Collapsed="true">
+    <Position X="82" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQCADBAAAAAAEACAABAAgACARAAAgFQAAAAQAAEAgAw=</HashCode>
+      <FileName>ClaimedCredit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClaimedRetentionRepurchase" Collapsed="true">
+    <Position X="83.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQCADBAAAAAAEACAABAAgACARAAAgFQAAAAQAAEAgAw=</HashCode>
+      <FileName>ClaimedRetentionRepurchase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CleverReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="61" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIEAAAIAAAAAAAAEAAABACAgAAAABAAMCJAABAIQAAg=</HashCode>
+      <FileName>CleverReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientAndCustomerContacts" Collapsed="true">
+    <Position X="66.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAIAAAAAAAAAAAAAAAAAAAAAgAAAAAAgAgAAI=</HashCode>
+      <FileName>ClientAndCustomerContacts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientAndCustomerInformation" Collapsed="true">
+    <Position X="68" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAACCCAAAAAAAAAACAA=</HashCode>
+      <FileName>ClientAndCustomerInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientAttribute" Collapsed="true">
+    <Position X="69.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAICAAAAAAAIAEAQAABAEAAAAAAAAAAA=</HashCode>
+      <FileName>ClientAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientContact" Collapsed="true">
+    <Position X="73.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACDAAEQggCFAAIAhkAiEABQIBQAAAEEgwAAAKAAAAAg=</HashCode>
+      <FileName>ClientContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientCustomerTerm" Collapsed="true">
+    <Position X="76.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAAAAAAAACAgAgAAAEAAAAAACBAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>ClientCustomerTerm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientInformation" Collapsed="true">
+    <Position X="80.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAABAwQAAQIgBAAACgQAAQoBAQAAAQAAAAAAACAAAQ=</HashCode>
+      <FileName>ClientInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientInformationAndAgeingBalances" Collapsed="true">
+    <Position X="82" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAgAAAAAAAAAAABAAAAAAAAAAgIAAAAAAAAAAA=</HashCode>
+      <FileName>ClientInformationAndAgeingBalances.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientManagementUser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="61" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEQAABAAAAAAiAAAAAwAAAAACAAAwQIAAAECAAA=</HashCode>
+      <FileName>ClientManagementUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientNote" Collapsed="true">
+    <Position X="13.25" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAICAAAAAAAAAAgAAAAAAAAAAAAAAAiAAAAAgACAA=</HashCode>
+      <FileName>ClientNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientOrderByType" Collapsed="true">
+    <Position X="62.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAADAAAAAwAAAAAAwBAIAAAQCgAAEIIAAACgAAAAA=</HashCode>
+      <FileName>ClientOrderByType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ClientStaffUser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="73.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEQAABAAAAAAiAAAAAwAAAAACAAAwQIAAAECAAA=</HashCode>
+      <FileName>ClientStaffUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Config" Collapsed="true">
+    <Position X="75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAQQAABAAAAAAAAAAQ=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CreditLine" Collapsed="true">
+    <Position X="0.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAADBAAAAAAMACAADAAgACARAAAgFQAAAAQAAABAA0=</HashCode>
+      <FileName>CreditLine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CreditNoteSearchResult" Collapsed="true">
+    <Position X="2.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAFQAQAAEAECAgAAggAAAQAEACFABwAAQAAEBAAE=</HashCode>
+      <FileName>CreditNoteSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CustomerContact" Collapsed="true">
+    <Position X="68" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACDASUQggGFAEIChkhiEgBYIRQAAAFEgwAAQKAAAAAg=</HashCode>
+      <FileName>CustomerContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CustomerNote" Collapsed="true">
+    <Position X="11" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAICAAAAAAAAAAAAAAAAAIQAAACFAACAAQAAgACAA=</HashCode>
+      <FileName>CustomerNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CustomerNotesParser" Collapsed="true">
+    <Position X="78.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomerNotesParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CustomerTransactionReport" Collapsed="true">
+    <Position X="17" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>CustomerTransactionReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CustomerTransactionReportRecord" Collapsed="true">
+    <Position X="59.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAACAAAAAgAAAAAAEAACABAQBgAAFAQAAAQAAAwA=</HashCode>
+      <FileName>CustomerTransactionReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.CustomerUser" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAACAiAAAgAgAQAAACFAAgQIQAAECAAA=</HashCode>
+      <FileName>CustomerUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Date" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIHgAACBJgAAAAQEgAmACgAABAAAAIQEAAkgAUAgRyA=</HashCode>
+      <FileName>Date.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.DateRange" Collapsed="true">
+    <Position X="71.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAACAAAAAACAAAgAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>DateRange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.EmployeeAdministratorUser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAAAAiAAAAAgAAAAACAAAgQIAAAECAAA=</HashCode>
+      <FileName>EmployeeAdministratorUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.EmployeeManagementUser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAAAAiAAAAAgAAAAACAAAgQIAAAECAAA=</HashCode>
+      <FileName>EmployeeManagementUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.EmployeeStaffUser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABAAAAAAiAAAAAgAAAAACAAAgQIAAAECAAA=</HashCode>
+      <FileName>EmployeeStaffUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.EndOfMonthHelper" Collapsed="true">
+    <Position X="68" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EndOfMonthHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ExcelDocument" Collapsed="true">
+    <Position X="69.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAisJAQQUWEFgFEAgAAGgCAAEAMAJUAAyIAEiBAABAA=</HashCode>
+      <FileName>ExcelDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.FacilityType" Collapsed="true">
+    <Position X="73.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>1AAyIgAAAAAYAAQAAEAAAAQAAIKGCBAAAICAIAAAAgA=</HashCode>
+      <FileName>FacilityType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.GstHelper" Collapsed="true">
+    <Position X="80.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GstHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.HistoricalTransaction" Collapsed="true">
+    <Position X="82" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAIAAABCAAAASAAAAEgQAABAmACEAIgAgA=</HashCode>
+      <FileName>HistoricalTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Invoice" Collapsed="true">
+    <Position X="57.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCACABAAEkACAhBgAgACIRQQAwFUFgAAQAQABAgk=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.InvoiceBatch" Collapsed="true">
+    <Position X="59.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQQACUQEgBAIQIABiEAAAQAACwQAQAsFwEAAEQEAAAk=</HashCode>
+      <FileName>InvoiceBatch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.InvoiceNumber" Collapsed="true">
+    <Position X="66.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvoiceNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.LinkHelper" Collapsed="true">
+    <Position X="75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAEEAAAAAAAAgAA=</HashCode>
+      <FileName>LinkHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Logger" Collapsed="true">
+    <Position X="76.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAIAAAAAAAAAAJAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ManagementDetails" Collapsed="true">
+    <Position X="82" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAIAhCACgAQgAIAAAAQIAAIECAEiAAAFIAAABAA=</HashCode>
+      <FileName>ManagementDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Note" Collapsed="true">
+    <Position X="14.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACCAEAAAgEAAAABAAAQAABCAAAAQgABAAAQAQAAg=</HashCode>
+      <FileName>Note.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.NoteType" Collapsed="true">
+    <Position X="68" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAiAAAABAMQAgGAIAAABASAIIAGIAAAAAAAAAEAAgE=</HashCode>
+      <FileName>NoteType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.NullDate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEAAAAAAAABAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>NullDate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.NullRetentionNote" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="71.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NullRetentionNote.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.OrderByHelper" Collapsed="true">
+    <Position X="73.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OrderByHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.OverdueFee" Collapsed="true">
+    <Position X="78.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAYAAAAAQAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>OverdueFee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Percentage" Collapsed="true">
+    <Position X="57.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Percentage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PermanentClientNote" Collapsed="true">
+    <Position X="15.5" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>PermanentClientNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PermanentCustomerNote" Collapsed="true">
+    <Position X="17.75" Y="19.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAA=</HashCode>
+      <FileName>PermanentCustomerNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PopupHelper" Collapsed="true">
+    <Position X="61" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PopupHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintableClientNotes" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAABAAAAAAAAAAAAAAAAAAAQAAAAAAAIAA=</HashCode>
+      <FileName>PrintableClientNotes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintableCustomerNotes" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAABAAAAAAAAAAgQAAAIEAAQAAAAAAAIAA=</HashCode>
+      <FileName>PrintableCustomerNotes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintableInvoiceBatchCharges" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAAAAIgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PrintableInvoiceBatchCharges.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintableInvoiceBatchCredits" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggAAAAIAAAAABAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>PrintableInvoiceBatchCredits.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintableInvoiceBatchInvoices" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAIAAIAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PrintableInvoiceBatchInvoices.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintableInvoiceBatchNonFactoredInvoices" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="71.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIAAIAAAAAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PrintableInvoiceBatchInvoices.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintableInvoiceBatchRepurchases" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="73.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIAAAAABAAAAAAAAAAAAAAAAAIAAAACAAAAAAA=</HashCode>
+      <FileName>PrintableInvoiceBatchRepurchases.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintableInvoiceBatchSchedule" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAIAAAAABAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>PrintableInvoiceBatchSchedule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintablePermanentClientNotes" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="76.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEAAAAAABAAAAAAAAAAAAAAAAAAAQAAAAAAAIAA=</HashCode>
+      <FileName>PrintablePermanentClientNotes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintablePermanentCustomerNotes" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="78.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAABAAAAAAAAAAAQAAAAEAAAAAAAAAAIAA=</HashCode>
+      <FileName>PrintablePermanentCustomerNotes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PrintableRetentionSchedule" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="80.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFAAAAAAAABAAAAAAAAAAAAAAAAAAAAAABAAAABAA=</HashCode>
+      <FileName>PrintableRetentionSchedule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.PurchaserDetails" Collapsed="true">
+    <Position X="57.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAACBAAAAAAAAAEAAAAQAAAAAAAACQAAABAAAAAA=</HashCode>
+      <FileName>PurchaserDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.QueryString" Collapsed="true">
+    <Position X="61" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGBAEACAFAAIAAEgAAAACgBAAAMABAAAAAAQQAAAAQ=</HashCode>
+      <FileName>QueryString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.RecordLimiter" Collapsed="true">
+    <Position X="64.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>RecordLimiter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.RelativePathComputer" Collapsed="true">
+    <Position X="68" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RelativePathComputer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.RepurchasesLine" Collapsed="true">
+    <Position X="80.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAADBAAAAAAMACAADAAgBCARAAAgFQAAAAQAAABAA0=</HashCode>
+      <FileName>RepurchasesLine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.RetentionDeductable" Collapsed="true">
+    <Position X="62.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAEQEAABEBACARIAAAFaAAABAIQIAQiACAAIAAQA=</HashCode>
+      <FileName>RetentionDeductable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.RetentionDetails" Collapsed="true">
+    <Position X="66.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pAQAAAAAABAIAACAKKgADAAIIFgQCAACAAsAEggLABA=</HashCode>
+      <FileName>RetentionDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.RetentionInfo" Collapsed="true">
+    <Position X="71.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIJAAAgCAAAAAgAAAAAAAgAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>RetentionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.RetentionNote" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RetentionNote.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.RetentionSchedule" Collapsed="true">
+    <Position X="83.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQiAEAEAAAIAAAAiAABAAAAAAAQAAAAwAIAAAACAwA=</HashCode>
+      <FileName>RetentionSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.RetentionSummary" Collapsed="true">
+    <Position X="61" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAEBAABAQAAAAGAAEAAAABAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>RetentionSummary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.SessionWrapper" Collapsed="true">
+    <Position X="75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CkASIEAAAAAJACIAAABAQEAACggAAAAAAIpAAgBAAAA=</HashCode>
+      <FileName>SessionWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Transaction" Collapsed="true">
+    <Position X="9.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAACEAAAAwAAAAEgAAACIAAEBgAABAQAAAQAAAgA=</HashCode>
+      <FileName>Transaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.TransactionsAfterEndOfMonth" Collapsed="true">
+    <Position X="57.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAEIAAAAIAIAACACAAIAAAA=</HashCode>
+      <FileName>TransactionsAfterEndOfMonth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.TransactionSearchResult" Collapsed="true">
+    <Position X="14" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEQAQCAEAECAggAAgAIIQIEACFCBwAAQAAAAAAA=</HashCode>
+      <FileName>TransactionSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.TransactionStatus" Collapsed="true">
+    <Position X="64.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAQiAAIEICAAASAAAAABEQAAIAAgACAQAIAAAgAAAgA=</HashCode>
+      <FileName>TransactionStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.TransactionSummary" Collapsed="true">
+    <Position X="66.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEAAKIBAAA=</HashCode>
+      <FileName>TransactionSummary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.TransactionType" Collapsed="true">
+    <Position X="69.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQEjABEAAAIQAqABAKAAASCgAAghSEAAA2hCAAYgAwA=</HashCode>
+      <FileName>TransactionType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.UserType" Collapsed="true">
+    <Position X="71.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAACAEAAAgCAAAFAAAAQAAEAEECQAABgAAAAAQkA=</HashCode>
+      <FileName>UserType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.AddressBuilder" Collapsed="true">
+    <Position X="61" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAABAAAQAAA=</HashCode>
+      <FileName>Builders\AddressBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.AgedBalancesReportRecordBuilder" Collapsed="true">
+    <Position X="69.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\AgedBalancesReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.AgeingBalancesBuilder" Collapsed="true">
+    <Position X="75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\AgeingBalancesBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.BankDetailsBuilder" Collapsed="true">
+    <Position X="59.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\BankDetailsBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.BatchChargeBuilder" Collapsed="true">
+    <Position X="61" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\BatchChargeBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.BatchScheduleFinanceInfoBuilder" Collapsed="true">
+    <Position X="68" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\BatchScheduleFinanceInfoBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CallsDueReportRecordBuilder" Collapsed="true">
+    <Position X="76.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\CallsDueReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CffClientInformationBuilder" Collapsed="true">
+    <Position X="83.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\CffClientInformationBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CffCustomerBuilder" Collapsed="true">
+    <Position X="59.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\CffCustomerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CffCustomerInformationBuilder" Collapsed="true">
+    <Position X="62.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\CffCustomerInformationBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ChargeBuilder" Collapsed="true">
+    <Position X="75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\ChargeBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ClaimedRetentionRepurchaseBuilder" Collapsed="true">
+    <Position X="57.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ClaimedRetentionRepurchaseBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ClientActionReportRecordBuilder" Collapsed="true">
+    <Position X="64.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ClientActionReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ClientAttributeBuilder" Collapsed="true">
+    <Position X="71.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ClientAttributeBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ClientContactBuilder" Collapsed="true">
+    <Position X="75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\ClientContactBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ClientCustomerTermBuilder" Collapsed="true">
+    <Position X="78.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\ClientCustomerTermBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ClientInformationBuilder" Collapsed="true">
+    <Position X="83.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\ClientInformationBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ControlReportBuilder" Collapsed="true">
+    <Position X="78.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ControlReportBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CreditLimitExceededReportRecordBuilder" Collapsed="true">
+    <Position X="83.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\CreditLimitExceededReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CreditLineBuilder" Collapsed="true">
+    <Position X="57.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\CreditLineBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CreditsClaimedBuilder" Collapsed="true">
+    <Position X="59.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\CreditsClaimedBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CurrentsPaymentReportRecordBuilder" Collapsed="true">
+    <Position X="66.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\CurrentsPaymentReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CustomerContactBuilder" Collapsed="true">
+    <Position X="69.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\CustomerContactBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CustomerInvoicesTransactionReportRecordBuilder" Collapsed="true">
+    <Position X="73.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\CustomerInvoicesTransactionReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.CustomerTransactionReportRecordBuilder" Collapsed="true">
+    <Position X="61" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\CustomerTransactionReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.DatePickerBuilder" Collapsed="true">
+    <Position X="69.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\DatePickerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.DebtorsLedgerBuilder" Collapsed="true">
+    <Position X="75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\DebtorsLedgerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.DeductablesBuilder" Collapsed="true">
+    <Position X="78.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\DeductablesBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.FactorsLedgerBuilder" Collapsed="true">
+    <Position X="76.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\FactorsLedgerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.HistoricalTransactionBuilder" Collapsed="true">
+    <Position X="83.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\HistoricalTransactionBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.InvoiceBatchBuilder" Collapsed="true">
+    <Position X="61" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\InvoiceBatchBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.InvoiceBuilder" Collapsed="true">
+    <Position X="64.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\InvoiceBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.InvoicesTransactionReportRecordBuilder" Collapsed="true">
+    <Position X="69.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAQIgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\InvoicesTransactionReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ManagementDetailsBuilder" Collapsed="true">
+    <Position X="57.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\ManagementDetailsBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.OverdueChargesReportRecordBuilder" Collapsed="true">
+    <Position X="76.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAQEAAAAAAAAhAAAAIgAAAAgBAAAAAAAA=</HashCode>
+      <FileName>Builders\OverdueChargesReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.OverdueFeeBuidler" Collapsed="true">
+    <Position X="80.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\OverdueFeeBuidler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.PromptReportRecordBuilder" Collapsed="true">
+    <Position X="83.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\PromptReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.PurchaserDetailsBuilder" Collapsed="true">
+    <Position X="59.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\PurchaserDetailsBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ReleaseSummaryBuilder" Collapsed="true">
+    <Position X="71.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ReleaseSummaryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.RepurchasesLineBuilder" Collapsed="true">
+    <Position X="82" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\RepurchasesLineBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.RetentionDeductableBuilder" Collapsed="true">
+    <Position X="64.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\RetentionDeductableBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.RetentionDetailsBuilder" Collapsed="true">
+    <Position X="68" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\RetentionDetailsBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.RetentionInfoBuilder" Collapsed="true">
+    <Position X="73.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\RetentionInfoBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.RetentionReleaseEstimateReportRecordBuilder" Collapsed="true">
+    <Position X="80.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\RetentionReleaseEstimateReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.RetentionScheduleBuilder" Collapsed="true">
+    <Position X="57.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\RetentionScheduleBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.RetentionSummaryBuilder" Collapsed="true">
+    <Position X="62.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\RetentionSummaryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.ScheduleBuilder" Collapsed="true">
+    <Position X="66.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\ScheduleBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.StatementReportBuilder" Collapsed="true">
+    <Position X="62.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\StatementReportBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.StatementReportRecordBuilder" Collapsed="true">
+    <Position X="66.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\StatementReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.StatusReportRecordBuilder" Collapsed="true">
+    <Position X="68" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAQEAAAAAAAAhAAAAIgAAAAgBAAAAAAAA=</HashCode>
+      <FileName>Builders\StatusReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.SubledgerBuilder" Collapsed="true">
+    <Position X="71.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Builders\SubledgerBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.TransactionBuilder" Collapsed="true">
+    <Position X="75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\TransactionBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.TransactionReportRecordBuilder" Collapsed="true">
+    <Position X="80.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAIgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builders\TransactionReportRecordBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.TransactionsAfterEndOfMonthBuilder" Collapsed="true">
+    <Position X="59.25" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\TransactionsAfterEndOfMonthBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Builders.TransactionSummaryBuilder" Collapsed="true">
+    <Position X="68" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Builders\TransactionSummaryBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Linq.Dynamic.DynamicQueryable" Collapsed="true">
+    <Position X="61" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAAACAAAAAAAAAAAAAAAQAAAEAAAAAAAEAQAAAEAA=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Linq.Dynamic.DynamicClass" Collapsed="true">
+    <Position X="82" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Linq.Dynamic.DynamicProperty" Collapsed="true">
+    <Position X="59.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Linq.Dynamic.DynamicExpression" Collapsed="true">
+    <Position X="83.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Linq.Dynamic.DynamicOrdering" Collapsed="true">
+    <Position X="57.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Linq.Dynamic.Signature" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="78.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Linq.Dynamic.ClassFactory" Collapsed="true">
+    <Position X="59.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIAAAAAAAAABACAQAAAAAACAAAAASAAAAAABAAg=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Linq.Dynamic.ParseException" Collapsed="true">
+    <Position X="83.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAkAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Linq.Dynamic.ExpressionParser" Collapsed="true">
+    <Position X="71.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Co+4gUICBFAhMm7UoEgTE7BCIIzYpCqIKkUKBAmRAYI=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Linq.Dynamic.Res" Collapsed="true">
+    <Position X="59.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAgMKhAIAgAAgEAgCIBSSAQAFDAgABEACoACAgLAA8A=</HashCode>
+      <FileName>Dynamic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.BatchChargesTabPresenter" Collapsed="true">
+    <Position X="62.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAACAAAAAAAAAAAAAAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\BatchChargesTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ChargesTabPresenter" Collapsed="true">
+    <Position X="78.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACgAAAAAAAAAAAAAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\ChargesTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ClientSearchPresenter" Collapsed="true">
+    <Position X="64.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAQAQAAAAAAA=</HashCode>
+      <FileName>Presenters\ClientSearchPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ContactsPresenter" Collapsed="true">
+    <Position X="76.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACgAAAAIAgABEECAAAAAQABAAAAEAABQAAIwAAACA=</HashCode>
+      <FileName>Presenters\ContactsPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.CreditsClaimedTabPresenter" Collapsed="true">
+    <Position X="61" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\CreditsClaimedTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.CreditsTabPresenter" Collapsed="true">
+    <Position X="62.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAGAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\CreditsTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.CustomerNotesAdderPresenter" Collapsed="true">
+    <Position X="75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAgQAEQAACAAAAIAAAAAAAAAAAAACAQAAAAAAAgA=</HashCode>
+      <FileName>Presenters\CustomerNotesAdderPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.CustomerNotesEditorPresenter" Collapsed="true">
+    <Position X="76.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAECAAAAAAAAIAAAQEAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\CustomerNotesEditorPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.CustomerSearchPresenter" Collapsed="true">
+    <Position X="82" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAQAQAAAAAAA=</HashCode>
+      <FileName>Presenters\CustomerSearchPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.DashboardPresenter" Collapsed="true">
+    <Position X="64.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAgCAAAAAAQAAAAAAABA=</HashCode>
+      <FileName>Presenters\DashboardPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.InvoiceBatchesPresenter" Collapsed="true">
+    <Position X="62.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQAgCAAAAAAAAAAAABAAAAEAQAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\InvoiceBatchesPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.InvoicesTabPresenter" Collapsed="true">
+    <Position X="68" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAQAAAAAAABA=</HashCode>
+      <FileName>Presenters\InvoicesTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.LogOnPresenter" Collapsed="true">
+    <Position X="78.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAABEAAgAEEAACAAAQEAAAQBAAEACAEA=</HashCode>
+      <FileName>Presenters\LogOnPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.MainNavigationPresenter" Collapsed="true">
+    <Position X="80.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAIAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\MainNavigationPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ManagementDetailsBoxPresenter" Collapsed="true">
+    <Position X="83.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAICAAAAAAAAAAAAAAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\ManagementDetailsBoxPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.NonFactoredTabPresenter" Collapsed="true">
+    <Position X="64.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAIAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\NonFactoredTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.NotesPresenter" Collapsed="true">
+    <Position X="66.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAAQACCAAAEIAAAgAAAAAAEAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\NotesPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.PromptReportPresenter" Collapsed="true">
+    <Position X="82" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAgAAgCAACIAAAAAAAAAAAAAAAAAQAAAAAAQAQ=</HashCode>
+      <FileName>Presenters\PromptReportPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.RepurchasesTabPresenter" Collapsed="true">
+    <Position X="83.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAQAAAAAgAAA=</HashCode>
+      <FileName>Presenters\RepurchasesTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.RetentionDetailsTabPresenter" Collapsed="true">
+    <Position X="69.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAEAAAAAAAAAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\RetentionDetailsTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.RetentionNotesTabPresenter" Collapsed="true">
+    <Position X="76.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAgAAAAAAAAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\RetentionNotesTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.RetentionRepurchasesClaimedTabPresenter" Collapsed="true">
+    <Position X="82" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAABAAAAAAAAAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\RetentionRepurchasesClaimedTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.RetentionSchedulePresenter" Collapsed="true">
+    <Position X="59.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABCAAAAAAAAAAAAAAAAIEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\RetentionSchedulePresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.SafeTraderPresenter" Collapsed="true">
+    <Position X="64.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAGAAAEUAACACAIIAAAAAAEAAAAAAAAQAAAAEQmCA=</HashCode>
+      <FileName>Presenters\SafeTraderPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ScheduleTabPresenter" Collapsed="true">
+    <Position X="68" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAEAAAQAAAAAACAA=</HashCode>
+      <FileName>Presenters\ScheduleTabPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.StatementPresenter" Collapsed="true">
+    <Position X="61" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQCAAAAAAAAQAAABAAAAAAAAQAAAAAAQAA=</HashCode>
+      <FileName>Presenters\StatementPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionArchivePresenter" Collapsed="true">
+    <Position X="73.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAACAAAAIAAAAAAABAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\TransactionArchivePresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionHistoryPresenter" Collapsed="true">
+    <Position X="76.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAADCAAgIIgAAAAABAAAAAAAAQAAAAAAAQA=</HashCode>
+      <FileName>Presenters\TransactionHistoryPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionSearchPresenter" Collapsed="true">
+    <Position X="61" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAACAAAAAAAAAAQAAAAAAAAAAAQAAAAAEAAA=</HashCode>
+      <FileName>Presenters\TransactionSearchPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionsPresenter" Collapsed="true">
+    <Position X="62.75" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAEADAAAAIAAAAAAABAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Presenters\TransactionsPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.AgedBalancesPresenter" Collapsed="true">
+    <Position X="11" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\AgedBalancesPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.CallsDuePresenter" Collapsed="true">
+    <Position X="15.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\CallsDuePresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.ClientActionPresenter" Collapsed="true">
+    <Position X="20" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\ClientActionPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.ControlReportPresenter" Collapsed="true">
+    <Position X="24.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\ControlReportPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.CreditLimitExceededPresenter" Collapsed="true">
+    <Position X="26.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\CreditLimitExceededPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.CurrentOverpaidPresenter" Collapsed="true">
+    <Position X="29" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\CurrentOverpaidPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.CurrentShortPaidPresenter" Collapsed="true">
+    <Position X="31.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\CurrentShortPaidPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.CustomerWatchPresenter" Collapsed="true">
+    <Position X="33.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\CustomerWatchPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.OverdueChargesPresenter">
+    <Position X="35.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\OverdueChargesPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.ReportPresenterTemplate" Collapsed="true">
+    <Position X="25.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAIAAAAAGAIAAAAAAAAAIAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\ReportPresenterTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.RetentionReleaseEstimatePresenter" Collapsed="true">
+    <Position X="38" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\RetentionReleaseEstimatePresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.ReportPresenters.StatusPresenter" Collapsed="true">
+    <Position X="40.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\ReportPresenters\StatusPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.CreditBalanceTransfersPresenter" Collapsed="true">
+    <Position X="42.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\CreditBalanceTransfersPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.CreditNotesPresenter" Collapsed="true">
+    <Position X="44.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\CreditNotesPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.DiscountsPresenter" Collapsed="true">
+    <Position X="47" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\DiscountsPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.InvoicesPresenter" Collapsed="true">
+    <Position X="49.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\InvoicesPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.JournalsPresenter" Collapsed="true">
+    <Position X="2" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\JournalsPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.OverpaymentsPresenter" Collapsed="true">
+    <Position X="4.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\OverpaymentsPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.ReceiptsPresenter" Collapsed="true">
+    <Position X="6.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\ReceiptsPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.RepurchasesPresenter" Collapsed="true">
+    <Position X="8.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\RepurchasesPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.TransactionReportPresenterTemplate" Collapsed="true">
+    <Position X="78.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAIAAQAAAAAAAAAGAAAAAAAAAAAIAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\TransactionReportPresenterTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.UnallocatedPresenter" Collapsed="true">
+    <Position X="13.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\UnallocatedPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.UnclaimedCreditNotesPresenter" Collapsed="true">
+    <Position X="17.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAgAAQAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\UnclaimedCreditNotesPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Presenters.TransactionReportPresenters.UnclaimedRepurchasesPresenter" Collapsed="true">
+    <Position X="22.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAUAAAAIAAQAAAAAAAAAGAIAAUAAAAAAQAE=</HashCode>
+      <FileName>Presenters\TransactionReportPresenters\UnclaimedRepurchasesPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Properties.Resources" Collapsed="true">
+    <Position X="61" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Properties.Settings" Collapsed="true">
+    <Position X="76.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAIAAAAAARQAABAAAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ReportManager.AdministratorReportManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAQAAAAAAgAIgAYAEAAAAAIBAQEgCmEgkAAEAA=</HashCode>
+      <FileName>ReportManager\AdministratorReportManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ReportManager.ClientManagementReportManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAQAAAAAAgAIgAYAEAAAAAIBAQEgCmEgkAAEAA=</HashCode>
+      <FileName>ReportManager\ClientManagementReportManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ReportManager.ClientStaffReportManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="68" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAQAAAAAAgAIgAYAEAAAAAIBAQEgCmEgkAAEAA=</HashCode>
+      <FileName>ReportManager\ClientStaffReportManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ReportManager.CustomerReportManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="80.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAQAAAAAAgAIgAYAEAAAAAIBAQEgCmEgkAAEAA=</HashCode>
+      <FileName>ReportManager\CustomerReportManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ReportManager.ManagementReportManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAQAAAAAAgAIgAYAEAAAAAIBAQEgCmEgkAAEAA=</HashCode>
+      <FileName>ReportManager\ManagementReportManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ReportManager.ReportManagerFactory" Collapsed="true">
+    <Position X="73.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReportManager\ReportManagerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ReportManager.ReportScopeManager" Collapsed="true">
+    <Position X="75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAACACAAAAQQGAgAgAAAgAAAAACAAAEBAAQAAGAA=</HashCode>
+      <FileName>ReportManager\ReportScopeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ReportManager.StaffReportManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="83.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAQAAAAAAgAIgA4AEAAAAAIBAQEgCmEgkAAEAA=</HashCode>
+      <FileName>ReportManager\StaffReportManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.AgedBalancesReport" Collapsed="true">
+    <Position X="30.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Reports\AgedBalancesReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.AgedBalancesReportRecord" Collapsed="true">
+    <Position X="68" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAEQABCAAAESgCAhAgIwJQACAIEggQICQIAGAkgA=</HashCode>
+      <FileName>Reports\AgedBalancesReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.AgedBalancesReportType" Collapsed="true">
+    <Position X="71.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACERCAaBAUgCAARAQAAECAAAAAAAAIAIAOCgCABgE=</HashCode>
+      <FileName>Reports\AgedBalancesReportType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CallsDueReport" Collapsed="true">
+    <Position X="1.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAABAAAACQAAAA=</HashCode>
+      <FileName>Reports\CallsDueReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CallsDueReportRecord" Collapsed="true">
+    <Position X="75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IICAAGSAwABAQECAAEgAgAQJQAAAAFAgQAAQKAAAAAg=</HashCode>
+      <FileName>Reports\CallsDueReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.ClientActionReport" Collapsed="true">
+    <Position X="10.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAABAAAACQAAAA=</HashCode>
+      <FileName>Reports\ClientActionReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.ClientActionReportRecord" Collapsed="true">
+    <Position X="62.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAESAQAABQECAAUgAgAQJQAAAAFAAQAAQAAAAAAA=</HashCode>
+      <FileName>Reports\ClientActionReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.ControlReport" Collapsed="true">
+    <Position X="14.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kARCABACQhQAQEAUEEAAABECAAAAAAAAAAAAAIEAAAA=</HashCode>
+      <FileName>Reports\ControlReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CreditBalanceTransferTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="80.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Reports\CreditBalanceTransferTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CreditLimitExceededReport" Collapsed="true">
+    <Position X="19.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Reports\CreditLimitExceededReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CreditLimitExceededReportRecord" Collapsed="true">
+    <Position X="82" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEQABCAAAESgCAhAgYwJQAGAIEggQIAQIACAEgA=</HashCode>
+      <FileName>Reports\CreditLimitExceededReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CreditTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Reports\CreditTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CurrentPaymentsReport" Collapsed="true">
+    <Position X="5.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAAQACAAEAAAQAAAAEAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Reports\CurrentPaymentsReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CurrentPaymentsReportRecord" Collapsed="true">
+    <Position X="5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports\CurrentPaymentsReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CustomerInvoicesTransactionReport" Collapsed="true">
+    <Position X="23.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Reports\CustomerInvoicesTransactionReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.CustomerInvoicesTransactionReportRecord" Collapsed="true">
+    <Position X="71.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAACAAAAAgAAAAAgEAACIBAQBgAAFAQAAAQAAAwA=</HashCode>
+      <FileName>Reports\CustomerInvoicesTransactionReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.DebtorsLedger" Collapsed="true">
+    <Position X="73.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAACAAAAAAAAAAACAAACAgAAAQAAAAEACAACAAgA=</HashCode>
+      <FileName>Reports\DebtorsLedger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.Deductables" Collapsed="true">
+    <Position X="76.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAASAQCiAAEAAAAIAIAgCAAAAEAQABAAAAIAAIAAAA=</HashCode>
+      <FileName>Reports\Deductables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.DiscountTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="80.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Reports\DiscountTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.FactoredPromptReport" Collapsed="true">
+    <Position X="21.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports\FactoredPromptReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.FactorsLedger" Collapsed="true">
+    <Position X="75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAABAAAAAAAAAAAAAgQAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Reports\FactorsLedger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.Fee" Collapsed="true">
+    <Position X="78.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAAAAABAAAAAQAAAAAQAAAAEAAAAEAAAA=</HashCode>
+      <FileName>Reports\Fee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.InvoicesTransactionReport" Collapsed="true">
+    <Position X="8" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIBAAIAAQACAAEAIAQgEAQGAAAAAQAAIAAQAACAEEIA=</HashCode>
+      <FileName>Reports\InvoicesTransactionReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.InvoicesTransactionReportRecord" Collapsed="true">
+    <Position X="7.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAQAAAAAAAAIACQggAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Reports\InvoicesTransactionReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.InvoiceTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="71.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Reports\InvoiceTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.JournalTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="73.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Reports\JournalTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.OverdueChargesReport" Collapsed="true">
+    <Position X="12.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAQAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports\OverdueChargesReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.OverdueChargesReportRecord" Collapsed="true">
+    <Position X="75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAQAAESEQAAIwECACEgAgASJUAAAgEAASAAQAKAAAAA=</HashCode>
+      <FileName>Reports\OverdueChargesReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.OverpaymentTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="82" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Reports\OverpaymentTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.PeriodReportType" Collapsed="true">
+    <Position X="59.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEBCAABAQAAAAAASAAACAgAAAAAAIAIACCgCAAgA=</HashCode>
+      <FileName>Reports\PeriodReportType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.PromptReport" Collapsed="true">
+    <Position X="21.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACAAQAABAEAAIAAAAACAAAABAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Reports\PromptReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.PromptReportRecord" Collapsed="true">
+    <Position X="16.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQACAFSEBAAIwACACUgAgASJQAAAwFAAQAAQAAAAAgA=</HashCode>
+      <FileName>Reports\PromptReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.ReceiptTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Reports\ReceiptTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.ReleaseSummary" Collapsed="true">
+    <Position X="69.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAACAAAAAgA=</HashCode>
+      <FileName>Reports\ReleaseSummary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.ReportBase" Collapsed="true">
+    <Position X="17" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABAAAAAQAQAAAAEAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Reports\ReportBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.RepurchaseTransaction" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Reports\RepurchaseTransaction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.RetentionReleaseEstimateReport" Collapsed="true">
+    <Position X="26" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABABAAAQAQAAEAAAAAAAAAAAgAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Reports\RetentionReleaseEstimateReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.RetentionReleaseEstimateReportRecord" Collapsed="true">
+    <Position X="78.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQCAACFAAAAwQCAAEgEgACIRAAAwFABAAAQAQEAAgA=</HashCode>
+      <FileName>Reports\RetentionReleaseEstimateReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.StatementReport" Collapsed="true">
+    <Position X="28.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAACAAAQAEABECAAAAAAAAAAAAAAAANAAAAASABAAA=</HashCode>
+      <FileName>Reports\StatementReport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.StatementReportRecord" Collapsed="true">
+    <Position X="64.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACAAQAgwAAAIEAQAACAEAAAgAABAAAAAYAAAAA=</HashCode>
+      <FileName>Reports\StatementReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.StatusReport" Collapsed="true">
+    <Position X="32.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACAAQACAAEIAAQAAAACABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports\StatusReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.StatusReportRecord" Collapsed="true">
+    <Position X="18.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>lQQEAFSFBAAIwSCACEgkgASJRAARwFIAUwESAIcBAAA=</HashCode>
+      <FileName>Reports\StatusReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.Subledger" Collapsed="true">
+    <Position X="69.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYAACQABAIAAABCAAAADAAAAYgMAgnACAAMAAxA=</HashCode>
+      <FileName>Reports\Subledger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.TransactionReport" Collapsed="true">
+    <Position X="3.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAAQACAAEAAAQAAAAEAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Reports\TransactionReport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.TransactionReportBase" Collapsed="true">
+    <Position X="5.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reports\TransactionReportBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Reports.TransactionReportRecord" Collapsed="true">
+    <Position X="6.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgADAESEBAAAgACAAAAEgASBRAAAwFABQAAQAQIBAwA=</HashCode>
+      <FileName>Reports\TransactionReportRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.BatchRepository" Collapsed="true">
+    <Position X="3.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQAAAgAAAACAAQAAAAAIAACAAAABAAAAgDBQ=</HashCode>
+      <FileName>Repositories\BatchRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.CffUserRepository" Collapsed="true">
+    <Position X="7.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAUAAARAAAQAAAAAkAFUAgBCMAQAACAABAAEQQHAA=</HashCode>
+      <FileName>Repositories\CffUserRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.ClientRepository" Collapsed="true">
+    <Position X="12.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAACAAAgAAAAAAAAACGAAAAAAIAAAA=</HashCode>
+      <FileName>Repositories\ClientRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.ContactsRespository" Collapsed="true">
+    <Position X="14.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAGggAAAIAAAEMEQIAAgAABABgAAgggAAAAQAMAAAM=</HashCode>
+      <FileName>Repositories\ContactsRespository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.CustomerRepository" Collapsed="true">
+    <Position X="19" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEALAEgIAIABEAAEAAQgIAAAAAAAACEQBAAACAAAEA=</HashCode>
+      <FileName>Repositories\CustomerRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.DataRowReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAIAAAQgAAAEIABAAAAiAAAQAAAAIAAABAIRAAA=</HashCode>
+      <FileName>Repositories\DataRowReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.DictionaryRepository" Collapsed="true">
+    <Position X="23.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\DictionaryRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.ManagementRepository" Collapsed="true">
+    <Position X="1" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ManagementRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.NotesRepository" Collapsed="true">
+    <Position X="5.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAISBIAABAEAaAAABAEAsEgBAEAAkAQGAiAACoCECAA=</HashCode>
+      <FileName>Repositories\NotesRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.ReportRepository" Collapsed="true">
+    <Position X="10" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAFmHLYREGQgPQAwAoBMOEoCGiQABhVCgIQcCSwQIAA=</HashCode>
+      <FileName>Repositories\ReportRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.RepositoryFactory" Collapsed="true">
+    <Position X="78.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAgAAAEAEAAAAoAAACAIBAAAAcACAAAgAAAAA=</HashCode>
+      <FileName>Repositories\RepositoryFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.RetentionNotesTabRepository" Collapsed="true">
+    <Position X="16.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Repositories\RetentionNotesTabRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.RetentionRepository" Collapsed="true">
+    <Position X="21.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAgABAgAAAACAAACAAAAAAYAAAACAAAAAAQAA=</HashCode>
+      <FileName>Repositories\RetentionRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.SqlHelper" Collapsed="true">
+    <Position X="80.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAAAiAAAAAACAkABAEBECAgAAAAAABAAAAAAIAAIA=</HashCode>
+      <FileName>Repositories\SqlHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.SqlHelperParameterCache" Collapsed="true">
+    <Position X="82" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAEECAAIAAAAAAAARAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\SqlHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.SqlManager" Collapsed="true">
+    <Position X="13.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAICEAABAAAEAAAAAAAAAJAAAAAAAAgAA=</HashCode>
+      <FileName>Repositories\SqlManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.TransactionRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="83.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AChAAAABAEAAAAAgAAgAAAAAAAQAAAAAAAAABAAAAQA=</HashCode>
+      <FileName>Repositories\TransactionRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Repositories.TransactionSearchRepository" Collapsed="true">
+    <Position X="25.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Repositories\TransactionSearchRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ScopeManager.AdministratorSearchScopeManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScopeManager\AdministratorSearchScopeManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ScopeManager.ClientManagementSearchScopeManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScopeManager\ClientManagementSearchScopeManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ScopeManager.ClientStaffSearchScopeManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScopeManager\ClientStaffSearchScopeManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ScopeManager.CustomerSearchScopeManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="83.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScopeManager\CustomerSearchScopeManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ScopeManager.ManagementSearchScopeManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="61" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScopeManager\ManagementSearchScopeManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ScopeManager.SearchScopeManagerFactory" Collapsed="true">
+    <Position X="71.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScopeManager\SearchScopeManagerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.ScopeManager.StaffSearchScopeManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScopeManager\StaffSearchScopeManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.SecurityManager.AdministratorSecurityManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAIAAACgACABAAAAgAABIgAAAAAAAAYQBAAaIAAA=</HashCode>
+      <FileName>SecurityManager\AdministratorSecurityManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.SecurityManager.ClientSecurityManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAIAAACgACABAAAAgAABIgAAAAAAAAYQBAAaIAAA=</HashCode>
+      <FileName>SecurityManager\ClientManagementSecurityManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.SecurityManager.ClientStaffSecurityManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="71.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAIAAACgACABAAAAgAABIgAAAAAAAAYQBAAaIAAA=</HashCode>
+      <FileName>SecurityManager\ClientStaffSecurityManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.SecurityManager.CustomerSecurityManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAIAAACgACABAAAAgAABIgAAAAAAAAYQBAAaIAAA=</HashCode>
+      <FileName>SecurityManager\CustomerSecurityManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.SecurityManager.ManagementSecurityManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAIAAACgACABAAAAgAABIgAAAAAAAAYQBAAaIAAA=</HashCode>
+      <FileName>SecurityManager\ManagementSecurityManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.SecurityManager.SecurityManagerFactory" Collapsed="true">
+    <Position X="73.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>SecurityManager\SecurityManagerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.SecurityManager.StaffSecurityManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAIAAACgACABAAAAgAABIgAAAAAAAAYQBAAaIAAA=</HashCode>
+      <FileName>SecurityManager\StaffSecurityManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Services.CffUserService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAACAEAAAAAAAAABAAAAAAAAAAMAAAAAAAIAAEAA=</HashCode>
+      <FileName>Services\CffUserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Services.CffUserNotFoundException" Collapsed="true">
+    <Position X="68" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Services\CffUserNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Services.RedirectionService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="66.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAEAAAABAAAIAAQABAAAADAMAAAQAAAQAAAEI=</HashCode>
+      <FileName>Services\RedirectionService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Services.ReportsService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="76.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEgCJQAAAACCQAAAgAAMAoCAAAAAEEAAIAQCQQQIAA=</HashCode>
+      <FileName>Services\ReportsService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Services.ScopeService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="69.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAEAgACAAIAIAAAAAAAAAAAIAAAQEAAAAAAAA=</HashCode>
+      <FileName>Services\ScopeService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cff.SaferTrader.Core.Services.TransactionReportsService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="82" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABGACQQEGACJAAQAAAMKAgAFgAABlVCgQQMAAgAAAA=</HashCode>
+      <FileName>Services\TransactionReportsService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Cff.SaferTrader.Core.ICalendar" Collapsed="true">
+    <Position X="61" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICalendar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.ICffClient" Collapsed="true">
+    <Position X="62.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAAAAAAAAAIEABAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICffClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.ICffUser" Collapsed="true">
+    <Position X="64.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAgAAAAAgAAAAACAAAAQAAAAACAAA=</HashCode>
+      <FileName>ICffUser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.IDate" Collapsed="true">
+    <Position X="61" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>IDate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.IPrintable" Collapsed="true">
+    <Position X="80.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPrintable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.IReader" Collapsed="true">
+    <Position X="83.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAgAAAABAAAAAAABAAAAAA=</HashCode>
+      <FileName>IReader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.IReportManager" Collapsed="true">
+    <Position X="59.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAAQAAAAAAgAIgAYAEAAAAAIBAQEgCmEgkAAEAA=</HashCode>
+      <FileName>IReportManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.IRetentionNote" Collapsed="true">
+    <Position X="68" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRetentionNote.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.ISecurityManager" Collapsed="true">
+    <Position X="59.25" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAIAAACgACABAAAAAAABIgAAAAAAAAYQBAAaIAAA=</HashCode>
+      <FileName>ISecurityManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Web.UserControls.ReleaseTabs.IRetentionTab" Collapsed="true">
+    <Position X="78.5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRetentionTab.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Reports.ISubledgerTransaction" Collapsed="true">
+    <Position X="61" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Reports\ISubledgerTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.IBatchRepository" Collapsed="true">
+    <Position X="59.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQAAAgAAAAAAAQAAAAAIAACAAAAAAAAAgCBA=</HashCode>
+      <FileName>Repositories\IBatchRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.ICffUserRepository" Collapsed="true">
+    <Position X="66.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAgAEUAgACIAQAAAAABAAEQAGAA=</HashCode>
+      <FileName>Repositories\ICffUserRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.IClientRepository" Collapsed="true">
+    <Position X="71.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAACAAAAAAIAAAA=</HashCode>
+      <FileName>Repositories\IClientRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.IContactsRepository" Collapsed="true">
+    <Position X="75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAGgAAAAIAAAAMEQIAAAAAAAAAAAAggAAAAQAAACCI=</HashCode>
+      <FileName>Repositories\IContactsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.ICustomerRepository" Collapsed="true">
+    <Position X="83.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAKAEAIAIAAEAAAAAQgIAAAAAAAAAAABAAACAAAEA=</HashCode>
+      <FileName>Repositories\ICustomerRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.IDictionaryRepository" Collapsed="true">
+    <Position X="62.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IDictionaryRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.IManagementRepository" Collapsed="true">
+    <Position X="73.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IManagementRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.INotesRepository" Collapsed="true">
+    <Position X="76.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQBAAAAAEAQAAABAAAIAABAEAAkAACAiAACgAEAAA=</HashCode>
+      <FileName>Repositories\INotesRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.IReportRepository" Collapsed="true">
+    <Position X="61" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFmCLYQEGQAPQAQAoBMOAoCEiAABhVCgIQcCQwQIAA=</HashCode>
+      <FileName>Repositories\IReportRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.IRetentionNotesTabRepository" Collapsed="true">
+    <Position X="69.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IRetentionNotesTabRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.IRetentionRepository" Collapsed="true">
+    <Position X="73.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAABAgAAAAAAAACAAAAAAIAAAACAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IRetentionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.ITransactionRepository" Collapsed="true">
+    <Position X="66.25" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AChAAAAAAEAAAAAgAAgAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Repositories\ITransactionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Repositories.ITransactionSearchRepository" Collapsed="true">
+    <Position X="68" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Repositories\ITransactionSearchRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.ScopeManager.ISearchScopeManager" Collapsed="true">
+    <Position X="57.5" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScopeManager\ISearchScopeManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Services.ICffUserService" Collapsed="true">
+    <Position X="68" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Services\ICffUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Services.IRedirectionService" Collapsed="true">
+    <Position X="57.5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAABAAAABAAAAAAAAAQAAAEI=</HashCode>
+      <FileName>Services\IRedirectionService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Services.IReportsService" Collapsed="true">
+    <Position X="62.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEgCJQAAAAACQAAAgAAMAoCAAAAAAEAAIAQCQQQIAA=</HashCode>
+      <FileName>Services\IReportsService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Services.IScopeService" Collapsed="true">
+    <Position X="83.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAgACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Services\IScopeService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Services.ITransactionReportsService" Collapsed="true">
+    <Position X="62.75" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABGACQQEGAAJAAQAAAMKAgAEgAABhVCgAQMAAgAAAA=</HashCode>
+      <FileName>Services\ITransactionReportsService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IBatchChargesTabView" Collapsed="true">
+    <Position X="57.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IBatchChargesTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IChargesTabView" Collapsed="true">
+    <Position X="69.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IChargesTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IClientSearchView" Collapsed="true">
+    <Position X="73.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IClientSearchView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IContactsView" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgIAQAAAAAAABAAGAAgAIAAAAAAAAA=</HashCode>
+      <FileName>Views\IContactsView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ICreditsClaimedTabView" Collapsed="true">
+    <Position X="76.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ICreditsClaimedTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ICreditsTabView" Collapsed="true">
+    <Position X="78.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ICreditsTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ICustomerNotesAdderView" Collapsed="true">
+    <Position X="80.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAABAAAAAABAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Views\ICustomerNotesAdderView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ICustomerNotesEditorView" Collapsed="true">
+    <Position X="82" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ICustomerNotesEditorView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ICustomerSearchView" Collapsed="true">
+    <Position X="57.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Views\ICustomerSearchView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IDashboardView" Collapsed="true">
+    <Position X="59.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAEAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Views\IDashboardView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IInvoiceBatchesView" Collapsed="true">
+    <Position X="64.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAgAAQIAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IInvoiceBatchesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IInvoicesTabView" Collapsed="true">
+    <Position X="66.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Views\IInvoicesTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ILogOnView" Collapsed="true">
+    <Position X="68" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ILogOnView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IMainNavigationView" Collapsed="true">
+    <Position X="69.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAQAAAAIgAIAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IMainNavigationView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IManagementDetailsBoxView" Collapsed="true">
+    <Position X="71.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IManagementDetailsBoxView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.INonFactoredTabView" Collapsed="true">
+    <Position X="75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Views\INonFactoredTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.INotesView" Collapsed="true">
+    <Position X="78.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEBAAIAIAAABAAAAAAAgAAAAIBAgAAAAAAAgAAA=</HashCode>
+      <FileName>Views\INotesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IPrintableView" Collapsed="true">
+    <Position X="82" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Views\IPrintableView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IPromptReportView" Collapsed="true">
+    <Position X="43.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Views\IPromptReportView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IRedirectableView">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IRedirectableView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IRepurchasesTabView" Collapsed="true">
+    <Position X="64.5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IRepurchasesTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IRetentionDetailsTabView" Collapsed="true">
+    <Position X="66.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Views\IRetentionDetailsTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IRetentionNotesTabView" Collapsed="true">
+    <Position X="71.5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Views\IRetentionNotesTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IRetentionRepurchasesClaimedTabView" Collapsed="true">
+    <Position X="75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IRetentionRepurchasesClaimedTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IRetentionSchedulesView" Collapsed="true">
+    <Position X="76.75" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\IRetentionSchedulesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ISafeTraderView" Collapsed="true">
+    <Position X="80.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BggAJAAAAAAAQAAAIAAAAAAAEAAKAAAAAAAAAACAAEA=</HashCode>
+      <FileName>Views\ISafeTraderView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IScheduleTabView" Collapsed="true">
+    <Position X="82" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAgAAAAAAAAAAAEgAAAAAAAAAAAAgIA=</HashCode>
+      <FileName>Views\IScheduleTabView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IScopedView">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Views\IScopedView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.IStatementView" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAgAAAAAAgAAAAEBAAAAAAAAAAIAA=</HashCode>
+      <FileName>Views\IStatementView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ITransactionArchiveView" Collapsed="true">
+    <Position X="6.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ITransactionArchiveView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ITransactionHistoryView" Collapsed="true">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAWAAABAAAAAAAAAA=</HashCode>
+      <FileName>Views\ITransactionHistoryView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ITransactionReportView" Collapsed="true">
+    <Position X="64.5" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAICAAAAAAAAAAAGAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ITransactionReportView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ITransactionSearchView" Collapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAABAA=</HashCode>
+      <FileName>Views\ITransactionSearchView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ITransactionsView" Collapsed="true">
+    <Position X="13" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ITransactionsView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.IAgedBalancesView" Collapsed="true">
+    <Position X="28" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAJAAAAAAAAAAIgAABAAAAAAAACAAAAAAAAAlAQAA=</HashCode>
+      <FileName>Views\ReportView\IAgedBalancesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.ICallsDueView" Collapsed="true">
+    <Position X="32.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAAAAAAAAAIgAAAAQAAAAAACAAAAAAAAAlAQAA=</HashCode>
+      <FileName>Views\ReportView\ICallsDueView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.IClientActionView" Collapsed="true">
+    <Position X="37" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAAAAAAAAAIgAAAAQAAAAAACAAAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\ReportView\IClientActionView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.IControlView" Collapsed="true">
+    <Position X="39.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAIgAAAAAAgAAAACAAAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\ReportView\IControlView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.ICreditLimitExceededView" Collapsed="true">
+    <Position X="41.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAIgAABAAAAAAAACAAAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\ReportView\ICreditLimitExceededView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.ICurrentOverpaidView" Collapsed="true">
+    <Position X="46" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAIgAABAAAAAAAACAAAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\ReportView\ICurrentOverpaidView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.ICurrentShortPaidView" Collapsed="true">
+    <Position X="48.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAIgAABAAAAAAAACAAAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\ReportView\ICurrentShortPaidView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.ICustomerWatchView">
+    <Position X="50.5" Y="1.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AFAAAAAAAAAAAEAIgAAAAQAAAAAACAAAAAAAAAlAQAA=</HashCode>
+      <FileName>Views\ReportView\ICustomerWatchView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.IOverdueChargesView" Collapsed="true">
+    <Position X="28" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAIgAABAAAgAAAAWAAAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\ReportView\IOverdueChargesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.IReportView" Collapsed="true">
+    <Position X="28" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ReportView\IReportView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.IRetentionReleaseEstimateView">
+    <Position X="54.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAAAAAhAAAA=</HashCode>
+      <FileName>Views\ReportView\IRetentionReleaseEstimateView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.ReportView.IStatusView" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAAAAABAAAAAAIgAABAAAgAAAAGAAAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\ReportView\IStatusView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.ICreditBalanceTransfersView" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAACIgAABAAAgAAAAGBAAAAAAAAhgQAA=</HashCode>
+      <FileName>Views\TransactionReportView\ICreditBalanceTransfersView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.ICreditNotesView" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAACIgAABAAAgAAAAGBAAAAAAAAhgQAA=</HashCode>
+      <FileName>Views\TransactionReportView\ICreditNotesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.IDiscountsView" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAACIgAABAAAgAAAAGBAAAAAAAAhgQAA=</HashCode>
+      <FileName>Views\TransactionReportView\IDiscountsView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.IInvoicesView" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAACIgAABAAAgAAAAGBAAAAAAAAhgQAA=</HashCode>
+      <FileName>Views\TransactionReportView\IInvoicesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.IJournalsView" Collapsed="true">
+    <Position X="16.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAACIgAABAAAgAAAAGBAAAAAAAAhgQAA=</HashCode>
+      <FileName>Views\TransactionReportView\IJournalsView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.IOverpaymentsView" Collapsed="true">
+    <Position X="19" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAACIgAABAAAgAAAAGBAAAAAAAAhgQAA=</HashCode>
+      <FileName>Views\TransactionReportView\IOverpaymentsView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.IReceiptsView" Collapsed="true">
+    <Position X="21.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAACIgAABAAAgAAAAGBAAAAAAAAhgQAA=</HashCode>
+      <FileName>Views\TransactionReportView\IReceiptsView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.IRepurchasesView" Collapsed="true">
+    <Position X="23.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAIgAABAAAgAAAACAAAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\TransactionReportView\IRepurchasesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.IUnallocatedView" Collapsed="true">
+    <Position X="25.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAIgAABAAAAAAAACAAAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\TransactionReportView\IUnallocatedView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.IUnclaimedCreditNotesView" Collapsed="true">
+    <Position X="30.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAIgAABAAAgAAAACABAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\TransactionReportView\IUnclaimedCreditNotesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cff.SaferTrader.Core.Views.TransactionReportView.IUnclaimedRepurchasesView" Collapsed="true">
+    <Position X="34.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAIgAABAAAgAAAACABAAAAAAAhAQAA=</HashCode>
+      <FileName>Views\TransactionReportView\IUnclaimedRepurchasesView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Cff.SaferTrader.Core.BatchTab" Collapsed="true">
+    <Position X="57.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BatchTab.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Cff.SaferTrader.Core.Scope" Collapsed="true">
+    <Position X="61" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAg=</HashCode>
+      <FileName>Scope.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Cff.SaferTrader.Core.SearchScope" Collapsed="true">
+    <Position X="62.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAEAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>SearchScope.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Cff.SaferTrader.Core.TransactionSearchType" Collapsed="true">
+    <Position X="64.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAIAAACABAAA=</HashCode>
+      <FileName>TransactionSearchType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Cff.SaferTrader.Core.Reports.ReportType" Collapsed="true">
+    <Position X="59.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABAAgIAgkABAIGQAAAgQgAABAwAAQgCACAIQiAAA=</HashCode>
+      <FileName>Reports\ReportType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
